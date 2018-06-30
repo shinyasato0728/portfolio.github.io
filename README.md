@@ -75,7 +75,7 @@ $ yarn build
 
 - [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 
-CLIでPostCSSを使うプラグイン。これがないと何も始まらない
+CLIでPostCSSを使うプラグイン
 
 - [cssnano](https://www.npmjs.com/package/cssnano)
 
