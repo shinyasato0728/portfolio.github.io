@@ -26,7 +26,7 @@
   translation: "由於使用靜態站點生成器創建博客是很有趣的，所以如果有人想從WordPress切換到靜態站點生成器，請不要猶豫，向我們諮詢。"
 
 - id: profileTitleTools
-  translation: "常用的工具"
+  translation: "常用的软件"
 
 - id: profileTitleSkill
   translation: "常用技术"

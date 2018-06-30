@@ -109,11 +109,11 @@ PostCSSでmixinsが使えるようになる
 
 ```
 /* postcss.css */
-@define-mixin titleBackground $titleBackground { padding: 8px; background: $titleBackground; border-radius: 4px; }
-.mixins { @mixin titleBackground #f8f8f9;}
+@define-mixin titleBackground $R, $G, $B, $A { padding: 8px; background: rgba($R, $G, $B, $A); border-radius: 4px; }
+.mixins { @mixin titleBackground 245,245,246,0.7;}
 
 /* build.css */
-.mixins { padding: 8px; background: #f8f8f9; border-radius: 4px;}
+.mixins { padding: 8px; background: hsla(240,5%,96%,.7); border-radius: 4px;}
 ```
 
 - [postcss-simple-vars](https://www.npmjs.com/package/postcss-simple-vars)
@@ -150,6 +150,20 @@ PostCSSでNest（入れ子）が使えるようになる
 .media { width: 100%;
   @media (max-width: 600px) { width: 95%;}
 }
+```
+
+- [postcss-media-minmax](https://www.npmjs.com/package/postcss-media-minmax)
+
+@mediaのmax-width,min-widthを、不等号で指定することができる
+
+```
+/* postcss.css */
+@media (width <= 960px) { width: 50%;}
+@media (width => 600px) { width: 100%;}
+
+/* build.css */
+@media (max-width: 960px) { width: 50%;}
+@media (min-width: 600px) { width: 100%;}
 ```
 
 - [postcss-pixels-to-rem](https://www.npmjs.com/package/postcss-pixels-to-rem)

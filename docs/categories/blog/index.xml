@@ -35,7 +35,7 @@
 静的サイトジェネレーターは便利ですが、DBと紐づく高度な機能はJekyllにはなかった為、DBと紐づかせずに使え、より多機能なHugoを選択しました。
 また、Golang製なのでBuildが早いというメリットもあり、採用いたしました。
 CSSは今流行りのPostCSSを使ってみました。
-  </description>
+Repositoryを見る    </description>
     </item>
     
     <item>
