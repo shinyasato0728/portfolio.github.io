@@ -10,6 +10,7 @@ module.exports = (ctx) => ({
     require('postcss-simple-vars'),
     require('postcss-nested'),
     require('postcss-custom-media'),
+    require('postcss-media-minmax'),
     require('postcss-pixels-to-rem'),
     require('postcss-calc'),
     require('postcss-utilities'),

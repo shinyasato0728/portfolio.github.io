@@ -6,7 +6,7 @@
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
-    "babel-loader": "7.1.2",
+    "babel-loader": "^7.1.4",
     "babel-runtime": "6.26.0",
     "css-loader": "0.28.7",
     "eslint": "4.10.0",
@@ -32,18 +32,19 @@
     "build": "hugo & postcss postcss/*.css -d docs/assets/styles/ & webpack --mode production"
   },
   "devDependencies": {
-    "postcss": "^6.0.19",
     "cssnano": "^3.10.0",
+    "postcss": "^6.0.19",
+    "postcss-calc": "^6.0.1",
     "postcss-cli": "^5.0.0",
+    "postcss-custom-media": "^6.0.0",
     "postcss-import": "^11.1.0",
+    "postcss-media-minmax": "^3.0.0",
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^3.0.0",
-    "postcss-calc": "^6.0.1",
-    "postcss-custom-media": "^6.0.0",
     "postcss-pixels-to-rem": "^0.8.0",
+    "postcss-reporter": "^5.0.0",
     "postcss-simple-vars": "^4.1.0",
     "postcss-utilities": "^0.8.0",
-    "postcss-reporter": "^5.0.0",
     "stylelint": "^9.1.1",
     "stylelint-config-primer": "^2.2.8"
   }
