@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Landingpage on Shinya Sato Portfolio</title>
+    <link>https://shinya-sato.com/en/categories/landingpage/</link>
+    <description>Recent content in Landingpage on Shinya Sato Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shinya-sato.com/en/categories/landingpage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coincheck Exchange</title>
+      <link>https://shinya-sato.com/en/landingpage/coincheck_exchange/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/landingpage/coincheck_exchange/</guid>
+      <description>Coincheck Exchange Design / Rails,Scss / Multilingual    CONCEPT I redesigned the top page of Coincheck.
+The concept was &#34;establishment of corporate color&#34;, &#34;simple but easy to use, user friendly design&#34; I tried.
+Also, as Coincheck was also a big point in the number of currencies, I also pay attention to appealing the number of currencies as an appeal axis.
+View    </description>
+    </item>
+    
+    <item>
+      <title>Coincheck Payment</title>
+      <link>https://shinya-sato.com/en/landingpage/coincheck_payment/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/landingpage/coincheck_payment/</guid>
+      <description>Coincheck Payment Design / Rails,Scss / Multilingual    CONCEPT I redesigned the top page of Coincheck Payment.
+The concept was created by imagining &#34;spread of bit coin settlement&#34;.
+In the background circle and line, in the future bit-coin settlement spread all over the world, designing with the thought / wish that one of the world&#39;s basic currencies is a bit coin.
+In addition, by expressing the merit of bit coin settlement with icon + character, we emphasized visually easy-to-understand and designed to eliminate further suspiciousness.</description>
+    </item>
+    
+    <item>
+      <title>Coincheck Lending</title>
+      <link>https://shinya-sato.com/en/landingpage/coincheck_lending/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/landingpage/coincheck_lending/</guid>
+      <description>Coincheck Lending Design / Rails,Scss / Multilingual    CONCEPT I designed the top page of Coincheck Lending (Rental virtual currency).
+The concept is &#34;the concept of a new virtual currency&#34;.
+In the first view, I tried to place new images reminiscent of the feeling of the near future and remind me of new services different from other companies.
+In addition, I put a bit of &#34;pop&#34; images, icons on the whole, I tried to design such that &#34;</description>
+    </item>
+    
+    <item>
+      <title>Coincheck Electlic</title>
+      <link>https://shinya-sato.com/en/landingpage/coincheck_electric/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/landingpage/coincheck_electric/</guid>
+      <description>Coincheck Electric Design / Rails,Scss    CONCEPT We designed the top page of Coincheck&#39;s horizontally spread business &#34;Coincheck Hikari&#34;.
+We focused on eliminating &#34;doubtfulness&#34; of virtual currency by placing photos that make electric + warm feeling in First View.
+Also, this First View image is processed and synthesized with Photoshp.
+View    </description>
+    </item>
+    
+    <item>
+      <title>Coincheck Introduction</title>
+      <link>https://shinya-sato.com/en/landingpage/coincheck_introduction/</link>
+      <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/landingpage/coincheck_introduction/</guid>
+      <description>Coincheck Introduction Design / Rails,Scss / Multilingual    CONCEPT I designed the landing page when I clicked the advertisement banner of SNS.
+By using Coincheck&#39;s corporate color in the foreground, Coincheck&#39;s image brand has been established and as much as possible using icons + illustrations, we aimed for Coincheck&#39;s &#34;service that allows young people to feel free to use virtual currency without feeling casually&#34; .
+In addition, I did the user interview in the lower row (I adopted the context interview method)</description>
+    </item>
+    
+    <item>
+      <title>Coincheck Affiliate</title>
+      <link>https://shinya-sato.com/en/landingpage/coincheck_affiliates/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/landingpage/coincheck_affiliates/</guid>
+      <description>Coincheck Affiliate Design / Rails,Scss / Multilingual    CONCEPT I designed the landing page of the linked banner affixed by Coincheck&#39;s affiliate.
+Illustration of First View included an image that &#34;Affiliators introduce and Coincheck will spread all over the world&#34;.
+Because there were many voices that discontinued animation was not sure how to receive reward of affiliate program, we made animation and made it easy to understand visually. In addition, this animation will be played even in smartphone.</description>
+    </item>
+    
+  </channel>
+</rss>

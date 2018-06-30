@@ -1,0 +1,116 @@
+- id: menuTitle
+  translation: "菜单"
+
+- id: menuTitleClose
+  translation: "关"
+
+- id: menuHome
+  translation: "首页"
+
+- id: languageSelect
+  translation: "選擇一種語言"
+
+- id: profileTitleName
+  translation: "サトウ シンヤ"
+
+- id: profileText01
+  translation: "很高興認識你，我是一名1987年出生的設計師。"
+
+- id: profileText02
+  translation: "我長大了，看著我的祖父在童年時期經營一家客棧，所以我總是善於烹飪，有時間我有時間。"
+
+- id: profileText03
+  translation: "而且，由於這是一個電腦從小就接近我的環境，我專心於小學電腦。 我觀看了該網站，並嘗試製作當時流行的Flash。"
+
+- id: profileText04
+  translation: "由於使用靜態站點生成器創建博客是很有趣的，所以如果有人想從WordPress切換到靜態站點生成器，請不要猶豫，向我們諮詢。"
+
+- id: profileTitleTools
+  translation: "常用的工具"
+
+- id: profileTitleSkill
+  translation: "常用技术"
+
+- id: landingpageTitle
+  translation: "登陆页面"
+
+- id: landingpageList
+  translation: "登陆页面列表"
+
+- id: bannerTitle
+  translation: "旗帜"
+
+- id: bannerList
+  translation: "旗帜列表"
+
+- id: illustTitle
+  translation: "型插画"
+
+- id: illustList
+  translation: "型插画列表"
+
+- id: blogTitle
+  translation: "博客"
+
+- id: blogList
+  translation: "博客列表"
+
+- id: mailmagazineTitle
+  translation: "电子邮件杂志"
+
+- id: mailmagazineList
+  translation: "电子邮件杂志列表"
+
+- id: otherTitle
+  translation: "其他"
+
+- id: otherInterviewTitle
+  translation: "進行用戶訪談"
+
+- id: otherInterviewText01
+  translation: "我們經常採訪，因為我們認為在設計服務設計時真正了解用戶是非常重要的。"
+
+- id: otherGithubTitle
+  translation: "Github設計數據管理"
+
+- id: otherGithubText01
+  translation: "我試圖使用Github來設計數據來積極控製版本。"
+
+- id: otherGithubText02
+  translation: "另外，對於不熟悉Git的設計人員，我還講瞭如何管理Git。"
+
+- id: otherGithubText03
+  translation: "通過管理Git，可以掌握誰改變了什麼類型，並且根據版本不需要分開文件夾，因此我們決定積極採用它。"
+
+- id: otherStaticTitle
+  translation: "静态站点生成器的研究"
+
+- id: otherStaticText01
+  translation: "由于我沉迷于可以在没有复杂数据库的情况下创建博客的静态站点生成器，因此我每天都在进行研究。"
+
+- id: otherStaticText02
+  translation: "我用HUGO实施了这个组合网站，但下次我将创建并分发HUGO的模板。"
+
+- id: formTitle
+  translation: "在這里聯系我們"
+
+- id: formText01
+  translation: "請不要猶豫，聯繫我們的生產要求或諮詢。"
+
+- id: formText02
+  translation: "即使我剛才說了我關心的事情，關於我，如果您有任何意見，如果您可以通過下面的表格與我聯繫，我會很高興。"
+
+- id: formMailaddress
+  translation: "電郵地址"
+
+- id: formName
+  translation: "名"
+
+- id: formInquiry
+  translation: "查詢內容"
+
+- id: formRequired
+  translation: "需要"
+
+- id: formSubmit
+  translation: "傳輸"

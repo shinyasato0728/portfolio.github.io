@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Shinya Sato Portfolio</title>
+    <link>https://shinya-sato.com/blog/</link>
+    <description>Recent content in Blogs on Shinya Sato Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shinya-sato.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coincheck Blog</title>
+      <link>https://shinya-sato.com/blog/coincheck/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/blog/coincheck/</guid>
+      <description>Coincheck Blog Design / WordPress,Scss    コンセプト Coincheckのブログをリデザインいたしました。
+基本原則として、コーポレートカラーの定着を意識いたしました。
+また、金融商品は実態がない為、ユーザーとの接点である画像をうまく見せることに注意を払ってデザインを行いました。
+全体的に、少しポップな雰囲気を目指しデザインを行いました。
+画像を見る    </description>
+    </item>
+    
+    <item>
+      <title>Portfolio Site</title>
+      <link>https://shinya-sato.com/blog/hugo_portfolio/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/blog/hugo_portfolio/</guid>
+      <description>Portfolio Site Design / Hugo,PostCSS / 多言語対応    コンセプト HUGOを使って作った、ポートフォリオサイトになります。
+業務でJekyllを運用していましたが、「タグ・カテゴリー検索ができない」、「パーマリンクの設定ができない」、等の問題があり、Hugoに作り変えてみました。
+静的サイトジェネレーターは便利ですが、DBと紐づく高度な機能はJekyllにはなかった為、DBと紐づかせずに使え、より多機能なHugoを選択しました。
+また、Golang製なのでBuildが早いというメリットもあり、採用いたしました。
+CSSは今流行りのPostCSSを使ってみました。
+  </description>
+    </item>
+    
+    <item>
+      <title>HUGO Netlify CMS</title>
+      <link>https://shinya-sato.com/blog/hugo_netlify/</link>
+      <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/blog/hugo_netlify/</guid>
+      <description>HUGO Netlify CMS Design / Hugo,PostCSS / Netlify CMS    管理画面  コンセプト HUGOとNetlifyCMSを用いて、静的サイトジェネレーターでCMSのシステムを導入してみました。
+ゆくゆくはCMSを導入して、誰でも簡単に静的サイトジェネレーターでブログを更新できるようにしたいと思っています。
+ホスティングサービス：Netlify
+CMS：Netlify CMS
+ページを見る    </description>
+    </item>
+    
+  </channel>
+</rss>

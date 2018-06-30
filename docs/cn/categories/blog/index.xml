@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Shinya Sato Portfolio</title>
+    <link>https://shinya-sato.com/cn/categories/blog/</link>
+    <description>Recent content in Blog on Shinya Sato Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shinya-sato.com/cn/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coincheck Blog</title>
+      <link>https://shinya-sato.com/cn/blog/coincheck/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/blog/coincheck/</guid>
+      <description>Coincheck Blog Design / WordPress,Scss    概念 Coincheck的博客被重新設計。
+作為基本原則，我意識到建立企業色彩。
+此外，由於金融工具不是真實的，我們設計的時候要注意顯示與用戶接觸點的圖像。
+總的來說，我們設計的目標是一個流行的小氣氛。
+查看圖像    </description>
+    </item>
+    
+    <item>
+      <title>Portfolio Site</title>
+      <link>https://shinya-sato.com/cn/blog/hugo_portfolio/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/blog/hugo_portfolio/</guid>
+      <description>Portfolio Site Design / Hugo,PostCSS / 多語言支持    概念 這將是一個由HUGO製作的投資組合網站。
+儘管我經營Jekyll業務，但我遇到了諸如“無法搜索標籤和類別”，“我無法設置固定鏈接”等問題，我嘗試將其加入Hugo。
+靜態網站生成器很有用，但由於Jekyll沒有與數據庫相關的高級功能，因此我們可以在不與數據庫綁定的情況下使用它，並選擇更多功能的Hugo。
+另外，由於它是由Golang製作的，我們採用了Build早期的優點。
+CSS現在嘗試使用流行的PostCSS。
+  </description>
+    </item>
+    
+    <item>
+      <title>HUGO Netlify CMS</title>
+      <link>https://shinya-sato.com/cn/blog/hugo_netlify/</link>
+      <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/blog/hugo_netlify/</guid>
+      <description>HUGO Netlify CMS Design / Hugo,PostCSS / Netlify CMS    管理屏幕  概念 使用HUGO和NetlifyCMS，我们引入了带有静态站点生成器的CMS系统。
+最后，我想介绍CMS，以便任何人都可以使用静态网站生成器轻松更新我的博客。
+托管服务：Netlify
+CMS：Netlify CMS
+查看頁面    </description>
+    </item>
+    
+  </channel>
+</rss>

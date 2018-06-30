@@ -1,0 +1,11 @@
+<meta property="og:title" content="{{ .Title }} | Shinya Sato Portfolio">
+<meta property="og:description" content="{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ .Title }} | Shinya Sato Portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }} | Shinya Sato Portfolio">
+<meta name="twitter:description" content="{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="{{ .Site.BaseURL }}">

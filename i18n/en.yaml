@@ -1,0 +1,119 @@
+- id: menuTitle
+  translation: "Menu"
+
+- id: menuTitleClose
+  translation: "Close"
+
+- id: menuHome
+  translation: "Home"
+
+- id: languageSelect
+  translation: "Language"
+
+- id: profileTitleName
+  translation: "Shinya Sato"
+
+- id: profileText01
+  translation: "Nice to meet you, I am a designer born in 1987."
+
+- id: profileText02
+  translation: "I grew up watching my grandfather who was running a inn in the early childhood, so I am always good at cooking and having time when I have time."
+
+- id: profileText03
+  translation: "Also, since it was an environment where computers were close to me from childhood, I was absorbed in computers at elementary school. I watched the website and tried making the Flash that was popular at that time myself."
+
+- id: profileText04
+  translation: "Since it is fancy to make blogs with static site generator, if you have someone who wants to switch from WordPress to static site generator, please do not hesitate to consult us."
+
+- id: profileTitleTools
+  translation: "Frequently used tools"
+
+- id: profileTitleSkill
+  translation: "Frequently used skill"
+
+- id: landingpageTitle
+  translation: "Landing Page"
+
+- id: landingpageList
+  translation: "Landing page list"
+
+- id: bannerTitle
+  translation: "Banner"
+
+- id: bannerList
+  translation: "Banner list"
+
+- id: illustTitle
+  translation: "Illust"
+
+- id: illustList
+  translation: "Illust list"
+
+- id: blogTitle
+  translation: "Blog"
+
+- id: blogList
+  translation: "Blog list"
+
+- id: mailmagazineTitle
+  translation: "E-mail magazine"
+
+- id: mailmagazineList
+  translation: "E-mail magazine list"
+
+- id: otherTitle
+  translation: "Other"
+
+- id: otherInterviewTitle
+  translation: "Conduct user interviews"
+
+- id: otherInterviewText01
+  translation: "We had interviewed regularly because we thought that it was important to know the user actually in designing the service design."
+
+- id: otherInterviewText02
+  translation: "Initially we conducted a \"context interview\" and introduced users from Otsuka, a director, but as I expanded my work I have been actively participating in study sessions etc. to meet users It was."
+
+- id: otherGithubTitle
+  translation: "Github management of design data"
+
+- id: otherGithubText01
+  translation: "I tried to positively version control using Github for design data."
+
+- id: otherGithubText02
+  translation: "Also, for designers not familiar with Git, I gave a lecture on how to manage Git."
+
+- id: otherGithubText03
+  translation: "By managing the Git, it is possible to grasp who changed what kind, and it is not necessary to separate the folders depending on the version, so we decided to actively adopt it."
+
+- id: otherStaticTitle
+  translation: "Study of static site generator"
+
+- id: otherStaticText01
+  translation: "Since I am addicted to a static site generator that can build blogs without complicated databases, I am doing research everyday."
+
+- id: otherStaticText02
+  translation: "I implemented this portfolio site with HUGO, but next time I will create and distribute the template of HUGO."
+
+- id: formTitle
+  translation: "Contact Us"
+
+- id: formText01
+  translation: "Please do not hesitate to contact us for production requests or consultation."
+
+- id: formText02
+  translation: "Even if I just said what I was concerned about, about me, if you have comments, I would be happy if you could contact me from the form below."
+
+- id: formMailaddress
+  translation: "Mailaddress"
+
+- id: formName
+  translation: "Name"
+
+- id: formInquiry
+  translation: "Inquiry"
+
+- id: formRequired
+  translation: "Required"
+
+- id: formSubmit
+  translation: "Submit"

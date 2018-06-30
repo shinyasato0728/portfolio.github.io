@@ -1,0 +1,116 @@
+- id: menuTitle
+  translation: "メニュー"
+
+- id: menuTitleClose
+  translation: "閉じる"
+
+- id: menuHome
+  translation: "ホーム"
+
+- id: languageSelect
+  translation: "言語を選択"
+
+- id: profileTitleName
+  translation: "サトウ シンヤ"
+
+- id: profileText01
+  translation: "初めまして、1987年生まれのデザイナーです。"
+
+- id: profileText02
+  translation: "幼少期から民宿を経営していた祖父を見て育ったので、料理が得意で時間があったらいつも作っています。"
+
+- id: profileText03
+  translation: "また、幼少期からコンピューターが身近にある環境だったので、小学生の時にはコンピューターに夢中になっていました。Webサイトを見たり、当時流行っていたFlashを自分で作ってみたりしました。"
+
+- id: profileText04
+  translation: "静的サイトジェネレーターでブログを作るのが好きなので、WordPressから静的サイトジェネレーターに移行したい方がいれば、お気軽にご相談下さい。"
+
+- id: profileTitleTools
+  translation: "よく使うツール"
+
+- id: profileTitleSkill
+  translation: "よく使う技術"
+
+- id: landingpageTitle
+  translation: "ランディングページ"
+
+- id: landingpageList
+  translation: "ランディングページ一覧"
+
+- id: bannerTitle
+  translation: "バナー"
+
+- id: bannerList
+  translation: "バナー一覧"
+
+- id: illustTitle
+  translation: "イラスト"
+
+- id: illustList
+  translation: "イラスト一覧"
+
+- id: blogTitle
+  translation: "ブログ"
+
+- id: blogList
+  translation: "ブログ一覧"
+
+- id: mailmagazineTitle
+  translation: "メルマガ"
+
+- id: mailmagazineList
+  translation: "メルマガ一覧"
+
+- id: otherTitle
+  translation: "その他"
+
+- id: otherInterviewTitle
+  translation: "ユーザーインタビューの実施"
+
+- id: otherInterviewText01
+  translation: "サービスデザインを行うにあたり、実際にユーザーを知る事は大事だと考えていたため、定期的にインタビューを行なっておりました。"
+
+- id: otherGithubTitle
+  translation: "デザインデータのGithub管理化"
+
+- id: otherGithubText01
+  translation: "デザインデータはGithubを用いて、積極的にバージョン管理するように心がけました。"
+
+- id: otherGithubText02
+  translation: "また、Gitに不慣れなデザイナーの為に、Git管理のやり方もレクチャーいたしました。"
+
+- id: otherGithubText03
+  translation: "Git管理をすることにより、誰がどのような変更を加えたのか把握することが可能であり、またバージョンによってフォルダを分ける必要がなくなる為、積極的に取り入れることにいたしました。"
+
+- id: otherStaticTitle
+  translation: "静的サイトジェネレーターの研究"
+
+- id: otherStaticText01
+  translation: "複雑なデータベースなしにブログを構築できる静的サイトジェネレーターにはまっているので、日々研究をしています。"
+
+- id: otherStaticText02
+  translation: "このポートフォリオサイトはHUGOで実装しましたが、次はHUGOのテンプレートを作成して配布しようと思っています。"
+
+- id: formTitle
+  translation: "お問い合わせはこちら"
+
+- id: formText01
+  translation: "制作の依頼、ご相談などお気軽にお問い合わせ下さい。"
+
+- id: formText02
+  translation: "私のことについて、気になったこと、挨拶しただけでも、コメントがありましたら下記のフォームからご連絡いただけると、嬉しいです。"
+
+- id: formMailaddress
+  translation: "メールアドレス"
+
+- id: formName
+  translation: "名前"
+
+- id: formInquiry
+  translation: "お問合せ内容"
+
+- id: formRequired
+  translation: "必須"
+
+- id: formSubmit
+  translation: "送信"

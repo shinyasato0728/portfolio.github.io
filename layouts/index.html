@@ -1,0 +1,171 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<article class="first__wrapper">
+  <div class="first__content">
+    <div class="first__box">
+      <figure class="icon__circle">
+        <img src="/images/back/icon_back_circle.svg" alt="">
+      </figure>
+      <div class="first__textbox">
+        <h2 class="first__text__title">{{ i18n "profileTitleName" }}</h2>
+        <p>{{ i18n "profileText01" }}</p>
+        <p>{{ i18n "profileText02" }}</p>
+        <p>{{ i18n "profileText03" }}</p>
+        <p>{{ i18n "profileText04" }}</p>
+        <div class="first__content__skill">
+          <h3 class="first__skill__title">{{ i18n "profileTitleTools" }}</h3>
+          <img src="/images/icon/icon_ai.svg" alt="Illustrator">
+          <img src="/images/icon/icon_psd.svg" alt="Photoshop">
+          <img src="/images/icon/icon_xd.svg" alt="XD">
+          <img src="/images/icon/icon_an.svg" alt="Animate">
+          <img src="/images/icon/icon_vim.svg" alt="VIM">
+        </div>
+        <div class="first__content__skill">
+          <h3 class="first__skill__title">{{ i18n "profileTitleSkill" }}</h3>
+          <img src="/images/icon/icon_html5.svg" alt="HTMl5">
+          <img src="/images/icon/icon_css.svg" alt="CSS">
+          <img src="/images/icon/icon_sass.svg" alt="SASS">
+          <img src="/images/icon/icon_postcss.svg" alt="PostCSS">
+          <img src="/images/icon/icon_rails.svg" alt="Rails">
+          <img src="/images/icon/icon_git.svg" alt="Git">
+          <img src="/images/icon/icon_jekyll.svg" alt="Jekyll">
+          <img src="/images/icon/icon_hugo.svg" alt="HUGO">
+          <img src="/images/icon/icon_wordpress.svg" alt="WordPress">
+        </div>
+      </div>
+      <figure class="icon__try">
+        <img src="/images/back/icon_back_try.svg" alt="">
+      </figure>
+    </div>
+  </div>
+</article>
+
+<article id="lp" class="wrapper">
+  <h2 class="title">{{ i18n "landingpageTitle" }}</h2>
+  <div class="wrapper__items">
+    {{ range first 6 (where .Data.Pages "Section" "landingpage") }}
+    <figure>
+      <a class="link__top__img" href="{{ .Permalink }}">
+        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+      </a>
+      <div class="post__title__caption">
+        <a class="caption-title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
+        <p class="caption">{{ .Params.caption }}</p>
+      </div>
+    </figure>
+    {{ end }}
+    <nav class="categories">
+      <a href="{{ "/landingpage/" | relLangURL }}">{{ i18n "landingpageList" }}</a>
+    </nav>
+  </div>
+</article>
+
+<article id="banner" class="wrapper">
+  <h2 class="title">{{ i18n "bannerTitle" }}</h2>
+  <div class="wrapper__items">
+    {{ range first 12 (where .Data.Pages "Section" "banner") }}
+    <figure>
+      <a class="link__top__img banner__image" href="{{ .Permalink }}">
+        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+      </a>
+      <div class="post__title__caption">
+        <a class="caption-title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
+        <p class="caption">{{ .Params.caption }}</p>
+      </div>
+    </figure>
+    {{ end }}
+    <nav class="categories">
+      <a href="{{ "/banner/" | relLangURL }}">{{ i18n "bannerList" }}</a>
+    </nav>
+  </div>
+</article>
+
+<article id="illust" class="wrapper">
+  <h2 class="title">{{ i18n "illustTitle" }}</h2>
+  <div class="wrapper__items">
+    {{ range first 12 (where .Data.Pages "Section" "illust") }}
+    <figure>
+      <a class="link__top__img illust__image" href="{{ .Permalink }}">
+        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+      </a>
+      <div class="post__title__caption">
+        <a class="caption-title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
+      </div>
+    </figure>
+    {{ end }}
+    <nav class="categories">
+      <a href="{{ "/illust/" | relLangURL }}">{{ i18n "illustList" }}</a>
+    </nav>
+  </div>
+</article>
+
+<article id="blog" class="wrapper">
+  <h2 class="title">{{ i18n "blogTitle" }}</h2>
+  <div class="wrapper__items">
+    {{ range (where .Data.Pages "Section" "blog") }}
+    <figure>
+      <a class="link__top__img" href="{{ .Permalink }}">
+        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+      </a>
+      <div class="post__title__caption">
+        <a class="caption-title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
+        <p class="caption">{{ .Params.caption }}</p>
+      </div>
+    </figure>
+    {{ end }}
+    <nav class="categories">
+      <a href="{{ "/blog/" | relLangURL }}">{{ i18n "blogList" }}</a>
+    </nav>
+  </div>
+</article>
+
+<article id="mailmagazine" class="wrapper">
+  <h2 class="title">{{ i18n "mailmagazineTitle" }}</h2>
+  <div class="wrapper__items">
+    {{ range (where .Data.Pages "Section" "mailmagazine") }}
+    <figure>
+      <a class="link__top__img" href="{{ .Permalink }}">
+        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+      </a>
+      <div class="post__title__caption">
+        <a class="caption-title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
+        <p class="caption">{{ .Params.caption }}</p>
+      </div>
+    </figure>
+    {{ end }}
+    <nav class="categories">
+      <a href="{{ "/mailmagazine/" | relLangURL }}">{{ i18n "mailmagazineList" }}</a>
+    </nav>
+  </div>
+</article>
+
+<article id="other" class="wrapper">
+  <h2 class="title">{{ i18n "otherTitle" }}</h2>
+  <div id="other" class="wrapper__other">
+    <div class="other__container">
+      {{ partial "svg/interview.html" . }}
+      <div class="other__textbox">
+        <h3>{{ i18n "otherInterviewTitle" }}</h3>
+        <p>{{ i18n "otherInterviewText01" }}</p>
+      </div>
+    </div>
+    <div class="other__container">
+      {{ partial "svg/github.html" . }}
+      <div class="other__textbox">
+        <h3>{{ i18n "otherGithubTitle" }}</h3>
+        <p>{{ i18n "otherGithubText01" }}</p>
+        <p>{{ i18n "otherGithubText02" }}</p>
+        <p>{{ i18n "otherGithubText03" }}</p>
+      </div>
+    </div>
+    <div class="other__container">
+      {{ partial "svg/study.html" . }}
+      <div class="other__textbox">
+        <h3>{{ i18n "otherStaticTitle" }}</h3>
+        <p>{{ i18n "otherStaticText01" }}</p>
+        <p>{{ i18n "otherStaticText02" }}</p>
+      </div>
+    </div>
+  </div>
+</article>
+{{ partial "footer.html" . }}

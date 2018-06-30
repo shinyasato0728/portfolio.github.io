@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Shinya Sato Portfolio</title>
+    <link>https://shinya-sato.com/cn/categories/</link>
+    <description>Recent content in Categories on Shinya Sato Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 10 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shinya-sato.com/cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Banner</title>
+      <link>https://shinya-sato.com/cn/categories/banner/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/categories/banner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://shinya-sato.com/cn/categories/blog/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Illust</title>
+      <link>https://shinya-sato.com/cn/categories/illust/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/categories/illust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Landingpage</title>
+      <link>https://shinya-sato.com/cn/categories/landingpage/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/categories/landingpage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mailmagazine</title>
+      <link>https://shinya-sato.com/cn/categories/mailmagazine/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/cn/categories/mailmagazine/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+{
+  "name": "ShinyaSatoPortfolio",
+  "version": "1.0,0",
+  "private": true,
+  "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.2",
+    "babel-runtime": "6.26.0",
+    "css-loader": "0.28.7",
+    "eslint": "4.10.0",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "2.39.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.5",
+    "global": "^4.3.2",
+    "html-webpack-plugin": "2.29.0",
+    "install": "^0.10.4",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-loader": "2.0.8",
+    "url-loader": "0.6.2",
+    "webpack": "4.0.1",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "2.9.4",
+    "webpack-manifest-plugin": "1.3.2"
+  },
+  "scripts": {
+    "start": "hugo server --watch & postcss postcss/*.css -d static/assets/styles/ -w",
+    "build": "hugo & postcss postcss/*.css -d docs/assets/styles/ & webpack --mode production"
+  },
+  "devDependencies": {
+    "postcss": "^6.0.19",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^5.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-calc": "^6.0.1",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-pixels-to-rem": "^0.8.0",
+    "postcss-simple-vars": "^4.1.0",
+    "postcss-utilities": "^0.8.0",
+    "postcss-reporter": "^5.0.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-primer": "^2.2.8"
+  }
+}

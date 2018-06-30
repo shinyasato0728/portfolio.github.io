@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Params.LanguageCode }}" ng-app="portfolioApp">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }} | Shinya Sato Portfolio</title>
+  <meta name="robots" content="noindex">
+  <meta name="keywords" content="{{ .Title }}">
+  <meta name="description" content="{{ .Site.Params.Description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  {{ partial "ogp.html" . }}
+  {{ partial "styles.html" . }}
+  {{ partial "angularjs.html" . }}
+  {{ partial "javascripts.html" . }}
+  {{ if not (in (.Site.BaseURL | string) "localhost") }}
+    {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
+</head>
+<body>
+<main>

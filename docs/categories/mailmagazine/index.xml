@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mailmagazine on Shinya Sato Portfolio</title>
+    <link>https://shinya-sato.com/categories/mailmagazine/</link>
+    <description>Recent content in Mailmagazine on Shinya Sato Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shinya-sato.com/categories/mailmagazine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coincheck Mailmagazine</title>
+      <link>https://shinya-sato.com/mailmagazine/coincheck_normal/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/mailmagazine/coincheck_normal/</guid>
+      <description>Coincheck Normal Mailmagazine Design    コンセプト Coincheckで配布するメールマガジンの、デザインとコーディングを担当致しました。
+汎用性を持たせるのと、技術的にわかりづらい広報にも簡単に手を入れてもらえる様に、背景画像とテキストのみのシンプルなレイアウトにしました。
+ページを見る    </description>
+    </item>
+    
+    <item>
+      <title>Coincheck Food Mailmagazine</title>
+      <link>https://shinya-sato.com/mailmagazine/coincheck_foot/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/mailmagazine/coincheck_foot/</guid>
+      <description>Coincheck Food Mailmagazine Design    コンセプト Coincheckで配布するメールマガジンの、デザインとコーディングを担当致しました。
+こちらは主に飲食店開拓のためのメルマガだったので、イラストで飲食をイメージする画像を使いました。
+外注のイラストレーターさんへの指示も、自分で行いました。
+ページを見る    </description>
+    </item>
+    
+    <item>
+      <title>Coincheck Payment Mailmagazine</title>
+      <link>https://shinya-sato.com/mailmagazine/coincheck_payment/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/mailmagazine/coincheck_payment/</guid>
+      <description>Coincheck Payment Mailmagazine Design    コンセプト Coincheckで配布するメールマガジンの、デザインとコーディングを担当致しました。
+こちらは主にビットコインの多店舗決済（買い物・電気決済・その他生活インフラ）を促進するバナーだったので、ビットコインで買い物を楽しそうに行なっているイメージを想定しました。
+こちらも、外注のイラストレーターさんへの指示は自分で行いました。
+ページを見る    </description>
+    </item>
+    
+  </channel>
+</rss>

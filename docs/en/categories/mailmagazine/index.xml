@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mailmagazine on Shinya Sato Portfolio</title>
+    <link>https://shinya-sato.com/en/categories/mailmagazine/</link>
+    <description>Recent content in Mailmagazine on Shinya Sato Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shinya-sato.com/en/categories/mailmagazine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coincheck Mailmagazine</title>
+      <link>https://shinya-sato.com/en/mailmagazine/coincheck_normal/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/mailmagazine/coincheck_normal/</guid>
+      <description>Coincheck Normal Mailmagazine Design    CONCEPT I was in charge of design and coding of the mail magazine distributed by Coincheck.
+I made it a simple layout with only background images and text so that it has general versatility and easy to get into the public relations that is difficult to understand technically.
+View    </description>
+    </item>
+    
+    <item>
+      <title>Coincheck Food Mailmagazine</title>
+      <link>https://shinya-sato.com/en/mailmagazine/coincheck_foot/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/mailmagazine/coincheck_foot/</guid>
+      <description>Coincheck Food Mailmagazine Design    CONCEPT I was in charge of design and coding of the mail magazine distributed by Coincheck.
+This was an e-mail magazine mainly for cultivating restaurants, so I used images that illustrate eating and drinking in illustrations.
+I also instructed Illustrator of outsourcing by myself.
+View    </description>
+    </item>
+    
+    <item>
+      <title>Coincheck Payment Mailmagazine</title>
+      <link>https://shinya-sato.com/en/mailmagazine/coincheck_payment/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/mailmagazine/coincheck_payment/</guid>
+      <description>Coincheck Payment Mailmagazine Design    CONCEPT I was in charge of design and coding of the mail magazine distributed by Coincheck.
+This was mainly a banner to promote multi-store settlement of bit coins (shopping, electric payment, other life infrastructure), so I assumed an image that is doing shopping happily with bit coin.
+I also instructed the illustrator of outsourcing by myself.
+View    </description>
+    </item>
+    
+  </channel>
+</rss>

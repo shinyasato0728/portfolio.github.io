@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Shinya Sato Portfolio</title>
+    <link>https://shinya-sato.com/en/categories/blog/</link>
+    <description>Recent content in Blog on Shinya Sato Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shinya-sato.com/en/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coincheck Blog</title>
+      <link>https://shinya-sato.com/en/blog/coincheck/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/blog/coincheck/</guid>
+      <description>Coincheck Blog Design / WordPress,Scss    CONCEPT Coincheck&#39;s blog was redesigned.
+As a basic principle, I was conscious of the establishment of corporate color.
+Also, since financial instruments are not real, we designed with paying attention to showing images that are points of contact with users.
+Overall, we designed to aim a little pop atmosphere.
+View    </description>
+    </item>
+    
+    <item>
+      <title>Portfolio Site</title>
+      <link>https://shinya-sato.com/en/blog/hugo_portfolio/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/blog/hugo_portfolio/</guid>
+      <description>Portfolio Site Design / Hugo,PostCSS / Multilingual    CONCEPT It will be a portfolio site made with HUGO.
+Although I operated Jekyll in business, I have problems such as &#34;Can not search for tags and categories&#34;, &#34;I can not set permalink&#34;, etc. I tried to make it into Hugo.
+The static site generator is useful, but because Jekyll did not have advanced features associated with the DB, we could use it without tying it with the DB and chose more versatile Hugo.</description>
+    </item>
+    
+    <item>
+      <title>HUGO Netlify CMS</title>
+      <link>https://shinya-sato.com/en/blog/hugo_netlify/</link>
+      <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinya-sato.com/en/blog/hugo_netlify/</guid>
+      <description>HUGO Netlify CMS Design / Hugo,PostCSS / Netlify CMS    Management Screen  CONCEPT Using HUGO and NetlifyCMS, we introduced CMS system with static site generator.
+Eventually, I would like to introduce CMS so that anyone can easily update my blog with a static site generator.
+Hosting service：Netlify
+CMS：Netlify CMS
+View    </description>
+    </item>
+    
+  </channel>
+</rss>

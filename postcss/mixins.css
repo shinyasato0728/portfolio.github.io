@@ -1,0 +1,13 @@
+/* breakPC */
+@custom-media --breakPC (max-width: 960px);
+
+/* iPad */
+@custom-media --iPad (max-width: 767px);
+
+/* smartphone */
+@custom-media --smartphone (max-width: 600px);
+
+$textColor: #212121;
+$baseFontSize: 16px;
+
+@define-mixin titleBackground $titleBackground { padding: 8px; background: $titleBackground; border-radius: 4px; }
