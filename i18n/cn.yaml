@@ -114,3 +114,12 @@
 
 - id: formSubmit
   translation: "傳輸"
+
+- id: notfoundTItle
+  translation: "找不到您要查找的页面"
+
+- id: notfoundText01
+  translation: "链接有问题，或页面可能已被删除。"
+
+- id: notfoundText02
+  translation: "只要确定，请再次检查网址。"

@@ -6,6 +6,10 @@
 
 .svg__icon { fill: $textColor;}
 
+.ofi { object-fit: contain; object-position: 50% 50%; font-family: 'object-fit: cover; object-position: 50% 50%;';}
+
+.text__center { text-align: center;}
+
 * { box-sizing: border-box;}
 
 html { position: relative; min-height: 100%;}
@@ -36,12 +40,16 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   }
 }
 
+
 .first__wrapper { width: 100%; position: relative; display: flex; padding: 200px 0 120px 0;
   .first__content { width: 960px; display: table; box-sizing: border-box; position: relative; z-index: 1000;  margin: auto;
     .first__box { position: relative; border-radius: 4px; background: rgba(255,255,255,0.5); box-shadow: 0 0 8px rgba(0,0,0,0.1);
       .first__textbox { padding: 32px 48px; box-sizing: border-box;
         .first__text__title { text-align: center;}
         .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
+        .notfound__image__wrapper { width: 500px; @util margin(null auto 36px auto);
+          @media(--smartphone) { width: 70%;}
+        }
         @media(--smartphone) { padding: 32px 24px;}
       }
       .icon__circle { width: 44px; position: absolute; top: 16px; left: 16px;}
@@ -217,8 +225,6 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   a { color: color(#ffffff a(100%));}
 }
 div.mce_inline_error { position: absolute;}
-
-.ofi { object-fit: contain; object-position: 50% 50%; font-family: 'object-fit: cover; object-position: 50% 50%;';}
 
 /* gopher */
 .gopher__wrapper { float: right; width: 56px; height: 56px; margin-left: 12px; text-align: right;

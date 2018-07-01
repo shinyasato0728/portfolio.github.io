@@ -117,3 +117,12 @@
 
 - id: formSubmit
   translation: "Submit"
+
+- id: notfoundTItle
+  translation: "The page you were looking for could not be found"
+
+- id: notfoundText01
+  translation: "There is a problem with the link, or the page may have been deleted."
+
+- id: notfoundText02
+  translation: "Just to be sure, please check the URL again."
