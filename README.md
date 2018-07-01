@@ -77,9 +77,13 @@ $ yarn build
 
 CLIでPostCSSを使うプラグイン
 
+
+
 - [cssnano](https://www.npmjs.com/package/cssnano)
 
 buildしたPostCSSをminifyする。不必要はベンダープレフィックスは自動的に削除する
+
+
 
 - [stylelint](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/postcss-plugin.md)
 
@@ -87,13 +91,19 @@ PostCSSのリンター。プラグインにも対応
 
 stylelint.config.jsで[ルールの設定が必要](https://stylelint.io/)
 
+
+
 - [autoprefixer](https://github.com/postcss/autoprefixer)
 
 ベンダープレフィックスを自動的につけてくれる。設定で対象ブラウザ・バージョン範囲の設定が可能
 
+
+
 - [postcss-reporter](https://github.com/postcss/postcss-reporter)
 
 stylelintのログを見やすくしてくれる
+
+
 
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
 
@@ -102,6 +112,8 @@ PostCSSでimportが使えるようになる
 ```
 @import 'mixins.css';
 ```
+
+
 
 - [postcss-mixins](https://www.npmjs.com/package/postcss-mixins)
 
@@ -115,6 +127,8 @@ PostCSSでmixinsが使えるようになる
 /* build.css */
 .mixins { padding: 8px; background: hsla(240,5%,96%,.7); border-radius: 4px;}
 ```
+
+
 
 - [postcss-simple-vars](https://www.npmjs.com/package/postcss-simple-vars)
 
@@ -131,9 +145,27 @@ body { color: $textColor; font-size: $baseFontSize;}
 body { color: #212121; font-size: 16px;}
 ```
 
+
+
+- [postcss-color-function](https://www.npmjs.com/package/postcss-color-function)
+
+color変数が使えるようになる
+
+```
+/* postcss.css */
+.f__color { color: color(#000 a(50%)); background-color: color(#000 l(40%)); border-color: color(#fff b(50%));}
+
+/* build.css */
+.f__color { color: rgba(0.0.0.0.5); background-color: rgb(102,102,102); border-color: rgb(170, 170, 170);}
+```
+
+
+
 - [postcss-nested](https://www.npmjs.com/package/postcss-nested)
 
 PostCSSでNest（入れ子）が使えるようになる
+
+
 
 - [postcss-custom-media](https://www.npmjs.com/package/postcss-custom-media)
 
@@ -152,6 +184,8 @@ PostCSSでNest（入れ子）が使えるようになる
 }
 ```
 
+
+
 - [postcss-media-minmax](https://www.npmjs.com/package/postcss-media-minmax)
 
 @mediaのmax-width,min-widthを、不等号で指定することができる
@@ -165,6 +199,8 @@ PostCSSでNest（入れ子）が使えるようになる
 @media (max-width: 960px) { width: 50%;}
 @media (min-width: 600px) { width: 100%;}
 ```
+
+
 
 - [postcss-pixels-to-rem](https://www.npmjs.com/package/postcss-pixels-to-rem)
 
@@ -181,6 +217,8 @@ h1 { font-size: 2rem; margin-bottom: 2rem;}
 h2 { font-size: 1.5em; margin-bottom: 1.5rem;}
 h3 { font-size: 1rem; margin-bottom: 1rem;}
 ```
+
+
 
 - [postcss-utilities](https://www.npmjs.com/package/postcss-utilities)
 

@@ -7,7 +7,7 @@
 /* smartphone */
 @custom-media --smartphone (width <= 600px);
 
-$textColor: #212121;
+$textColor: color(#212121 a(100%));
 $baseFontSize: 16px;
 
-@define-mixin titleBackground $R, $G, $B, $A { padding: 8px; background: rgba($R, $G, $B, $A); border-radius: 4px; }
+@define-mixin titleBackground $backgroundColor, $property, $params { padding: 8px; background: color($backgroundColor $property($params)); border-radius: 4px; }

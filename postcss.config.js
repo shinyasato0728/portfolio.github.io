@@ -9,6 +9,7 @@ module.exports = (ctx) => ({
     require('postcss-mixins'),
     require('postcss-simple-vars'),
     require('postcss-nested'),
+    require('postcss-color-function'),
     require('postcss-custom-media'),
     require('postcss-media-minmax'),
     require('postcss-pixels-to-rem'),
