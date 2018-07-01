@@ -123,3 +123,6 @@
 
 - id: notfoundText02
   translation: "只要确定，请再次检查网址。"
+
+- id: notfoundButtonText
+  translation: "返回首页"

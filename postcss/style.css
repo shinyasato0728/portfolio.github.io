@@ -50,6 +50,11 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         .notfound__image__wrapper { width: 500px; @util margin(null auto 36px auto);
           @media(--smartphone) { width: 70%;}
         }
+        .notfound__button__wrapper { width: 100%; text-align: center; @util margin(32px null null null);
+          .notfound__home__button { @mixin buttonStyle;
+            &:hover { @mixin buttonStyleHover;}
+          }
+        }
         @media(--smartphone) { padding: 32px 24px;}
       }
       .icon__circle { width: 44px; position: absolute; top: 16px; left: 16px;}
@@ -172,8 +177,8 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       }
     }
     .categories { width: 100%; text-align: center;
-      a { display: inline-block; background: #ffffff; margin-bottom: 48px; padding: 12px 32px; color: $textColor; text-decoration: none; border-radius: 4px; border: 1px solid $textColor;
-        &:hover { border: 1px solid #ffffff; color: color(#ffffff a(100%)); opacity: 1; background: $textColor;}
+      a { @mixin buttonStyle; margin-bottom: 48px;
+        &:hover { @mixin buttonStyleHover;}
       }
     }
   }
@@ -216,7 +221,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       }
     }
     .form__button__wrapper { width: 100%; text-align: center; margin-top: 32px;
-      .submit__button { width: auto; outline: none; padding: 16px 60px; font-size: $baseFontSize; cursor: pointer; border-radius: 100px; border: none; color: color(#ffffff a(100%)); background: #ea352d; box-shadow: 0 4px #520300;
+      .submit__button { width: auto; outline: none; padding: 16px 60px; font-size: $baseFontSize; cursor: pointer; border-radius: 100px; border: none; color: color(#ffffff a(100%)); background: color(#ea352d a(100%)); box-shadow: 0 4px #520300;
         &:active { box-shadow: none; margin-top: 4px; margin-bottom: -4px;}
       }
     }
@@ -248,8 +253,8 @@ div.mce_inline_error { position: absolute;}
 .text__wrapper { margin: 48px auto; width: 600px; box-sizing: border-box;
   .text__wrapper__title { margin: 24px 0; text-align: center; @mixin titleBackground #f5f5f5,a,70%;}
   .button__wrapper { width: 100%; text-align: center;
-    .click__button { display: inline-block; background: #ffffff; margin-top: 32px; padding: 12px 32px; color: $textColor; text-decoration: none; border-radius: 4px; border: 1px solid $textColor;
-      &:hover { border: 1px solid #ffffff; color: color(#ffffff a(100%)); opacity: 1; background: $textColor;}
+    .click__button { @mixin buttonStyle; margin-top: 32px;
+      &:hover { @mixin buttonStyleHover;}
     }
   }
   a { color: $textColor;}

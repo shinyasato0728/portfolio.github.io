@@ -126,3 +126,6 @@
 
 - id: notfoundText02
   translation: "Just to be sure, please check the URL again."
+
+- id: notfoundButtonText
+  translation: "back to the HOME"
