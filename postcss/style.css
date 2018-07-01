@@ -13,7 +13,7 @@
 * { box-sizing: border-box;}
 
 html { position: relative; min-height: 100%;}
-body { display: flex; flex-direction: column; height: 100vh; line-height: 1.75; color: $textColor; font-size: $baseFontSize; font-family: 'Helvetica','Hiragino Kaku Gothic Pro',Meiryo,'MS PGothic',sans-serif;}
+body { display: flex; flex-direction: column; height: 100vh; line-height: 1.75; color: $textColor; font-size: $baseFontSize; letter-spacing: 1px; font-family: Roboto,Arial,Helvetica,sans-serif;}
 img { max-width: 100%;}
 a { transition: 0.3s;
   &:hover { opacity: 0.6;}
@@ -43,7 +43,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .first__wrapper { width: 100%; position: relative; display: flex; padding: 200px 0 120px 0;
   .first__content { width: 960px; display: table; box-sizing: border-box; position: relative; z-index: 1000;  margin: auto;
-    .first__box { position: relative; border-radius: 4px; background: rgba(255,255,255,0.5); box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    .first__box { position: relative; @mixin cordStyle;
       .first__textbox { padding: 32px 48px; box-sizing: border-box;
         .first__text__title { text-align: center;}
         .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
@@ -65,7 +65,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .single__page { margin-bottom: 80px;}
 
-.menu { width: 100%; display: flex; justify-content: space-between; align-items: center; font-size: $baseFontSize; background: #ffffff; height: 56px; padding: 0 16px; position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 5000;
+.menu { width: 100%; display: flex; justify-content: space-between; align-items: center; font-size: $baseFontSize; background: #ffffff; height: 56px; padding: 0 16px; position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cordShadow; z-index: 5000;
   .menu__nav { order: 1;
     .menu__hamburger,.menu__hamburger__reserve { font-size: $baseFontSize; border: none; background: none; outline: none; cursor: pointer; padding: 0;
       img,.svg__icon { width: 20px; height: 20px; margin-right: 8px;}
@@ -76,7 +76,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       img,.svg__icon { margin-left: 8px;}
       @media(--smartphone) { display: inline-block;}
     }
-    .menu__nav__container { width: 200px; box-sizing: border-box; background: white; position: absolute; top: 70px; left: 16px; box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    .menu__nav__container { width: 220px; box-sizing: border-box; background: white; position: absolute; top: 70px; left: 16px; box-shadow: 0 0 8px $cordShadow;
       .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center;
         .svg__icon { width: 24px; height: 24px; margin-right: 8px;}
         .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: #cccccc;
@@ -103,7 +103,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         &:hover { opacity: 1;}
         @media(--smartphone) { display: inline-block;}
       }
-      .languages__mobile__nav { width: 140px; box-sizing: border-box; background: white; position: absolute; top: 70px; left: 2.5%; box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      .languages__mobile__nav { width: 140px; box-sizing: border-box; background: white; position: absolute; top: 70px; left: 2.5%; box-shadow: 0 0 8px $cordShadow;
         .languages__box { width: 100%; margin: 0; padding: 12px;
           .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
           svg,span { display: inline-block; vertical-align: middle;}
@@ -119,22 +119,22 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .post__page{ width: 100%;
   .post__page__wrapper { width: 960px; margin: 160px auto 40px auto;
-    .illust__image { margin-top: 72px; background: rgba(255,255,255,0.5); border-radius: 4px; box-shadow: 0 0 8px rgba(0,0,0,0.1);}
+    .illust__image { margin-top: 72px; @mixin cordStyle;}
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
     @media(--breakPC) { width: 95%;}
   }
-  .post__netlify__admin { margin: 32px auto; box-shadow: 0 0 8px rgba(0,0,0,0.1);}
+  .post__netlify__admin { margin: 32px auto; box-shadow: 0 0 8px $cordShadow;}
   .post__banner__wrapper { width: 700px; margin: 160px auto 40px auto;
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
     figure { text-align: center;
-      img { box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+      img { box-shadow: 0 2px 4px $cordShadow;}
     }
     .tabs__wrapper { width: 100%; margin-bottom: 40px; overflow: auto;
       .tabs { display: table;
         .tab { display: inline-block; border-radius: 4px; padding: 12px 16px; text-align: center; cursor: pointer;
-          &.selected { background: rgba(47,255,255,0.4);}
+          &.selected { background: color(#2fffff a(40%));}
           @media all and (max-width: 700px) { display: table-cell;}
         }
       }
@@ -151,7 +151,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-around;
     .img-wrapper { display: inline-block; width: 960px; box-sizing: border-box;}
     figure { width: 32%; margin-bottom: 48px;
-      .link__top__img { display: block; text-align: center; box-sizing: border-box; background: rgba(255,255,255,0.5); position: relative; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      .link__top__img { display: block; text-align: center; box-sizing: border-box; position: relative; overflow: hidden; @mixin cordStyle;
         img { height: 286px;
           @media(--smartphone) { height: auto;}
         }
@@ -255,5 +255,3 @@ div.mce_inline_error { position: absolute;}
   a { color: $textColor;}
   @media(--smartphone) { width: 95%;}
 }
-
-.page__wrapper { padding: 16px; border-radius: 4px; margin-top: 60px; background: #ffffff; box-shadow: 0 4px 20px rgba(0,0,0,0.2);}
