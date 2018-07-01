@@ -123,3 +123,6 @@
 
 - id: notfoundText02
   translation: "念のため、もう一度URLをお確かめください。"
+
+- id: notfoundButtonText
+  translation: "トップページに戻る"

@@ -13,6 +13,9 @@
         <h2 class="first__text__title">{{ i18n "notfoundTItle" }}</h2>
         <p class="text__center">{{ i18n "notfoundText01" }}</p>
         <p class="text__center">{{ i18n "notfoundText02" }}</p>
+        <div class="notfound__button__wrapper">
+          <a class="notfound__home__button" href="{{ "/" | relLangURL }}">{{ i18n "notfoundButtonText" }}</a>
+        </div>
       </div>
       <figure class="icon__try">
         <img src="{{ .Site.BaseURL }}images/back/icon_back_try.svg" alt="">
