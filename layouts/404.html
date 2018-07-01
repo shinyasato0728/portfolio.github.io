@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<article class="first__wrapper">
+  <div class="first__content">
+    <div class="first__box">
+      <figure class="icon__circle">
+        <img src="{{ .Site.BaseURL }}images/back/icon_back_circle.svg" alt="">
+      </figure>
+      <div class="first__textbox">
+        <figure class="notfound__image__wrapper">
+          <img src="{{ .Site.BaseURL }}images/404.svg" alt="">
+        </figure>
+        <h2 class="first__text__title">{{ i18n "notfoundTItle" }}</h2>
+        <p class="text__center">{{ i18n "notfoundText01" }}</p>
+        <p class="text__center">{{ i18n "notfoundText02" }}</p>
+      </div>
+      <figure class="icon__try">
+        <img src="{{ .Site.BaseURL }}images/back/icon_back_try.svg" alt="">
+      </figure>
+    </div>
+  </div>
+</article>
+{{ partial "footer.html" . }}

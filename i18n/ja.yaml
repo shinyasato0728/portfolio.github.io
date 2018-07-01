@@ -114,3 +114,12 @@
 
 - id: formSubmit
   translation: "送信"
+
+- id: notfoundTItle
+  translation: "お探しのページは見つかりませんでした"
+
+- id: notfoundText01
+  translation: "リンクに問題があるか、ページが削除された可能性があります。"
+
+- id: notfoundText02
+  translation: "念のため、もう一度URLをお確かめください。"
