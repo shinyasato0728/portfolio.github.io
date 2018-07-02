@@ -5,6 +5,9 @@ Publishdir = 'docs'
 Paginate = 12
 googleAnalytics = "UA-120088829-1"
 
+relativeURLs = true
+canonifyURLs = true
+
 [params]
   github = "https://github.com/cookboys"
 
