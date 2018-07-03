@@ -153,7 +153,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   .title { margin: 36px auto 48px auto; display: flex; align-items: center;
     @media(--breakPC) { width: 95%;}
   }
-  .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-around;
+  .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-between;
     .img-wrapper { display: inline-block; width: 960px; box-sizing: border-box;}
     figure { width: 32%; margin-bottom: 48px;
       .link__top__img { display: block; text-align: center; box-sizing: border-box; position: relative; overflow: hidden; @mixin cordStyle;
@@ -176,10 +176,11 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         width: 100%;
       }
     }
-    .categories { width: 100%; text-align: center;
-      a { @mixin buttonStyle; margin-bottom: 48px;
-        &:hover { @mixin buttonStyleHover;}
-      }
+    &::after { content: ""; display: block; width: 32%;}
+  }
+  .categories { width: 100%; text-align: center;
+    a { @mixin buttonStyle; margin-bottom: 48px;
+      &:hover { @mixin buttonStyleHover;}
     }
   }
   .wrapper__other { width: 100%;
