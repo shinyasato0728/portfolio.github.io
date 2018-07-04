@@ -80,25 +80,6 @@
   </nav>
 </article>
 
-<article id="illust" class="wrapper">
-  <h2 class="title">{{ i18n "illustTitle" }}</h2>
-  <div class="wrapper__items">
-    {{ range first 12 (where .Data.Pages "Section" "illust") }}
-    <figure ng-cloak>
-      <a class="link__top__img illust__image" href="{{ .Permalink }}">
-        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
-      </div>
-    </figure>
-    {{ end }}
-  </div>
-  <nav class="categories">
-    <a href="{{ "/illust/" | relLangURL }}">{{ i18n "illustList" }}</a>
-  </nav>
-</article>
-
 <article id="blog" class="wrapper">
   <h2 class="title">{{ i18n "blogTitle" }}</h2>
   <div class="wrapper__items">
@@ -116,6 +97,25 @@
   </div>
   <nav class="categories">
     <a href="{{ "/blog/" | relLangURL }}">{{ i18n "blogList" }}</a>
+  </nav>
+</article>
+
+<article id="illust" class="wrapper">
+  <h2 class="title">{{ i18n "illustTitle" }}</h2>
+  <div class="wrapper__items">
+    {{ range first 12 (where .Data.Pages "Section" "illust") }}
+    <figure ng-cloak>
+      <a class="link__top__img illust__image" href="{{ .Permalink }}">
+        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+      </a>
+      <div class="post__title__caption">
+        <a class="caption-title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
+      </div>
+    </figure>
+    {{ end }}
+  </div>
+  <nav class="categories">
+    <a href="{{ "/illust/" | relLangURL }}">{{ i18n "illustList" }}</a>
   </nav>
 </article>
 
