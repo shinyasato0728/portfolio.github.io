@@ -38,6 +38,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   small { font-size: 12px; display: block;
     a { color: color(#ffffff a(100%)); text-decoration: underline; padding: 0 8px;}
   }
+  @media(--breakPC) { padding: 48px 8px 80px 8px;}
 }
 
 
@@ -114,6 +115,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
           }
         }
       }
+      @media(--iPad) { right: 8px; bottom: 8px;}
     }
     @media(--breakPC) { width: 95%;}
   }
