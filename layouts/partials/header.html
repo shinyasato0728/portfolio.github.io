@@ -28,10 +28,10 @@
         </a>
       </nav>
     </nav>
-    <div class="languages__wrapper">
+    <div id="langulages__wrapper" class="languages__wrapper">
       <div class="languages__nav">
         <a class="languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true">{{ partial "svg/languages.html" . }}<span>{{ i18n "languageSelect" }}</span></a>
-        <a class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" ng-cloak>{{ partial "svg/close.html" . }}<span>{{ i18n "menuTitleClose" }}</a>
+        <a class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" ng-cloak>{{ partial "svg/close.html" . }}<span>{{ i18n "menuTitleClose" }}</span></a>
         <nav class="languages__nav__content" ng-if="showMobileLang" ng-cloak>
           {{ partial "languages.html" . }}
         </nav>
