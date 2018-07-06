@@ -38,7 +38,8 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   small { font-size: 12px; display: block;
     a { color: color(#ffffff a(100%)); text-decoration: underline; padding: 0 8px;}
   }
-  @media(--breakPC) { padding: 48px 8px 80px 8px;}
+  @media(--breakPC) { padding: 48px 8px 120px 8px;}
+  @media(--smartphone) { padding: 48px 8px 80px 8px;}
 }
 
 
@@ -97,16 +98,18 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     }
     .languages__wrapper { position: fixed; z-index: 2000; margin: auto; bottom: 32px; right: 32px; background: #ffffff; border-radius: 100px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       .languages__nav { text-align: center;
-        .languages__nav__button { width: 220px; display: inline-block; color: $textColor; cursor: pointer; padding: 16px 32px;
+        .languages__pc { @mixin displayPcOnly;}
+        .languages__sp { @mixin displaySpOnly;}
+        .languages__nav__button { width: 220px; color: $textColor; cursor: pointer; padding: 16px 32px;
           .svg__icon { width: 20px; height: 20px;
-            @media(--iPad) { width: 28px; height: 28px;}
+            @media(--smartphone) { width: 28px; height: 28px;}
           }
           svg,span { vertical-align: middle;}
           span {
-            @media(--iPad) { position: absolute; bottom: -1000px; display: none;}
+            @media(--smartphone) { display: none;}
           }
           &:hover { opacity: 1;}
-          @media(--iPad) { width: auto; padding: 16px;}
+          @media(--smartphone) { width: auto; padding: 16px;}
         }
         .languages__nav__content { width: 220px; text-align: left; box-sizing: border-box; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cardShadow;
           .languages__box { width: 100%; margin: 0; padding: 16px;
@@ -116,7 +119,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
           }
         }
       }
-      @media(--iPad) { bottom: 8px; right: 2.5%;}
+      @media(--smartphone) { bottom: 8px; right: 2.5%;}
     }
     @media(--breakPC) { width: 95%;}
   }
