@@ -8,11 +8,11 @@
 @custom-media --smartphone (width <= 600px);
 
 $textColor: color(#212121 a(100%));
-$cordShadow: color(#000000 a(10%));
+$cardShadow: color(#000000 a(10%));
 $baseBorderRadius: 4px;
 $baseFontSize: 16px;
 
 @define-mixin titleBackground $backgroundColor, $property, $params { padding: 8px; background: color($backgroundColor $property($params)); border-radius: $baseBorderRadius; }
-@define-mixin cordStyle { background: color(#ffffff a(50%)); border-radius: $baseBorderRadius; box-shadow: 0 0 8px color(#000000 a(10%)); }
+@define-mixin cardStyle { background: color(#ffffff a(50%)); border-radius: $baseBorderRadius; box-shadow: 0 0 8px color(#000000 a(10%)); }
 @define-mixin buttonStyle { display: inline-block; padding: 12px 36px; color: $textColor; text-decoration: none; background: color(#ffffff a(100%)); border: 1px solid $textColor; border-radius: $baseBorderRadius; }
 @define-mixin buttonStyleHover { color: color(#ffffff a(100%)); background: $textColor; border: 1px solid #ffffff; opacity: 1; }
