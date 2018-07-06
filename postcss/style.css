@@ -44,7 +44,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .first__wrapper { width: 100%; position: relative; display: flex; padding: 200px 0 120px 0;
   .first__content { width: 960px; display: table; box-sizing: border-box; position: relative; z-index: 1000;  margin: auto;
-    .first__box { position: relative; @mixin cordStyle;
+    .first__box { position: relative; @mixin cardStyle;
       .first__textbox { padding: 32px 48px; box-sizing: border-box;
         .first__text__title { text-align: center;}
         .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
@@ -71,7 +71,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .single__page { margin-bottom: 80px;}
 
-.menu__wrapper { width: 100%; font-size: $baseFontSize; background: #ffffff; position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cordShadow; z-index: 3000;
+.menu__wrapper { width: 100%; font-size: $baseFontSize; background: #ffffff; position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cardShadow; z-index: 3000;
   .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: 960px; margin: auto; position: relative;
     .menu__home { display: inline-block; order: 1;
       .svg__icon { width: 28px; margin-right: 8px;}
@@ -82,7 +82,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         img { width: 20px; height: 20px; margin-left: 8px;}
         svg,img,span { display: inline-block; vertical-align: middle;}
       }
-      .menu__nav__container { width: 220px; box-sizing: border-box; background: white; position: absolute; z-index: 9999; top: 70px; right: 0; box-shadow: 0 0 8px $cordShadow;
+      .menu__nav__container { width: 220px; box-sizing: border-box; background: white; position: absolute; z-index: 9999; top: 70px; right: 0; box-shadow: 0 0 8px $cardShadow;
         .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center;
           .svg__icon { width: 24px; height: 24px; margin-right: 8px;}
           .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: #cccccc;
@@ -107,7 +107,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
           &:hover { opacity: 1;}
           @media(--iPad) { width: auto; padding: 16px;}
         }
-        .languages__nav__content { width: 220px; text-align: left; box-sizing: border-box; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cordShadow;
+        .languages__nav__content { width: 220px; text-align: left; box-sizing: border-box; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cardShadow;
           .languages__box { width: 100%; margin: 0; padding: 16px;
             .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
             svg,span { display: inline-block; vertical-align: middle;}
@@ -124,17 +124,17 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .post__page{ width: 100%;
   .post__page__wrapper { width: 960px; margin: 160px auto 40px auto;
-    .illust__image { margin-top: 72px; @mixin cordStyle;}
+    .illust__image { margin-top: 72px; @mixin cardStyle;}
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
     @media(--breakPC) { width: 95%;}
   }
-  .post__netlify__admin { margin: 32px auto; box-shadow: 0 0 8px $cordShadow;}
+  .post__netlify__admin { margin: 32px auto; box-shadow: 0 0 8px $cardShadow;}
   .post__banner__wrapper { width: 700px; margin: 160px auto 40px auto;
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
     figure { text-align: center;
-      img { box-shadow: 0 2px 4px $cordShadow;}
+      img { box-shadow: 0 2px 4px $cardShadow;}
     }
     .tabs__wrapper { width: 100%; margin-bottom: 40px; overflow: auto;
       .tabs { display: table;
@@ -156,7 +156,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-between;
     .img-wrapper { display: inline-block; width: 960px; box-sizing: border-box;}
     figure { width: 32%; margin-bottom: 48px;
-      .link__top__img { display: block; text-align: center; box-sizing: border-box; position: relative; overflow: hidden; @mixin cordStyle;
+      .link__top__img { display: block; text-align: center; box-sizing: border-box; position: relative; overflow: hidden; @mixin cardStyle;
         img { height: 286px;
           @media(--smartphone) { height: auto;}
         }
