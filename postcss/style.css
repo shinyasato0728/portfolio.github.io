@@ -103,7 +103,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
           }
           svg,span { vertical-align: middle;}
           span {
-            @media(--iPad) { display: none;}
+            @media(--iPad) { position: absolute; bottom: -1000px; display: none;}
           }
           &:hover { opacity: 1;}
           @media(--iPad) { width: auto; padding: 16px;}
@@ -116,7 +116,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
           }
         }
       }
-      @media(--iPad) { right: 8px; bottom: 8px;}
+      @media(--iPad) { bottom: 8px; right: 2.5%;}
     }
     @media(--breakPC) { width: 95%;}
   }
