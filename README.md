@@ -105,6 +105,12 @@ stylelintのログを見やすくしてくれる
 
 
 
+- [postcss-bem-linter](https://github.com/postcss/postcss-bem-linter)
+
+stylelintがPostCSSの命名規則をBEM方式で記載しているかチェックする
+
+
+
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
 
 PostCSSでimportが使えるようになる
