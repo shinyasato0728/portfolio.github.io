@@ -43,7 +43,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 }
 
 
-.first__wrapper { width: 100%; position: relative; display: flex; padding: 200px 0 120px 0;
+.first__wrapper { width: 100%; position: relative; display: flex; padding: 160px 0 80px 0;
   .first__content { width: 960px; display: table; box-sizing: border-box; position: relative; z-index: 1000;  margin: auto;
     .first__box { position: relative; @mixin cardStyle;
       .first__textbox { padding: 32px 48px; box-sizing: border-box;
@@ -105,9 +105,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
             @media(--smartphone) { width: 28px; height: 28px;}
           }
           svg,span { vertical-align: middle;}
-          span {
-            @media(--smartphone) { display: none;}
-          }
+          span { @mixin displayPcOnly;}
           &:hover { opacity: 1;}
           @media(--smartphone) { width: auto; padding: 16px;}
         }
