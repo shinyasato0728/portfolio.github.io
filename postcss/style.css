@@ -46,6 +46,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   .first__content { width: 960px; display: table; box-sizing: border-box; position: relative; z-index: 1000;  margin: auto;
     .first__box { position: relative; @mixin cardStyle;
       .first__textbox { padding: 32px 48px; box-sizing: border-box;
+        .symbol__wrapper { width: 60px; @util margin(null auto 12px auto);}
         .first__text__title { text-align: center;}
         .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
         .notfound__image__wrapper { width: 500px; @util margin(null auto 36px auto);
