@@ -1,13 +1,13 @@
 <header class="menu__wrapper" id="menu" ng-controller="headerCtrl as hctrl">
   <div class="menu__container">
-      <a class="menu__home" href="{{ "/" | relLangURL }}">
-        {{ partial "svg/menu_home.html" . }}<span>{{ i18n "menuHome" }}</span>
-      </a>
+    <a class="menu__home" href="{{ "/" | relLangURL }}">
+      {{ partial "svg/menu_home.html" . }}<span>{{ i18n "menuHome" }}</span>
+    </a>
     <nav class="menu__nav">
-      <button class="menu__hamburger" ng-click="hctrl.openMenu()" ng-show="showMenu != true">
+      <button class="menu__hamburger" ng-click="hctrl.openMenu()" ng-show="showMenu != true" onClick="sound()">
         <span>{{ i18n "menuTitle" }}</span><img src="{{ .Site.BaseURL }}images/icon/menu_icon_open_reserve.svg" alt="Open">
       </button>
-      <button class="menu__hamburger" ng-click="showMenu = false" ng-hide="showMenu != true" ng-cloak>
+      <button class="menu__hamburger" ng-click="showMenu = false" ng-hide="showMenu != true" onClick="sound()" ng-cloak>
         <span>{{ i18n "menuTitleClose" }}</span><img src="{{ .Site.BaseURL }}images/icon/menu_icon_close.svg" alt="Close">
       </button>
       <nav class="menu__nav__container" ng-if="showMenu" ng-cloak>
@@ -30,9 +30,9 @@
     </nav>
     <div id="langulages__wrapper" class="languages__wrapper">
       <div class="languages__nav">
-        <a class="languages__pc languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true">{{ partial "svg/languages.html" . }}<span>{{ i18n "languageSelect" }}</span></a>
-        <a class="languages__sp languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true">{{ partial "svg/languages.html" . }}</a>
-        <a class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" ng-cloak>{{ partial "svg/close.html" . }}<span>{{ i18n "menuTitleClose" }}</span></a>
+        <a class="languages__pc languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()">{{ partial "svg/languages.html" . }}<span>{{ i18n "languageSelect" }}</span></a>
+        <a class="languages__sp languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()">{{ partial "svg/languages.html" . }}</a>
+        <a class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" onClick="sound()" ng-cloak>{{ partial "svg/close.html" . }}<span>{{ i18n "menuTitleClose" }}</span></a>
         <nav class="languages__nav__content" ng-if="showMobileLang" ng-cloak>
           {{ partial "languages.html" . }}
         </nav>

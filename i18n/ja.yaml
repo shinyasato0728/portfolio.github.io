@@ -13,6 +13,9 @@
 - id: profileTitleName
   translation: "サトウ シンヤ"
 
+- id: profileSoundNotice
+  translation: "※ボタン、メニューをクリックすると音がなります。初めてクリックするときは、周りの環境に注意して下さい。"
+
 - id: profileText01
   translation: "初めまして、マテリアルデザインをこよなく愛する、1987年生まれのデザイナーです。"
 

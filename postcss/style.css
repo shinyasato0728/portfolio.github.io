@@ -10,6 +10,8 @@
 
 .text__center { text-align: center;}
 
+.underline { text-decoration: underline;}
+
 * { box-sizing: border-box;}
 
 html { position: relative; min-height: 100%;}
