@@ -13,6 +13,9 @@
 - id: profileTitleName
   translation: "Shinya Sato"
 
+- id: profileSoundNotice
+  translation: "* Button, when you click the menu, the sound becomes. When clicking for the first time, please pay attention to surrounding environment."
+
 - id: profileText01
   translation: "Nice to meet you, I am a designer born in 1987 who loves material design."
 
