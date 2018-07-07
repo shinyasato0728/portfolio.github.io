@@ -2,18 +2,18 @@
 <html lang="zh-CN" ng-app="portfolioApp">
 <head>
   <meta charset="UTF-8">
-  <title>Illusts | Shinya Sato Portfolio</title>
+  <title>Gopher | Shinya Sato Portfolio</title>
   <meta name="keywords" content="サトウシンヤ, 投资组合，网页设计，网页设计师，静态网站生成器">
   <meta name="description" content="很高兴见到你，我的名字是Satukinya，1987年出生的设计师。 我擅长使用静态站点生成器进行设计，编码和创建站点。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta property="og:title" content="Illusts | Shinya Sato Portfolio">
+  <meta property="og:title" content="Gopher | Shinya Sato Portfolio">
 <meta property="og:description" content="很高兴见到你，我的名字是Satukinya，1987年出生的设计师。 我擅长使用静态站点生成器进行设计，编码和创建站点。">
-<meta property="og:url" content="https://shinya-sato.com/cn/illust/">
+<meta property="og:url" content="https://shinya-sato.com/cn/illust/gopher06/">
 <meta property="og:image" content="">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Illusts | Shinya Sato Portfolio">
+<meta property="og:site_name" content="Gopher | Shinya Sato Portfolio">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Illusts | Shinya Sato Portfolio">
+<meta name="twitter:title" content="Gopher | Shinya Sato Portfolio">
 <meta name="twitter:description" content="很高兴见到你，我的名字是Satukinya，1987年出生的设计师。 我擅长使用静态站点生成器进行设计，编码和创建站点。">
 <meta name="twitter:image:src" content="">
 <meta name="twitter:domain" content="https://shinya-sato.com/">
@@ -52,9 +52,10 @@ ga('send', 'pageview');
 <body>
 <main>
 
-<header class="menu__wrapper" id="menu" ng-controller="headerCtrl as hctrl">
+<div class="single__page">
+  <header class="menu__wrapper" id="menu" ng-controller="headerCtrl as hctrl">
   <div class="menu__container">
-      <a class="menu__home" href="../../cn/">
+      <a class="menu__home" href="../../../cn/">
         <svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 37.8 33.9" xml:space="preserve">
 <path id="XMLID_1_" d="M0,13.9l0,4.4h2.8v12.8H2.6v2.8H35v-2.8V18.3h2.8v-4.4h-0.2L18.9,0.1L18.9,0l0,0l0,0l-0.1,0.1l-7.2,5.3V2.9
 	H5.3v7.2l-5.1,3.8H0z M5.3,31.1V18.3v-1.2L18.9,7.1l13.6,10.1v1.2v12.8h-10V23h-6.4v8.1H5.3z"/>
@@ -69,7 +70,7 @@ ga('send', 'pageview');
         <span>关</span><img src="https://shinya-sato.com/images/icon/menu_icon_close.svg" alt="Close">
       </button>
       <nav class="menu__nav__container" ng-if="showMenu" ng-cloak>
-        <a class="menu__nav__inline" href="../../cn/landingpage/">
+        <a class="menu__nav__inline" href="../../../cn/landingpage/">
           <svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 33 33.9" xml:space="preserve">
 <g>
 	<polygon points="21,21.7 25,21.7 25,5.6 27.8,5.6 23,0 18.8,5.6 21,5.6 	"/>
@@ -91,7 +92,7 @@ ga('send', 'pageview');
 </svg>
 
         </a>
-        <a class="menu__nav__inline" href="../../cn/banner/">
+        <a class="menu__nav__inline" href="../../../cn/banner/">
           <svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.6 34" xml:space="preserve">
 <g>
 	<path d="M40.1,0H2.4C1.1,0,0,1.1,0,2.4v29.2C0,32.9,1.1,34,2.4,34h37.7c1.3,0,2.4-1.1,2.4-2.4V2.4C42.6,1.1,41.5,0,40.1,0z
@@ -111,7 +112,7 @@ ga('send', 'pageview');
 </svg>
 
         </a>
-        <a class="menu__nav__inline" href="../../cn/illust/">
+        <a class="menu__nav__inline" href="../../../cn/illust/">
           <svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.1 34" xml:space="preserve">
 <g>
 	<path d="M25.5,29.7c-0.2-2.5-0.5-5.7-0.7-8.8c-0.1-2.8-0.1-5.2,0-6.9c0-0.5,0.1-0.9,0.1-1.3c0-0.2,0.1-0.5,0.1-0.7v0
@@ -140,7 +141,7 @@ ga('send', 'pageview');
 </svg>
 
         </a>
-        <a class="menu__nav__inline" href="../../cn/blog/">
+        <a class="menu__nav__inline" href="../../../cn/blog/">
           <svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.4 34" xml:space="preserve">
 <path d="M0,0l0,34l26.4,0V0L0,0z M3.8,29.2l0-5.9h5.7l0,5.9H3.8z M3.8,20.7v-5.9l5.7,0l0,5.9H3.8z M11.9,26.1V14.9l11.5,0l0,11.2
 	H11.9z M23.6,11.3l-20.1,0V4.2l20.1,0V11.3z"/>
@@ -155,7 +156,7 @@ ga('send', 'pageview');
 </svg>
 
         </a>
-        <a class="menu__nav__inline" href="../../cn/mailmagazine/">
+        <a class="menu__nav__inline" href="../../../cn/mailmagazine/">
           <svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43 34" xml:space="preserve">
 <path d="M0,0.3L0.2,34L43,33.7L42.7,0L0,0.3z M36.9,4.6L21.6,15.2L6.2,4.8L36.9,4.6z M4.3,29.4L4.2,6.7l17.4,11.7l0-0.1l0.1,0.1
 	l17-11.7l0.1,22.5L4.3,29.4z"/>
@@ -200,16 +201,16 @@ ga('send', 'pageview');
 </svg>
 <span>关</span></a>
         <nav class="languages__nav__content" ng-if="showMobileLang" ng-cloak>
-          <a class="languages__box" href="../../">
-  <img class="lang__icon" src="../../images/icon/icon_ja.svg">
+          <a class="languages__box" href="../../../">
+  <img class="lang__icon" src="../../../images/icon/icon_ja.svg">
   <span class="lang__button">日本語</span>
 </a>
-<a class="languages__box" href="../../en">
-  <img class="lang__icon" src="../../images/icon/icon_en.svg">
+<a class="languages__box" href="../../../en">
+  <img class="lang__icon" src="../../../images/icon/icon_en.svg">
   <span class="lang__button">English</span>
 </a>
-<a class="languages__box" href="../../cn">
-  <img class="lang__icon" src="../../images/icon/icon_cn.svg">
+<a class="languages__box" href="../../../cn">
+  <img class="lang__icon" src="../../../images/icon/icon_cn.svg">
   <span class="lang__button">中文(简体)</span>
 </a>
 
@@ -219,85 +220,26 @@ ga('send', 'pageview');
   </div>
 </header>
 
-<div class="wrapper categories__wrapper">
-  <div class="wrapper__items">
-  <h2 class="title">型插画</h2>
+  <article class="post__page">
+  <div class="post__page__wrapper">
+    <h3>Gopher</h3>
     
-    <figure ng-cloak>
-      <a class="link__top__img" href="https://shinya-sato.com/cn/illust/gopher06/">
-        <img class="ofi" src="../../images/illust/gopher06.png" alt="Gopher" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="https://shinya-sato.com/cn/illust/gopher06/">Gopher</a>
-        <p class="caption"></p>
-      </div>
-    </figure>
+<figure class="illust__image">
     
-    <figure ng-cloak>
-      <a class="link__top__img" href="https://shinya-sato.com/cn/illust/gopher05/">
-        <img class="ofi" src="../../images/illust/gopher05.png" alt="Gopher" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="https://shinya-sato.com/cn/illust/gopher05/">Gopher</a>
-        <p class="caption"></p>
-      </div>
-    </figure>
+        <img src="../../../images/illust/gopher06.png" alt="Gopher" />
     
-    <figure ng-cloak>
-      <a class="link__top__img" href="https://shinya-sato.com/cn/illust/gopher04/">
-        <img class="ofi" src="../../images/illust/gopher04.png" alt="Gopher" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="https://shinya-sato.com/cn/illust/gopher04/">Gopher</a>
-        <p class="caption"></p>
-      </div>
-    </figure>
     
-    <figure ng-cloak>
-      <a class="link__top__img" href="https://shinya-sato.com/cn/illust/gopher03/">
-        <img class="ofi" src="../../images/illust/gopher03.png" alt="Gopher" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="https://shinya-sato.com/cn/illust/gopher03/">Gopher</a>
-        <p class="caption"></p>
-      </div>
-    </figure>
-    
-    <figure ng-cloak>
-      <a class="link__top__img" href="https://shinya-sato.com/cn/illust/gopher02/">
-        <img class="ofi" src="../../images/illust/gopher02.png" alt="Gopher" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="https://shinya-sato.com/cn/illust/gopher02/">Gopher</a>
-        <p class="caption"></p>
-      </div>
-    </figure>
-    
-    <figure ng-cloak>
-      <a class="link__top__img" href="https://shinya-sato.com/cn/illust/gopher01/">
-        <img class="ofi" src="../../images/illust/gopher01.png" alt="Gopher" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="https://shinya-sato.com/cn/illust/gopher01/">Gopher</a>
-        <p class="caption"></p>
-      </div>
-    </figure>
-    
-    <figure ng-cloak>
-      <a class="link__top__img" href="https://shinya-sato.com/cn/illust/gopher_hugo/">
-        <img class="ofi" src="../../images/illust/gopher_hugo.png" alt="Gopher HUGO" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption-title" href="https://shinya-sato.com/cn/illust/gopher_hugo/">Gopher HUGO</a>
-        <p class="caption"></p>
-      </div>
-    </figure>
-    
+</figure>
+
   </div>
-  
+  <div class="text__wrapper">
+    <h2 class="text__wrapper__title">概念</h2>
+    <p>我用GO语言描述了官方角色“Gopher”。</p>
+  </div>
+</article>
 
 </div>
-  <div id="container" style="position: fixed; top: 0; left: 0; z-index: -1;"></div>
+<div id="container" style="position: fixed; top: 0; left: 0; z-index: -1;"></div>
 </main>
 <footer>
   <div class="form__wrapper" id="inquiryForm">

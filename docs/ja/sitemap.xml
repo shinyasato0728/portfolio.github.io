@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://shinya-sato.com/illust/gopher06/</loc>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shinya-sato.com/illust/gopher05/</loc>
     <lastmod>2018-05-25T00:00:00+00:00</lastmod>
   </url>
@@ -309,7 +314,7 @@
   
   <url>
     <loc>https://shinya-sato.com/categories/illust/</loc>
-    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -330,7 +335,7 @@
   
   <url>
     <loc>https://shinya-sato.com/illust/</loc>
-    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -435,7 +440,7 @@
   
   <url>
     <loc>https://shinya-sato.com/</loc>
-    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
