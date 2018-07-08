@@ -183,6 +183,42 @@ PostCSSでNest（入れ子）が使えるようになる
 
 
 
+- [postcss-animation](https://www.npmjs.com/package/postcss-animation)
+
+[Animate.css](https://daneden.github.io/animate.css/)をPostCSSで使えるようになる
+
+postcss-mixinsと組み合わせて、アニメーションの再生時間の変更も可能
+
+```
+/* postcss.css */
+@define-mixin animated $animationTime { animation-fillmode: both; animation-duration: $animationTime; }
+.animation { animation: bounce; @mixin animated 3s;}
+
+/* build.css */
+.animation {
+  animation-name: bounce; animation-fillmode: both; animation-duration: 3s;
+}
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+```
+
+
+
 - [postcss-custom-media](https://www.npmjs.com/package/postcss-custom-media)
 
 @mediaの指定を簡単にする

@@ -18,6 +18,8 @@ $baseFontSize: 16px;
 @define-mixin cardStyle { background: color(#ffffff a(50%)); border-radius: $baseBorderRadius; box-shadow: 0 0 8px color(#000000 a(10%)); }
 @define-mixin buttonStyle { display: inline-block; padding: 12px 36px; color: $textColor; text-decoration: none; background: color(#ffffff a(100%)); border: 1px solid $textColor; border-radius: $baseBorderRadius; }
 @define-mixin buttonStyleHover { color: color(#ffffff a(100%)); background: $textColor; border: 1px solid #ffffff; opacity: 1; }
+@define-mixin animated $animationTime { animation-fillmode: both; animation-duration: $animationTime; }
+@define-mixin animatedInfinite { animation-iteration-count: infinite; }
 @define-mixin displayPcOnly {display: inline-block;
   @media (--smartphone) { display: none; }
 }
