@@ -111,6 +111,16 @@ stylelintがPostCSSの命名規則をBEM方式で記載しているかチェッ�
 
 
 
+- [postcss-css-reset](https://www.npmjs.com/package/postcss-css-reset)
+
+PostCSSでreset.cssを設定できる
+
+```
+@reset-global pc;
+```
+
+
+
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
 
 PostCSSでimportが使えるようになる

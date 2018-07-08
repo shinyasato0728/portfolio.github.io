@@ -11,6 +11,7 @@ module.exports = (ctx) => ({
     require('postcss-nested'),
     require('postcss-bem-linter'),
     require('postcss-color-function'),
+    require('postcss-css-reset'),
     require('postcss-custom-media'),
     require('postcss-media-minmax'),
     require('postcss-pixels-to-rem'),

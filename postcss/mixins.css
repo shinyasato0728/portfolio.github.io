@@ -1,3 +1,5 @@
+@reset-global pc;
+
 /* breakPC */
 @custom-media --breakPC (width <= 960px);
 
