@@ -16,7 +16,7 @@
 
 html { position: relative; min-height: 100%;}
 body { display: flex; flex-direction: column; height: 100vh; line-height: 1.75; color: $textColor; font-size: $baseFontSize; letter-spacing: 1px; font-feature-settings : "palt"; font-family: Roboto,Arial,Helvetica,sans-serif;}
-img { max-width: 100%;}
+img { display: block; vertical-align: bottom; max-width: 100%;}
 a { transition: 0.3s;
   &:hover { opacity: 0.6;}
 }
