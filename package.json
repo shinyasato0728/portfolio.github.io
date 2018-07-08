@@ -38,6 +38,7 @@
     "postcss-calc": "^6.0.1",
     "postcss-cli": "^5.0.0",
     "postcss-color-function": "^4.0.1",
+    "postcss-css-reset": "^1.0.2",
     "postcss-custom-media": "^6.0.0",
     "postcss-import": "^11.1.0",
     "postcss-media-minmax": "^3.0.0",
@@ -48,7 +49,7 @@
     "postcss-simple-vars": "^4.1.0",
     "postcss-utilities": "^0.8.0",
     "stylelint": "^9.1.1",
-    "stylelint-selector-bem-pattern": "^2.0.0",
-    "stylelint-config-primer": "^2.2.8"
+    "stylelint-config-primer": "^2.2.8",
+    "stylelint-selector-bem-pattern": "^2.0.0"
   }
 }

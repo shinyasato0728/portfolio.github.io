@@ -22,7 +22,6 @@
 <link rel="icon" type="image/png" href="https://shinya-sato.com/images/icon/android-icon.png">
 <link rel="apple-touch-icon" href="https://shinya-sato.com/images/icon/apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="https://shinya-sato.com/images/icon/apple-touch-icon-precomposed.png">
-<link rel="stylesheet" href="https://shinya-sato.com/assets/styles/reset.css">
 <link rel="stylesheet" href="https://shinya-sato.com/assets/styles/style.css">
 
   <script type="text/javascript" src="https://shinya-sato.com/assets/javascripts/angular1.7.min.js"></script>
@@ -175,7 +174,7 @@ ga('send', 'pageview');
     </nav>
     <div id="langulages__wrapper" class="languages__wrapper">
       <div class="languages__nav">
-        <a class="languages__pc languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
+        <button class="languages__pc languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
 <path d="M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10c5.5,0,10-4.5,10-10S15.5,0,10,0z M16.9,6H14c-0.3-1.2-0.8-2.4-1.4-3.6
 	C14.4,3.1,16,4.3,16.9,6z M10,2c0.8,1.2,1.5,2.5,1.9,4H8.1C8.5,4.6,9.2,3.2,10,2z M2.3,12C2.1,11.4,2,10.7,2,10s0.1-1.4,0.3-2h3.4
 	c-0.1,0.7-0.1,1.3-0.1,2s0.1,1.3,0.1,2H2.3z M3.1,14h3c0.3,1.2,0.8,2.5,1.4,3.6C5.6,16.9,4,15.7,3.1,14z M6,6h-3
@@ -183,8 +182,8 @@ ga('send', 'pageview');
 	c-0.1-0.7-0.2-1.3-0.2-2s0.1-1.4,0.2-2h4.7c0.1,0.6,0.2,1.3,0.2,2S12.4,11.3,12.3,12z M12.6,17.6c0.6-1.1,1.1-2.3,1.4-3.6h2.9
 	C16,15.6,14.4,16.9,12.6,17.6z M14.4,12c0.1-0.7,0.1-1.3,0.1-2s-0.1-1.3-0.1-2h3.4c0.2,0.6,0.3,1.3,0.3,2s-0.1,1.4-0.3,2H14.4z"/>
 </svg>
-<span>選擇一種語言</span></a>
-        <a class="languages__sp languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
+<span>選擇一種語言</span></button>
+        <button class="languages__sp languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
 <path d="M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10c5.5,0,10-4.5,10-10S15.5,0,10,0z M16.9,6H14c-0.3-1.2-0.8-2.4-1.4-3.6
 	C14.4,3.1,16,4.3,16.9,6z M10,2c0.8,1.2,1.5,2.5,1.9,4H8.1C8.5,4.6,9.2,3.2,10,2z M2.3,12C2.1,11.4,2,10.7,2,10s0.1-1.4,0.3-2h3.4
 	c-0.1,0.7-0.1,1.3-0.1,2s0.1,1.3,0.1,2H2.3z M3.1,14h3c0.3,1.2,0.8,2.5,1.4,3.6C5.6,16.9,4,15.7,3.1,14z M6,6h-3
@@ -192,14 +191,14 @@ ga('send', 'pageview');
 	c-0.1-0.7-0.2-1.3-0.2-2s0.1-1.4,0.2-2h4.7c0.1,0.6,0.2,1.3,0.2,2S12.4,11.3,12.3,12z M12.6,17.6c0.6-1.1,1.1-2.3,1.4-3.6h2.9
 	C16,15.6,14.4,16.9,12.6,17.6z M14.4,12c0.1-0.7,0.1-1.3,0.1-2s-0.1-1.3-0.1-2h3.4c0.2,0.6,0.3,1.3,0.3,2s-0.1,1.4-0.3,2H14.4z"/>
 </svg>
-</a>
-        <a class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" onClick="sound()" ng-cloak><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.7 22.7">
+</button>
+        <button class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" onClick="sound()" ng-cloak><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.7 22.7">
 <path d="M14.7,11.4L14.7,11.4l7.7-7.8c0.4-0.3,0.4-0.9,0-1.3l-2-2c-0.3-0.4-0.9-0.4-1.3,0c0,0-7.9,7.8-7.9,7.8L3.6,0.3
 	c-0.3-0.4-0.9-0.4-1.2,0c0,0,0,0,0,0l-2,2.1C0,2.7,0,3.2,0.3,3.6c0,0,7.7,7.8,7.7,7.8l-7.7,7.8c-0.4,0.3-0.4,0.9,0,1.3
 	c0,0,2.1,2,2.1,2c0.4,0.3,0.9,0.3,1.3,0l7.7-7.7l7.8,7.8c0.4,0.4,0.9,0.4,1.3,0l2-2c0.4-0.3,0.5-0.9,0.1-1.3
 	C22.5,19.2,14.7,11.4,14.7,11.4z"/>
 </svg>
-<span>关</span></a>
+<span>关</span></button>
         <nav class="languages__nav__content" ng-if="showMobileLang" ng-cloak>
           <a class="languages__box" href="../../../">
   <img class="lang__icon" src="../../../images/icon/icon_ja.svg">
@@ -233,8 +232,8 @@ ga('send', 'pageview');
 </figure>
 
   </div>
-  <div class="text__wrapper">
-    <h2 class="text__wrapper__title">概念</h2>
+  <div class="post__text--wrapper">
+    <h2 class="post__text--title">概念</h2>
     <p>我設計了Coincheck Lending（租賃虛擬貨幣）的首頁。</p>
     <p>這個概念是“新虛擬貨幣的概念”。</p>
     <p>在第一種觀點中，我試圖展示新的形象，讓人想起近期的感受，並提醒我不同於其他公司的新服務。</p>
@@ -304,7 +303,7 @@ ga('send', 'pageview');
   c4.1-1.3,7.6-3.9,10.1-7.4c2.6-3.5,4-7.7,3.9-12.1C41,16.9,40.1,13.3,38.2,10.2z"/>
 </svg>
 </a>
-  <small>Building this site with<a href="https://gohugo.io/" target="_blank">Hugo</a>and hosting it on<a href="https://pages.github.com/" target="_blank">Github Pages</a></small>
+  <small>Building this site with<a href="https://gohugo.io/" target="_blank">Hugo</a><a href="https://postcss.org/" target="_blank">PostCSS</a>and hosting it on<a href="https://pages.github.com/" target="_blank">Github Pages</a></small>
   <small>The Go gopher was designed by Renée French.</small>
 </footer>
 <audio id="sound" preload="auto">
