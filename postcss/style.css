@@ -100,32 +100,32 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         @media(--smartphone) { width: 100%; margin: auto; left: 0; right: 0;}
       }
     }
-    .languages__wrapper { position: fixed; z-index: 2000; margin: auto; bottom: 32px; right: 32px; background: #ffffff; border-radius: 100px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-      .languages__nav { text-align: center;
-        .languages__pc { @mixin displayPcOnly;}
-        .languages__sp { @mixin displaySpOnly;}
-        .languages__nav__button { font-size: $baseFontSize; width: 220px; color: $textColor; cursor: pointer; border-radius: 100px; border: none; background: color(#ffffff a(100%)); padding: 16px 32px;
-          .svg__icon { width: 20px; height: 20px;
-            @media(--smartphone) { width: 28px; height: 28px;}
-          }
-          svg,span { vertical-align: middle;}
-          span { @mixin displayPcOnly;}
-          &:hover { opacity: 1;}
-          @media(--smartphone) { width: auto; padding: 16px;}
-        }
-        .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cardShadow;
-          .languages__box { width: 100%; margin: 0; padding: 16px;
-            .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
-            svg,span { display: inline-block; vertical-align: middle;}
-            &:hover { background: #f4f4f4; opacity: 1;}
-          }
-        }
-      }
-      @media(--smartphone) { bottom: 8px; right: 2.5%;}
-    }
     @media(--breakPC) { width: 95%;}
   }
   a { color: $textColor; text-decoration: none; display: inline-block; vertical-align: middle;}
+  .languages__wrapper { position: fixed; z-index: 2000; margin: auto; bottom: 32px; right: 32px; background: #ffffff; border-radius: 100px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    .languages__nav { text-align: center;
+      .languages__pc { @mixin displayPcOnly;}
+      .languages__sp { @mixin displaySpOnly;}
+      .languages__nav__button { font-size: $baseFontSize; width: 220px; color: $textColor; cursor: pointer; border-radius: 100px; border: none; background: color(#ffffff a(100%)); padding: 16px 32px;
+        .svg__icon { width: 20px; height: 20px;
+          @media(--smartphone) { width: 28px; height: 28px;}
+        }
+        svg,span { vertical-align: middle;}
+        span { @mixin displayPcOnly;}
+        &:hover { opacity: 1;}
+        @media(--smartphone) { width: auto; padding: 16px;}
+      }
+      .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cardShadow;
+        .languages__box { width: 100%; margin: 0; padding: 16px;
+          .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
+          svg,span { display: inline-block; vertical-align: middle;}
+          &:hover { background: #f4f4f4; opacity: 1;}
+        }
+      }
+    }
+    @media(--smartphone) { bottom: 8px; right: 2.5%;}
+  }
 }
 
 .post__page{ width: 100%;

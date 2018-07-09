@@ -15,10 +15,10 @@ BannerCtrl = (function() {
 angular.module("portfolioApp").controller("BannerCtrl", BannerCtrl);
 
 
-headerCtrl = (function() {
-  headerCtrl.$inject = ["$scope", "$http"];
+menuCtrl = (function() {
+  menuCtrl.$inject = ["$scope", "$http"];
 
-  function headerCtrl($scope, $http) {
+  function menuCtrl($scope, $http) {
     this.$scope = $scope;
     this.$http = $http;
     this.openMenu = function() {
@@ -31,8 +31,8 @@ headerCtrl = (function() {
     }
   }
 
-  return headerCtrl;
+  return menuCtrl;
 
 })();
 
-angular.module("portfolioApp").controller("headerCtrl", headerCtrl);
+angular.module("portfolioApp").controller("menuCtrl", menuCtrl);
