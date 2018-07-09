@@ -2,7 +2,7 @@
  * Particles.js
  */
 
-var init = function() {
+var init = function () {
 
   // DOM
   var container = document.getElementById('container');
@@ -11,37 +11,37 @@ var init = function() {
   var scene = new THREE.Scene();
 
   // Camera
-  var width  = window.innerWidth;
+  var width = window.innerWidth;
   var height = window.innerHeight;
-  var fov    = 60;
+  var fov = 60;
   var aspect = width / height;
-  var near   = 1;
-  var far    = 500;
+  var near = 1;
+  var far = 500;
   var camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(0, 0, 50);
 
   // Objects
-  var pa
-  var triangleTexture   = new THREE.TextureLoader().load('/images/three/triangle.png');
+  var pa;
+  var triangleTexture = new THREE.TextureLoader().load('/images/three/triangle.png');
   var squareTexture = new THREE.TextureLoader().load('/images/three/square.png');
   var circleTexture = new THREE.TextureLoader().load('/images/three/circle.png');
   var parameters = {
-    triangle: { size: 10, color:0xffff99, map: triangleTexture, blending: THREE.NoBlending, transparent: true, alphaTest: .9 },
-    square: { size: 10, color:0xe6ffff, map: squareTexture, blending: THREE.NoBlending, transparent: true, alphaTest: .9 },
-    circle: { size: 10, color:0xf7f7f7, map: circleTexture, blending: THREE.NoBlending, transparent: true, alphaTest: .9 }
+    triangle: { size: 10, color: 0xffff99, map: triangleTexture, blending: THREE.NoBlending, transparent: true, alphaTest: .9 },
+    square: { size: 10, color: 0xe6ffff, map: squareTexture, blending: THREE.NoBlending, transparent: true, alphaTest: .9 },
+    circle: { size: 10, color: 0xf7f7f7, map: circleTexture, blending: THREE.NoBlending, transparent: true, alphaTest: .9 }
   };
 
   var squaresGeometry = createGeometry(500);
   var squaresMaterial = new THREE.PointsMaterial(parameters.square);
-  var squares         = new THREE.Points(squaresGeometry, squaresMaterial);
+  var squares = new THREE.Points(squaresGeometry, squaresMaterial);
 
   var trianglesGeometry = createGeometry(1000);
   var trianglesMaterial = new THREE.PointsMaterial(parameters.triangle);
-  var triangles         = new THREE.Points(trianglesGeometry, trianglesMaterial);
+  var triangles = new THREE.Points(trianglesGeometry, trianglesMaterial);
 
   var circlesGeometry = createGeometry(300);
   var circlesMaterial = new THREE.PointsMaterial(parameters.circle);
-  var circles         = new THREE.Points(circlesGeometry, circlesMaterial);
+  var circles = new THREE.Points(circlesGeometry, circlesMaterial);
 
   scene.add(squares, triangles, circles);
 

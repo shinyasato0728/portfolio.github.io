@@ -183,6 +183,12 @@ PostCSSでNest（入れ子）が使えるようになる
 
 
 
+- [postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes)
+
+Flexboxのバグを取り除いてくれる
+
+
+
 - [postcss-animation](https://www.npmjs.com/package/postcss-animation)
 
 [Animate.css](https://daneden.github.io/animate.css/)をPostCSSで使えるようになる

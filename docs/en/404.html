@@ -32,7 +32,7 @@
 <script type="text/javascript" src="https://shinya-sato.com/assets/javascripts/jquery.ofi.min.js"></script>
 <script type="text/javascript" src="https://shinya-sato.com/assets/javascripts/jquery.plugins.js"></script>
 <script type="text/javascript" src="https://shinya-sato.com/assets/javascripts/particles.js"></script>
-<script type="text/javascript" src="https://shinya-sato.com/assets/javascripts/three.min.js"></script>
+<script type="text/javascript" src="https://shinya-sato.com/assets/javascripts/three.babel.js"></script>
 
   
     
@@ -51,7 +51,7 @@ ga('send', 'pageview');
 <body>
 <main>
 
-<header class="menu__wrapper" id="menu" ng-controller="headerCtrl as hctrl">
+<header class="menu__wrapper" id="menu" ng-controller="menuCtrl as mCtrl">
   <div class="menu__container">
     <a class="menu__home" href="../en/">
       <svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 37.8 33.9" xml:space="preserve">
@@ -61,7 +61,7 @@ ga('send', 'pageview');
 <span>Home</span>
     </a>
     <nav class="menu__nav">
-      <button class="menu__hamburger" ng-click="hctrl.openMenu()" ng-show="showMenu != true" onClick="sound()">
+      <button class="menu__hamburger" ng-click="mCtrl.openMenu()" ng-show="showMenu != true" onClick="sound()">
         <span>Menu</span><img src="https://shinya-sato.com/images/icon/menu_icon_open_reserve.svg" alt="Open">
       </button>
       <button class="menu__hamburger" ng-click="showMenu = false" ng-hide="showMenu != true" onClick="sound()" ng-cloak>
@@ -171,9 +171,10 @@ ga('send', 'pageview');
         </a>
       </nav>
     </nav>
-    <div id="langulages__wrapper" class="languages__wrapper">
-      <div class="languages__nav">
-        <button class="languages__pc languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
+  </div>
+  <div id="langulages__wrapper" class="languages__wrapper">
+    <div class="languages__nav">
+      <button class="languages__pc languages__nav__button" ng-click="mCtrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
 <path d="M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10c5.5,0,10-4.5,10-10S15.5,0,10,0z M16.9,6H14c-0.3-1.2-0.8-2.4-1.4-3.6
 	C14.4,3.1,16,4.3,16.9,6z M10,2c0.8,1.2,1.5,2.5,1.9,4H8.1C8.5,4.6,9.2,3.2,10,2z M2.3,12C2.1,11.4,2,10.7,2,10s0.1-1.4,0.3-2h3.4
 	c-0.1,0.7-0.1,1.3-0.1,2s0.1,1.3,0.1,2H2.3z M3.1,14h3c0.3,1.2,0.8,2.5,1.4,3.6C5.6,16.9,4,15.7,3.1,14z M6,6h-3
@@ -182,7 +183,7 @@ ga('send', 'pageview');
 	C16,15.6,14.4,16.9,12.6,17.6z M14.4,12c0.1-0.7,0.1-1.3,0.1-2s-0.1-1.3-0.1-2h3.4c0.2,0.6,0.3,1.3,0.3,2s-0.1,1.4-0.3,2H14.4z"/>
 </svg>
 <span>Language</span></button>
-        <button class="languages__sp languages__nav__button" ng-click="hctrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
+      <button class="languages__sp languages__nav__button" ng-click="mCtrl.openLang()" ng-show="showMobileLang != true" onClick="sound()"><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20">
 <path d="M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10c5.5,0,10-4.5,10-10S15.5,0,10,0z M16.9,6H14c-0.3-1.2-0.8-2.4-1.4-3.6
 	C14.4,3.1,16,4.3,16.9,6z M10,2c0.8,1.2,1.5,2.5,1.9,4H8.1C8.5,4.6,9.2,3.2,10,2z M2.3,12C2.1,11.4,2,10.7,2,10s0.1-1.4,0.3-2h3.4
 	c-0.1,0.7-0.1,1.3-0.1,2s0.1,1.3,0.1,2H2.3z M3.1,14h3c0.3,1.2,0.8,2.5,1.4,3.6C5.6,16.9,4,15.7,3.1,14z M6,6h-3
@@ -191,15 +192,15 @@ ga('send', 'pageview');
 	C16,15.6,14.4,16.9,12.6,17.6z M14.4,12c0.1-0.7,0.1-1.3,0.1-2s-0.1-1.3-0.1-2h3.4c0.2,0.6,0.3,1.3,0.3,2s-0.1,1.4-0.3,2H14.4z"/>
 </svg>
 </button>
-        <button class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" onClick="sound()" ng-cloak><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.7 22.7">
+      <button class="languages__nav__button" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" onClick="sound()" ng-cloak><svg class="svg__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.7 22.7">
 <path d="M14.7,11.4L14.7,11.4l7.7-7.8c0.4-0.3,0.4-0.9,0-1.3l-2-2c-0.3-0.4-0.9-0.4-1.3,0c0,0-7.9,7.8-7.9,7.8L3.6,0.3
 	c-0.3-0.4-0.9-0.4-1.2,0c0,0,0,0,0,0l-2,2.1C0,2.7,0,3.2,0.3,3.6c0,0,7.7,7.8,7.7,7.8l-7.7,7.8c-0.4,0.3-0.4,0.9,0,1.3
 	c0,0,2.1,2,2.1,2c0.4,0.3,0.9,0.3,1.3,0l7.7-7.7l7.8,7.8c0.4,0.4,0.9,0.4,1.3,0l2-2c0.4-0.3,0.5-0.9,0.1-1.3
 	C22.5,19.2,14.7,11.4,14.7,11.4z"/>
 </svg>
 <span>Close</span></button>
-        <nav class="languages__nav__content" ng-if="showMobileLang" ng-cloak>
-          <a class="languages__box" href="../">
+      <nav class="languages__nav__content" ng-if="showMobileLang" ng-cloak>
+        <a class="languages__box" href="../">
   <img class="lang__icon" src="../images/icon/icon_ja.svg">
   <span class="lang__button">日本語</span>
 </a>
@@ -212,8 +213,7 @@ ga('send', 'pageview');
   <span class="lang__button">中文(简体)</span>
 </a>
 
-        </nav>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
