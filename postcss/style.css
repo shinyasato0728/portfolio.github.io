@@ -48,9 +48,9 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 
 .first__wrapper { width: 100%; position: relative; display: flex; padding: 160px 0 60px 0;
-  .first__content { width: 960px; display: table; box-sizing: border-box; position: relative; z-index: 1000;  margin: auto;
+  .first__content { width: 960px; position: relative; z-index: 1000;  margin: auto;
     .first__box { position: relative; @mixin cardStyle;
-      .first__textbox { padding: 32px 48px; box-sizing: border-box;
+      .first__textbox { padding: 32px 48px;
         .symbol__wrapper { width: 60px; @util margin(null auto 12px auto);}
         .first__text__title { text-align: center;}
         .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
@@ -67,7 +67,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       .icon__circle { width: 44px; position: absolute; top: 16px; left: 16px;}
       .icon__try { width: 44px; position: absolute; bottom: 16px; right: 16px;}
       .first__content__skill { margin-top: 48px; display: flex; justify-content: stretch; align-items: center; flex-wrap: wrap;
-        img { display: inline-block; height: 60px; @util margin(16px 36px null null);}
+        img { display: inline-block; width: 60px; height: 60px; @util margin(16px 36px null null);}
       }
     }
     @media(--breakPC) { width: 95%;}
@@ -88,7 +88,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         img { width: 20px; height: 20px; margin-left: 8px;}
         svg,img,span { display: inline-block; vertical-align: middle;}
       }
-      .menu__nav__container { width: 220px; box-sizing: border-box; background: white; position: absolute; z-index: 9999; top: 70px; right: 0; box-shadow: 0 0 8px $cardShadow;
+      .menu__nav__container { width: 220px; background: white; position: absolute; z-index: 9999; top: 70px; right: 0; box-shadow: 0 0 8px $cardShadow;
         .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center;
           .svg__icon { width: 24px; height: 24px; margin-right: 8px;}
           .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: #cccccc;
@@ -113,7 +113,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
           &:hover { opacity: 1;}
           @media(--smartphone) { width: auto; padding: 16px;}
         }
-        .languages__nav__content { width: 220px; text-align: left; box-sizing: border-box; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cardShadow;
+        .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cardShadow;
           .languages__box { width: 100%; margin: 0; padding: 16px;
             .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
             svg,span { display: inline-block; vertical-align: middle;}
@@ -158,9 +158,9 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 .wrapper { width: 960px; margin: 48px auto; border-bottom: 1px solid #cccccc;
   .title { margin: 36px auto 48px auto; display: flex; align-items: center;}
   .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-between;
-    .img-wrapper { display: inline-block; width: 960px; box-sizing: border-box;}
+    .img-wrapper { display: inline-block; width: 960px;}
     figure { width: 32%; margin-bottom: 48px;
-      .link__top__img { display: block; text-align: center; box-sizing: border-box; position: relative; overflow: hidden; @mixin cardStyle;
+      .link__top__img { display: block; text-align: center; position: relative; overflow: hidden; @mixin cardStyle;
         img { height: 286px;
           @media(--smartphone) { height: auto;}
         }
@@ -219,7 +219,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         .field__textarea { width: 100%; text-align: left;
           textarea { width: 100%; display: inherit; height: 176px; padding: 16px; border: 1px solid #cccccc; border-radius: 4px; resize: none;}
         }
-        .span__required { font-size: 12px; padding: 4px 8px; margin-left: 8px; box-sizing: border-box; border-radius: 4px; background: #ea352d;}
+        .span__required { font-size: 12px; padding: 4px 8px; margin-left: 8px; border-radius: 4px; background: #ea352d;}
         @media(--iPad) { width: 100%;
           &:last-of-type { margin-top: 32px;}
         }
@@ -256,7 +256,7 @@ div.mce_inline_error { position: absolute;}
 }
 
 /* Post */
-.post__text--wrapper { margin: 48px auto; width: 600px; box-sizing: border-box;
+.post__text--wrapper { margin: 48px auto; width: 600px;
   .post__text--title { margin: 24px 0; text-align: center; @mixin titleBackground #f5f5f5,a,70%;}
   .button__wrapper { width: 100%; text-align: center;
     .click__button { @mixin buttonStyle; margin-top: 32px;
