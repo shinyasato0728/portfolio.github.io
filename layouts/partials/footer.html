@@ -6,6 +6,7 @@
   <small>Building this site with<a href="https://gohugo.io/" target="_blank">Hugo</a><a href="https://postcss.org/" target="_blank">PostCSS</a>and hosting it on<a href="https://pages.github.com/" target="_blank">Github Pages</a></small>
   <small>The Go gopher was designed by Renée French.</small>
 </footer>
+{{ partial "javascripts.html" . }}
 <audio id="sound" preload="auto">
   <source src="{{ .Site.BaseURL }}assets/sound/click.mp3" type="audio/mp3"></source>
   <source src="{{ .Site.BaseURL }}assets/sound/click.wav" type="audio/wav"></source>

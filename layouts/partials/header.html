@@ -1,4 +1,7 @@
 <header class="menu__wrapper" id="menu" ng-controller="menuCtrl as mCtrl">
+  <div id="ie__message" ng-cloak>
+    <span>{{ i18n "ieMessage" }}</span><a href="https://www.google.co.jp/chrome/index.html">{{ i18n "ieChromeLink" }}</a>
+  </div>
   <div class="menu__container">
     <a class="menu__home" href="{{ "/" | relLangURL }}">
       {{ partial "svg/menu_home.html" . }}<span>{{ i18n "menuHome" }}</span>

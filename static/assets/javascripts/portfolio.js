@@ -9,3 +9,14 @@ function sound() {
   }
   document.getElementById( id ).play();
 }
+
+
+
+var userAgent = window.navigator.userAgent.toLowerCase();
+var ie = document.getElementById("ie__message");
+ie.style.display ="none";
+
+if(userAgent.indexOf('msie') != -1) {
+  ie.classList.add('ie__alert');
+  ie.style.display ="block";
+}
