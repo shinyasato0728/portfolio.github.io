@@ -129,3 +129,9 @@
 
 - id: notfoundButtonText
   translation: "返回首页"
+
+- id: ieMessage
+  translation: "此站点不推荐使用Internet Explorer。"
+
+- id: ieChromeLink
+  translation: "Google Chrome下载"

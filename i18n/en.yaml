@@ -132,3 +132,9 @@
 
 - id: notfoundButtonText
   translation: "back to the HOME"
+
+- id: ieMessage
+  translation: "Internet Explorer is deprecated on this site."
+
+- id: ieChromeLink
+  translation: "Download Google Chrome"

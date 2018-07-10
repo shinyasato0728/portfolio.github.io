@@ -9,7 +9,6 @@
   {{ partial "ogp.html" . }}
   {{ partial "styles.html" . }}
   {{ partial "angularjs.html" . }}
-  {{ partial "javascripts.html" . }}
   {{ if not (in (.Site.BaseURL | string) "localhost") }}
     {{ template "_internal/google_analytics.html" . }}
   {{ end }}
