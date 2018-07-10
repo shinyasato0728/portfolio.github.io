@@ -14,26 +14,22 @@
     "eslint-plugin-flowtype": "2.39.1",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
-    "extract-text-webpack-plugin": "3.0.2",
-    "file-loader": "1.1.5",
     "global": "^4.3.2",
-    "html-webpack-plugin": "2.29.0",
     "install": "^0.10.4",
     "postcss-loader": "2.0.8",
-    "url-loader": "0.6.2",
-    "webpack": "4.0.1",
-    "webpack-cli": "^2.1.5",
-    "webpack-dev-server": "2.9.4",
-    "webpack-manifest-plugin": "1.3.2"
+    "webpack": "4.0.1"
   },
   "scripts": {
     "start": "hugo server -w & postcss postcss/*.css -d static/assets/styles/ -w",
-    "build": "hugo & postcss postcss/*.css -d docs/assets/styles/ & webpack --mode production"
+    "build": "hugo & postcss postcss/*.css -d docs/assets/styles/"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "cssnano": "^3.10.0",
     "postcss": "^6.0.19",
+    "postcss-html": "^0.31.0",
+    "postcss-markdown": "^0.31.0",
+    "postcss-syntax": "^0.31.0",
     "postcss-animation": "0.0.12",
     "postcss-bem-linter": "^3.1.0",
     "postcss-calc": "^6.0.1",
