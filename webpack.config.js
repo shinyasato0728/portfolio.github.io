@@ -1,29 +1,11 @@
 module.exports = {
+  mode: 'development',
   entry: [
-    __dirname + '/static/assets/javascripts/jquery.plugins.js',
-    __dirname + '/static/assets/javascripts/jquery.ofi.min.js',
-    __dirname + '/static/assets/javascripts/particles.js',
+    __dirname + '/static/assets/javascripts/portfolio.js',
   ],
   output: {
     filename: "bundle.js",
-    path: __dirname + "/docs/assets/javascripts"
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
-        }
-      }
-    ]
-  },
-  externals: [
-    {
-      jquery: 'jQuery'
-    }
-  ]
+    path: __dirname + "/static/assets/javascripts"
+  }
 };
 

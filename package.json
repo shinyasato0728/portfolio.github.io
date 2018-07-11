@@ -16,20 +16,18 @@
     "eslint-plugin-jsx-a11y": "5.1.1",
     "global": "^4.3.2",
     "install": "^0.10.4",
-    "postcss-loader": "2.0.8",
-    "webpack": "4.0.1"
+    "jquery": "^3.3.1",
+    "object-fit-images": "^3.2.3",
+    "postcss-loader": "2.0.8"
   },
   "scripts": {
-    "start": "hugo server -w & postcss postcss/*.css -d static/assets/styles/ -w",
+    "start": "hugo server -w & postcss postcss/*.css -d static/assets/styles/ -w & webpack --mode production -w",
     "build": "hugo & postcss postcss/*.css -d docs/assets/styles/"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "cssnano": "^3.10.0",
     "postcss": "^6.0.19",
-    "postcss-html": "^0.31.0",
-    "postcss-markdown": "^0.31.0",
-    "postcss-syntax": "^0.31.0",
     "postcss-animation": "0.0.12",
     "postcss-bem-linter": "^3.1.0",
     "postcss-calc": "^6.0.1",
@@ -38,16 +36,21 @@
     "postcss-css-reset": "^1.0.2",
     "postcss-custom-media": "^6.0.0",
     "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-html": "^0.31.0",
     "postcss-import": "^11.1.0",
+    "postcss-markdown": "^0.31.0",
     "postcss-media-minmax": "^3.0.0",
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^3.0.0",
     "postcss-pixels-to-rem": "^0.8.0",
     "postcss-reporter": "^5.0.0",
     "postcss-simple-vars": "^4.1.0",
+    "postcss-syntax": "^0.31.0",
     "postcss-utilities": "^0.8.0",
     "stylelint": "^9.1.1",
     "stylelint-config-primer": "^2.2.8",
-    "stylelint-selector-bem-pattern": "^2.0.0"
+    "stylelint-selector-bem-pattern": "^2.0.0",
+    "webpack": "4.0.1",
+    "webpack-cli": "^3.0.8"
   }
 }
