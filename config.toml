@@ -1,6 +1,6 @@
 BaseURL = "https://shinya-sato.com/"
 defaultContentLanguage = "ja"
-title = "サトウシンヤのポートフォリオ"
+title = "サトウシンヤのポートフォリオサイト"
 Publishdir = 'docs'
 Paginate = 12
 googleAnalytics = "UA-120088829-1"
