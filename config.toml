@@ -1,6 +1,6 @@
 BaseURL = "https://shinya-sato.com/"
 defaultContentLanguage = "ja"
-title = "Shinya Sato Portfolio"
+title = "サトウシンヤのポートフォリオ"
 Publishdir = 'docs'
 Paginate = 12
 googleAnalytics = "UA-120088829-1"
@@ -14,7 +14,9 @@ canonifyURLs = true
 [Languages]
 [Languages.ja]
   weight = 1
-  title = "Shinya Sato Portfolio"
+  domain = "shinya-sato.com/"
+  homeTitle = "ようこそ、サトウシンヤのポートフォリオサイトへ"
+  siteName = "サトウシンヤのポートフォリオサイト"
   languageName = "日本語"
   languageCode = "ja-JP"
   keyword = "サトウシンヤ, ポートフォリオ, ウェブデザイン, ウェブデザイナー, 静的サイトジェネレーター"
@@ -22,19 +24,23 @@ canonifyURLs = true
 
 [Languages.en]
   weight = 2
-  title = "Shinya Sato Portfolio"
+  domain = "shinya-sato.com/en/"
+  homeTitle = "Welcome to Shinya Sato portfolio site"
+  siteName = "portfolio site of Shinya Sato"
   languageName = "English"
   languageCode = "en-US"
   keyword = "Shinya Sato, Portfolio, Web Design, Web Designer, Static Site Generator"
-  description = "Nice to meet you, my name is Satukinya, a designer born in 1987. I am good at designing, coding, and creating sites using static site generators."
+  description = "Nice to meet you, my name is Shinya Sato, a designer born in 1987. I am good at designing, coding, and creating sites using static site generators."
 
 [Languages.cn]
   weight = 3
-  title = "Shinya Sato Portfolio"
+  domain = "shinya-sato.com/cn/"
+  homeTitle = "欢迎来到サトウシンヤ的投资组合网站"
+  siteName = "サトウシンヤ的投资组合网站"
   languageName = "中文(简体)"
   languageCode = "zh-CN"
   keyword = "サトウシンヤ, 投资组合，网页设计，网页设计师，静态网站生成器"
-  description = "很高兴见到你，我的名字是Satukinya，1987年出生的设计师。 我擅长使用静态站点生成器进行设计，编码和创建站点。"
+  description = "很高兴见到你，我的名字是サトウシンヤ，1987年出生的设计师。 我擅长使用静态站点生成器进行设计，编码和创建站点。"
 
 [[menu.languages]]
   name = "日本語"

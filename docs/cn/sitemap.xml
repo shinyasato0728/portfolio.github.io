@@ -439,6 +439,26 @@
   </url>
   
   <url>
+    <loc>https://shinya-sato.com/cn/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://shinya-sato.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://shinya-sato.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://shinya-sato.com/cn/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://shinya-sato.com/cn/</loc>
     <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -456,26 +476,6 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://shinya-sato.com/cn/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://shinya-sato.com/cn/tags/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://shinya-sato.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://shinya-sato.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://shinya-sato.com/cn/tags/"
                 />
   </url>
   

@@ -2,10 +2,10 @@
 <html lang="{{ .Site.Params.LanguageCode }}" ng-app="portfolioApp">
 <head>
   <meta charset="UTF-8">
-  <title>{{ .Title }} | Shinya Sato Portfolio</title>
+  <title>{{if .IsHome}}{{ .Site.Params.homeTitle }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Params.SiteName }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta name="keywords" content="{{ with .Params.Keyword }}{{ . }}{{ else }}{{ .Site.Params.Keyword }}{{ end }}">
-  <meta name="description" content="{{ .Site.Params.Description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
   {{ partial "ogp.html" . }}
   {{ partial "styles.html" . }}
   {{ partial "angularjs.html" . }}
