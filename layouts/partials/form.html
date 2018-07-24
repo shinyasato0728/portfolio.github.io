@@ -1,6 +1,6 @@
 <div class="form__wrapper">
-  <form name="contact" method="post" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact" />
+  <form name="contact" netlify-honeypot="bot-field" action="thank-you" method="post" netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
     <h2>{{ i18n "formTitle" }}</h2>
     <p>{{ i18n "formText01" }}</p>
     <p>{{ i18n "formText02" }}</p>
