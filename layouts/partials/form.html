@@ -1,14 +1,39 @@
 <div class="form__wrapper">
-    <form name="contact" method="POST" netlify>
-        <p>
-        <label>Email: <input type="text" name="name" /></label>
-        </p>
-        <p>
-        <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <div data-netlify-recaptcha></div>
-        <p>
-        <button type="submit">Send</button>
-        </p>
-    </form>
+  <form name="contact" method="post" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <h2>{{ i18n "formTitle" }}</h2>
+    <p>{{ i18n "formText01" }}</p>
+    <p>{{ i18n "formText02" }}</p>
+    <div class="field__container">
+      <div class="field__contents">
+        <div class="mc-field-group field__input">
+          <div class="form__label__wrapper">
+            <figure class="gopher__wrapper"><img src="{{ .Site.BaseURL }}images/icon/gopher_h.svg" alt=""></figure>
+            <label class="form__label">{{ i18n "formName" }}<span class="span__required">{{ i18n "formRequired" }}</span></label>
+          </div>
+          <input type="text" name="NAME" required>
+        </div>
+        <div class="mc-field-group field__input">
+          <div class="form__label__wrapper">
+            <figure class="gopher__wrapper"><img src="{{ .Site.BaseURL }}images/icon/gopher_u.svg" alt=""></figure>
+            <label class="form__label">{{ i18n "formMailaddress" }}<span class="span__required">{{ i18n "formRequired" }}</span></label>
+          </div>
+          <input type="email" name="EMAIL" required>
+        </div>
+      </div>
+      <div class="field__contents">
+        <div class="mc-field-group field__textarea">
+          <div class="form__label__wrapper">
+            <figure class="gopher__wrapper"><img src="{{ .Site.BaseURL }}images/icon/gopher_o.svg" alt=""></figure>
+            <figure class="gopher__wrapper"><img src="{{ .Site.BaseURL }}images/icon/gopher_g.svg" alt=""></figure>
+            <label class="form__label">{{ i18n "formInquiry" }}<span class="span__required">{{ i18n "formRequired" }}</span></label>
+          </div>
+          <textarea name="Message" cols="30" rows="10" required></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="form__button__wrapper">
+      <button class="submit__button" type="submit">{{ i18n "formSubmit" }}</button>
+    </div>
+  </form>
 </div>
