@@ -289,3 +289,9 @@ h3 { font-size: 1rem; margin-bottom: 1rem;}
 /* build.css */
 .margins { margin-top: 12px; margin-right: 24px; margin-left: 36px;}
 ```
+
+
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)]
