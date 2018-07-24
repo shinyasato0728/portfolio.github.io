@@ -281,7 +281,7 @@ if (!doNotTrack) {
 </main>
 <footer>
   <div class="form__wrapper">
-  <form name="contact" method="POST" netlify>
+  <form name="contact" method="POST" data-netlify="true">
     <h2>在這里聯系我們</h2>
     <p>請不要猶豫，聯繫我們的生產要求或諮詢。</p>
     <p>即使我剛才說了我關心的事情，關於我，如果您有任何意見，如果您可以通過下面的表格與我聯繫，我會很高興。</p>
@@ -292,14 +292,14 @@ if (!doNotTrack) {
             <figure class="gopher__wrapper"><img src="https://shinya-sato.com/images/icon/gopher_h.svg" alt=""></figure>
             <label class="form__label">名<span class="span__required">需要</span></label>
           </div>
-          <input type="text" value="" name="NAME" required>
+          <input type="text" name="NAME" required>
         </div>
         <div class="mc-field-group field__input">
           <div class="form__label__wrapper">
             <figure class="gopher__wrapper"><img src="https://shinya-sato.com/images/icon/gopher_u.svg" alt=""></figure>
             <label class="form__label">電郵地址<span class="span__required">需要</span></label>
           </div>
-          <input type="email" value="" name="EMAIL" required>
+          <input type="email" name="EMAIL" required>
         </div>
       </div>
       <div class="field__contents">
