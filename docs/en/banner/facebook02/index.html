@@ -244,8 +244,8 @@ if (!doNotTrack) {
 <div id="container" style="position: fixed; top: 0; left: 0; z-index: -1;"></div>
 </main>
 <footer>
-  <div class="form__wrapper" id="inquiryForm">
-  <form action="https://mailthis.to/designsato0728@gmail.com" method="POST" encType="multipart/form-data">
+  <div class="form__wrapper">
+  <form name="contact" method="POST" netlify>
     <h2>Contact Us</h2>
     <p>Please do not hesitate to contact us for production requests or consultation.</p>
     <p>Even if I just said what I was concerned about, about me, if you have comments, I would be happy if you could contact me from the form below.</p>
@@ -254,16 +254,16 @@ if (!doNotTrack) {
         <div class="mc-field-group field__input">
           <div class="form__label__wrapper">
             <figure class="gopher__wrapper"><img src="https://shinya-sato.com/images/icon/gopher_h.svg" alt=""></figure>
-            <label class="form__label" for="mce-EMAIL">Mailaddress<span class="span__required">Required</span></label>
+            <label class="form__label">Name<span class="span__required">Required</span></label>
           </div>
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+          <input type="text" value="" name="NAME" required>
         </div>
         <div class="mc-field-group field__input">
           <div class="form__label__wrapper">
             <figure class="gopher__wrapper"><img src="https://shinya-sato.com/images/icon/gopher_u.svg" alt=""></figure>
-            <label class="form__label" for="mce-NAME">Name<span class="span__required">Required</span></label>
+            <label class="form__label">Mailaddress<span class="span__required">Required</span></label>
           </div>
-          <input type="text" value="" name="NAME" class="required" id="mce-NAME" required>
+          <input type="email" value="" name="EMAIL" required>
         </div>
       </div>
       <div class="field__contents">
@@ -271,16 +271,15 @@ if (!doNotTrack) {
           <div class="form__label__wrapper">
             <figure class="gopher__wrapper"><img src="https://shinya-sato.com/images/icon/gopher_o.svg" alt=""></figure>
             <figure class="gopher__wrapper"><img src="https://shinya-sato.com/images/icon/gopher_g.svg" alt=""></figure>
-            <label class="form__label" for="mce-MMERGE6">Inquiry<span class="span__required">Required</span></label>
+            <label class="form__label">Inquiry<span class="span__required">Required</span></label>
           </div>
-          <textarea name="Message" class="required" id="mce-Message" cols="30" rows="10" required></textarea>
+          <textarea name="Message" cols="30" rows="10" required></textarea>
         </div>
       </div>
     </div>
     <div class="form__button__wrapper">
-      <button class="submit__button click__sound" type="submit">Submit</button>
+      <button class="submit__button" type="submit">Submit</button>
     </div>
-    <input type="hidden" name="_after" value="https://shinya-sato.com/">
   </form>
 </div>
 
@@ -299,7 +298,7 @@ if (!doNotTrack) {
   c4.1-1.3,7.6-3.9,10.1-7.4c2.6-3.5,4-7.7,3.9-12.1C41,16.9,40.1,13.3,38.2,10.2z"/>
 </svg>
 </a>
-  <small>Building this site with<a href="https://gohugo.io/" target="_blank">Hugo</a><a href="https://postcss.org/" target="_blank">PostCSS</a>and hosting it on<a href="https://pages.github.com/" target="_blank">Github Pages</a></small>
+  <small>Building this site with<a href="https://gohugo.io/" target="_blank">Hugo</a><a href="https://postcss.org/" target="_blank">PostCSS</a>and hosting it on<a href="https://www.netlify.com/" target="_blank">Netlify</a></small>
   <small>The Go gopher was designed by Renée French.</small>
 </footer>
 <script type="text/javascript" src="https://shinya-sato.com/assets/javascripts/bundle.js"></script>
