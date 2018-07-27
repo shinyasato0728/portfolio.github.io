@@ -145,7 +145,7 @@ PostCSSでmixinsが使えるようになる
 .mixins { @mixin titleBackground 245,245,246,0.7;}
 
 /* build.css */
-.mixins { padding: 8px; background: hsla(240,5%,96%,.7); border-radius: 4px;}
+.mixins { padding: 8px; background: rgba(245,245,246,.7); border-radius: 4px;}
 ```
 
 
