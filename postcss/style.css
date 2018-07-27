@@ -36,7 +36,7 @@ svg { display: inherit;}
 main { flex: 1 0 auto;}
 
 footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-align: center; padding: 48px 8px;
-  .github-icon { display: block; width: 32px; margin: 0 auto 8px auto;
+  .github__icon { display: block; width: 32px; margin: 0 auto 8px auto;
     .svg__icon { fill: #ffffff;}
   }
   small { font-size: 12px; display: block;
@@ -148,11 +148,11 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       .tabs { display: table;
         .tab { display: inline-block; border-radius: 4px; padding: 12px 16px; text-align: center; cursor: pointer;
           &.selected { background: color(#2fffff a(40%));}
-          @media all and (max-width: 700px) { display: table-cell;}
+          @media(--breakBanner) { display: table-cell;}
         }
       }
     }
-    @media all and (max-width: 700px) { width: 95%;}
+    @media(--breakBanner) { width: 95%;}
   }
   .mailmagazine__wrapper { text-align: center;}
 }
@@ -160,7 +160,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 .wrapper { width: 960px; margin: 48px auto; border-bottom: 1px solid #cccccc;
   .title { margin: 36px auto 48px auto; display: flex; align-items: center;}
   .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-between;
-    .img-wrapper { display: inline-block; width: 960px;}
+    .img__wrapper { display: inline-block; width: 960px;}
     figure { width: 32%; margin-bottom: 48px;
       .link__top__img { display: block; text-align: center; position: relative; overflow: hidden; @mixin cardStyle;
         img { height: 286px;
@@ -168,19 +168,15 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         }
       }
       .post__title__caption { margin-top: 24px;
-        .caption-title { text-decoration: none; color: $textColor; position: relative; display: inline-block; margin-bottom: 8px;
+        .caption__title { text-decoration: none; color: $textColor; position: relative; display: inline-block; margin-bottom: 8px;
           &:before { position: absolute; top: 1.5rem; left: 0; content: ""; display: inline-block; width: 0; height: 1px; background: $textColor; transition: .5s;}
           &:hover { opacity: 1;}
           &:hover:before { width: 100%;}
         }
         .caption { font-size: 12px; color: color(#848484 a(100%));}
       }
-      @media(--iPad) {
-        width: 48%;
-      }
-      @media all and (max-width: 599px) {
-        width: 100%;
-      }
+      @media(--iPad) { width: 48%;}
+      @media(--smartphone) { width: 100%;}
     }
     &::after { content: ""; display: block; width: 32%;}
   }
@@ -236,7 +232,6 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   }
   a { color: color(#ffffff a(100%));}
 }
-div.mce_inline_error { position: absolute;}
 
 /* gopher */
 .gopher__wrapper { float: right; width: 56px; height: 56px; margin-left: 12px; text-align: right;

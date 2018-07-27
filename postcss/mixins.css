@@ -3,6 +3,9 @@
 /* breakPC */
 @custom-media --breakPC (width <= 960px);
 
+/* breakBanner */
+@custom-media --breakBanner (width <= 700px);
+
 /* iPad */
 @custom-media --iPad (width <= 767px);
 
