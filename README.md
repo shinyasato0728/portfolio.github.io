@@ -81,7 +81,7 @@ $ yarn build
 
 CLIでPostCSSを使うプラグイン
 
-[Gulp](https://gulpjs.com/)やGrunt(https://gruntjs.com/)を使わず、npm scriptでPostCSSを使う場合は必須
+[Gulp](https://gulpjs.com/)や[Grunt](https://gruntjs.com/)を使わず、npm scriptでPostCSSを使う場合は必須
 
 
 - [cssnano](https://www.npmjs.com/package/cssnano)
