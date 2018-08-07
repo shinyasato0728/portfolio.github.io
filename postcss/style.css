@@ -86,7 +86,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       .svg__icon { width: 28px; margin-right: 8px;}
       svg,span { display: inline-block; vertical-align: middle;}
     }
-    .menu__github { position: absolute; width: 28px; height: 28px; left: 0; right: 0; margin: auto;}
+    .menu__github { position: absolute; width: 32px; height: 32px; left: 0; right: 0; margin: auto;}
     .menu__nav { color: $textColor; order: 2;
       .menu__hamburger { font-size: $baseFontSize; border: none; background: none; cursor: pointer; padding: 0;
         img { width: 20px; height: 20px; margin-left: 8px;}
