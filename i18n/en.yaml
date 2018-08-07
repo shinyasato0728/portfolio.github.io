@@ -107,7 +107,7 @@
   translation: "Even if I just said what I was concerned about, about me, if you have comments, I would be happy if you could contact me from the form below."
 
 - id: formMailaddress
-  translation: "Mailaddress"
+  translation: "E-Mail"
 
 - id: formName
   translation: "Name"

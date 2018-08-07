@@ -9,7 +9,7 @@ relativeURLs = true
 canonifyURLs = true
 
 [params]
-  github = "https://github.com/cookboys"
+  repo_portfolio = "https://github.com/cookboys/portfolio.github.io"
 
 [Languages]
 [Languages.ja]

@@ -21,7 +21,7 @@ a { transition: 0.3s;
   &:hover { opacity: 0.6;}
 }
 
-button, input, optgroup, select, textarea { color: initial; font: 400 11px system-ui; outline: none;}
+button, input, optgroup, select, textarea { color: initial; font: 400 16px system-ui; outline: none;}
 
 h1 { width: 100%; font-size: 28px; margin-bottom: 20px;}
 h2 { width: 100%; font-size: 24px; margin-bottom: 16px;}
@@ -39,8 +39,9 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   .github__icon { display: block; width: 32px; margin: 0 auto 8px auto;
     .svg__icon { fill: #ffffff;}
   }
-  small { font-size: 12px; display: block;
+  small { font-size: 12px; display: block; margin: auto;
     a { color: color(#ffffff a(100%)); text-decoration: underline; padding: 0 8px;}
+    @media(--breakPC) { width: 95%;}
   }
   @media(--breakPC) { padding: 48px 0 120px;}
   @media(--smartphone) { padding: 48px 0 80px;}
@@ -85,6 +86,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       .svg__icon { width: 28px; margin-right: 8px;}
       svg,span { display: inline-block; vertical-align: middle;}
     }
+    .menu__github { position: absolute; width: 28px; height: 28px; left: 0; right: 0; margin: auto;}
     .menu__nav { color: $textColor; order: 2;
       .menu__hamburger { font-size: $baseFontSize; border: none; background: none; cursor: pointer; padding: 0;
         img { width: 20px; height: 20px; margin-left: 8px;}
@@ -212,14 +214,14 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     .field__container { width: 100%; margin: 24px 0; display: flex; flex-wrap: wrap; justify-content: space-between;
       .field__contents { width: 48%;
         .field__input { width: 100%; text-align: left;
-          &:last-of-type { margin-top: 30px;}
+          &:last-of-type { margin-top: 20px;}
         }
         .field__textarea { width: 100%; text-align: left;
           textarea { width: 100%; display: inherit; height: 176px; padding: 16px; border: 1px solid #cccccc; border-radius: 4px; resize: none;}
         }
         .span__required { font-size: 12px; padding: 4px 8px; margin-left: 8px; border-radius: 4px; background: #ea352d;}
         @media(--iPad) { width: 100%;
-          &:last-of-type { margin-top: 32px;}
+          &:last-of-type { margin-top: 20px;}
         }
       }
     }
