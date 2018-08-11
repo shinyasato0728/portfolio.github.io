@@ -15,21 +15,23 @@
         <span>{{ i18n "menuTitleClose" }}</span><img src="{{ .Site.BaseURL }}images/icon/menu_icon_close.svg" alt="Close">
       </button>
       <nav class="menu__nav__container" ng-if="showMenu" ng-cloak>
-        <a class="menu__nav__inline" href="{{ "/landingpage/" | relLangURL }}">
-          {{ partial "svg/menu_lp.html" . }}<span>{{ i18n "landingpageTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
-        </a>
-        <a class="menu__nav__inline" href="{{ "/banner/" | relLangURL }}">
-          {{ partial "svg/menu_banner.html" . }}<span>{{ i18n "bannerTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
-        </a>
-        <a class="menu__nav__inline" href="{{ "/illust/" | relLangURL }}">
-          {{ partial "svg/menu_illust.html" . }}<span>{{ i18n "illustTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
-        </a>
-        <a class="menu__nav__inline" href="{{ "/blog/" | relLangURL }}">
-          {{ partial "svg/menu_blog.html" . }}<span>{{ i18n "blogTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
-        </a>
-        <a class="menu__nav__inline" href="{{ "/mailmagazine/" | relLangURL }}">
-          {{ partial "svg/menu_mail.html" . }}<span>{{ i18n "mailmagazineTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
-        </a>
+        <div class="menu__nav__box">
+          <a class="menu__nav__inline" href="{{ "/landingpage/" | relLangURL }}">
+            {{ partial "svg/menu_lp.html" . }}<span>{{ i18n "landingpageTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
+          </a>
+          <a class="menu__nav__inline" href="{{ "/banner/" | relLangURL }}">
+            {{ partial "svg/menu_banner.html" . }}<span>{{ i18n "bannerTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
+          </a>
+          <a class="menu__nav__inline" href="{{ "/illust/" | relLangURL }}">
+            {{ partial "svg/menu_illust.html" . }}<span>{{ i18n "illustTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
+          </a>
+          <a class="menu__nav__inline" href="{{ "/blog/" | relLangURL }}">
+            {{ partial "svg/menu_blog.html" . }}<span>{{ i18n "blogTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
+          </a>
+          <a class="menu__nav__inline" href="{{ "/mailmagazine/" | relLangURL }}">
+            {{ partial "svg/menu_mail.html" . }}<span>{{ i18n "mailmagazineTitle" }}</span>{{ partial "svg/menu_arrow.html" . }}
+          </a>
+        </div>
       </nav>
     </nav>
   </div>

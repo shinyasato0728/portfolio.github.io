@@ -92,16 +92,21 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         img { width: 20px; height: 20px; margin-left: 8px;}
         svg,img,span { display: inline-block; vertical-align: middle;}
       }
-      .menu__nav__container { width: 220px; background: white; position: absolute; z-index: 9999; top: 70px; right: 0; box-shadow: 0 0 8px $cardShadow;
-        .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center;
-          .svg__icon { width: 24px; height: 24px; margin-right: 8px;}
-          .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: #cccccc;
-            @media(--smartphone) { display: inline-block;}
+      .menu__nav__container { width: 220px; position: absolute; z-index: 5000; top: 70px; right: 0; overflow: auto;
+        .menu__nav__box { background: color(#ffffff a(100%)); border-radius: $baseBorderRadius; border: 1px solid $baseBorderColor;
+          .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center; border-top: 1px solid $baseBorderColor;
+            .svg__icon { width: 24px; height: 24px; margin-right: 8px;}
+            .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: #cccccc;
+              @media(--smartphone) { display: inline-block;}
+            }
+            svg,span { display: inline-block;}
+            &:hover { background: color(#f4f4f4 a(100%)); opacity: 1;}
+            &:first-of-type { border-top: none;}
           }
-          svg,span { display: inline-block;}
-          &:hover { background: #f4f4f4; opacity: 1;}
+          @media(--iPad) { margin-bottom: 100px;}
         }
-        @media(--smartphone) { width: 100%; margin: auto; left: 0; right: 0;}
+        @media(--iPad) { position: fixed; height: 100%; margin: auto; right: 2.5%;}
+        @media(--smartphone) { width: 95%; left: 0; right: 0;}
       }
     }
     @media(--breakPC) { width: 95%;}
@@ -120,11 +125,12 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         &:hover { opacity: 1;}
         @media(--smartphone) { width: auto; padding: 16px;}
       }
-      .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; box-shadow: 0 0 8px $cardShadow;
-        .languages__box { width: 100%; margin: 0; padding: 16px;
+      .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; border-radius: $baseBorderRadius; border: 1px solid $baseBorderColor;
+        .languages__box { width: 100%; margin: 0; padding: 16px; border-top: 1px solid $baseBorderColor;
           .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
           svg,span { display: inline-block; vertical-align: middle;}
           &:hover { background: #f4f4f4; opacity: 1;}
+          &:first-of-type { border-top: none;}
         }
       }
     }
