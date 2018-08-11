@@ -67,7 +67,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       }
       .icon__circle { width: 44px; position: absolute; top: 16px; left: 16px;}
       .icon__try { width: 44px; position: absolute; bottom: 16px; right: 16px;}
-      .first__content__skill { margin-top: 48px; display: flex; justify-content: stretch; align-items: center; flex-wrap: wrap;
+      .first__content__skill { margin-top: 48px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
         img { display: inline-block; height: 60px; margin-top: 16px; margin-right: 32px;
           &:last-of-type { margin-right: 0;}
         }
