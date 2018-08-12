@@ -69,7 +69,7 @@
 
 <article id="banner" class="wrapper">
   <h2 class="title">{{ i18n "bannerTitle" }}</h2>
-  <div class="wrapper__items">
+  <div class="wrapper__items photos__wrapper">
     {{ range first 12 (where .Data.Pages "Section" "banner") }}
     <figure ng-cloak>
       <a class="link__top__img banner__image" href="{{ .Permalink }}">
@@ -84,6 +84,26 @@
   </div>
   <nav class="categories">
     <a href="{{ "/banner/" | relLangURL }}">{{ i18n "bannerList" }}</a>
+  </nav>
+</article>
+
+<article id="photo" class="wrapper">
+  <h2 class="title">{{ i18n "photosTitle" }}</h2>
+  <div class="wrapper__items photos__wrapper">
+    {{ range (where .Data.Pages "Section" "photos") }}
+    <figure ng-cloak>
+      <a class="link__top__img" href="{{ .Permalink }}">
+        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+      </a>
+      <div class="post__title__caption">
+        <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
+        <p class="caption">{{ .Params.caption }}</p>
+      </div>
+    </figure>
+    {{ end }}
+  </div>
+  <nav class="categories">
+    <a href="{{ "/photos/" | relLangURL }}">{{ i18n "photosList" }}</a>
   </nav>
 </article>
 

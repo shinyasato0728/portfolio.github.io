@@ -75,12 +75,12 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     }
     @media(--breakPC) { width: 95%;}
   }
-  @media(--smartphone) { padding: 140px 0 40px 0;}
+  @media(--smartphone) { padding: 120px 0 40px 0;}
 }
 
 .single__page { margin-bottom: 80px;}
 
-.menu__wrapper { width: 100%; font-size: $baseFontSize; background: #ffffff; position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cardShadow; z-index: 3000;
+.menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(99%)); position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cardShadow; z-index: 3000;
   .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: 960px; margin: auto; position: relative;
     .menu__home { display: inline-block; order: 1;
       .svg__icon { width: 28px; margin-right: 8px;}
@@ -139,14 +139,15 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 }
 
 .post__page{ width: 100%;
-  .post__page__wrapper { width: 960px; margin: 160px auto 40px auto;
+  .post__page__wrapper { width: 960px; margin: 160px auto 40px;
     .illust__image { margin-top: 72px; @mixin cardStyle;}
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
     @media(--breakPC) { width: 95%;}
+    @media(--smartphone) { margin: 120px auto 40px;}
   }
   .post__netlify__admin { margin: 32px auto; box-shadow: 0 0 8px $cardShadow;}
-  .post__banner__wrapper { width: 700px; margin: 160px auto 40px auto;
+  .post__banner__wrapper { width: 700px; margin: 160px auto 40px;
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
     figure { text-align: center;
@@ -161,6 +162,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       }
     }
     @media(--breakBanner) { width: 95%;}
+    @media(--smartphone) { margin: 120px auto 40px;}
   }
   .mailmagazine__wrapper { text-align: center;}
 }
@@ -186,7 +188,17 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       @media(--iPad) { width: 48%;}
       @media(--smartphone) { width: 100%;}
     }
-    &::after { content: ""; display: block; width: 32%;}
+    &::after { content: ""; display: block; width: 48%;}
+  }
+  .photos__wrapper {
+    figure { width: 48%;
+      .link__top__img {
+        img { height: 242px;
+          @media(--iPad) { height: auto;}
+        }
+      }
+      @media(--iPad) { width: 100%;}
+    }
   }
   .categories { width: 100%; text-align: center;
     a { @mixin buttonStyle; margin-bottom: 48px;
@@ -262,7 +274,14 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 /* Post */
 .post__text--wrapper { margin: 48px auto; width: 600px;
+  figure { margin: 32px auto; text-align: center;}
   .post__text--title { margin: 24px 0; text-align: center; @mixin titleBackground #f5f5f5,a,70%;}
+  .post__photos--title { margin: 48px auto 24px; text-align: left; @mixin titleBackground #f5f5f5,a,70%;
+    @media(--smartphone) { font-size: 20px;}
+  }
+  .post__photo--small { width: 50%;
+    @media(--smartphone) { width: 100%;}
+  }
   .button__wrapper { width: 100%; text-align: center;
     .click__button { @mixin buttonStyle; margin-top: 32px;
       &:hover { @mixin buttonStyleHover;}
