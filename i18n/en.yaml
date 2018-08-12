@@ -52,6 +52,12 @@
 - id: illustList
   translation: "Illust list"
 
+- id: photosTitle
+  translation: "Photofabrication"
+
+- id: photosList
+  translation: "Photofabrication List"
+
 - id: blogTitle
   translation: "Blog"
 

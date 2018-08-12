@@ -52,6 +52,12 @@
 - id: illustList
   translation: "イラスト一覧"
 
+- id: photosTitle
+  translation: "写真加工"
+
+- id: photosList
+  translation: "写真加工一覧"
+
 - id: blogTitle
   translation: "ブログ"
 

@@ -52,6 +52,12 @@
 - id: illustList
   translation: "型插画列表"
 
+- id: photosTitle
+  translation: "照片处理"
+
+- id: photosList
+  translation: "照片处理列表"
+
 - id: blogTitle
   translation: "博客"
 
