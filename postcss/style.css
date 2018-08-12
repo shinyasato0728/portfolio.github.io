@@ -71,6 +71,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         img { display: inline-block; height: 60px; margin-top: 16px; margin-right: 32px;
           &:last-of-type { margin-right: 0;}
         }
+        @media(--smartphone) { justify-content: flex-start;}
       }
     }
     @media(--breakPC) { width: 95%;}
@@ -80,7 +81,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .single__page { margin-bottom: 80px;}
 
-.menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(99%)); position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cardShadow; z-index: 3000;
+.menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(98%)); position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cardShadow; z-index: 3000;
   .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: 960px; margin: auto; position: relative;
     .menu__home { display: inline-block; order: 1;
       .svg__icon { width: 28px; margin-right: 8px;}
