@@ -40,8 +40,7 @@
   </div>
   <div id="langulages__wrapper" class="languages__wrapper">
     <div class="languages__nav">
-      <button class="languages__pc languages__nav__button click__sound" ng-click="mCtrl.openLang()" ng-show="showMobileLang != true">{{ partial "svg/languages.html" . }}<span>{{ i18n "languageSelect" }}</span></button>
-      <button class="languages__sp languages__nav__button click__sound" ng-click="mCtrl.openLang()" ng-show="showMobileLang != true">{{ partial "svg/languages.html" . }}</button>
+      <button class="languages__button languages__nav__button click__sound" ng-click="mCtrl.openLang()" ng-show="showMobileLang != true">{{ partial "svg/languages.html" . }}<span>{{ i18n "languageSelect" }}</span></button>
       <button class="languages__nav__button click__sound" ng-click="showMobileLang = false" ng-hide="showMobileLang != true" ng-cloak>{{ partial "svg/close.html" . }}<span>{{ i18n "menuTitleClose" }}</span></button>
       <nav class="languages__nav__content" ng-if="showMobileLang" ng-cloak>
         {{ partial "languages.html" . }}
