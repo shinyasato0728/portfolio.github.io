@@ -117,11 +117,11 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     .languages__nav { text-align: center;
       .languages__pc { @mixin displayPcOnly;}
       .languages__sp { @mixin displaySpOnly;}
-      .languages__nav__button { font-size: $baseFontSize; width: 220px; color: $textColor; cursor: pointer; border-radius: 100px; border: none; background: color(#ffffff a(100%)); padding: 16px 32px;
+      .languages__nav__button { font-size: $baseFontSize; width: 220px; color: color(#ffffff a(100%)); background: linear-gradient(45deg, #ed2f78 0%,#ea352d 100%);  cursor: pointer; border-radius: 100px; border: none; padding: 16px 32px;
         .svg__icon { width: 20px; height: 20px;
           @media(--smartphone) { width: 28px; height: 28px;}
         }
-        svg,span { vertical-align: middle;}
+        svg,span { fill: color(#ffffff a(100%)); vertical-align: middle;}
         span { @mixin displayPcOnly;}
         &:hover { opacity: 1;}
         @media(--smartphone) { width: auto; padding: 16px;}
@@ -245,7 +245,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       }
     }
     .form__button__wrapper { width: 100%; text-align: center; margin-top: 32px;
-      .submit__button { width: auto; padding: 16px 60px; font-size: $baseFontSize; cursor: pointer; border-radius: 100px; border: none; color: color(#ffffff a(100%)); background: color(#ea352d a(100%)); box-shadow: 0 4px #520300;
+      .submit__button { width: auto; padding: 16px 60px; font-size: $baseFontSize; cursor: pointer; border-radius: 100px; border: none; color: color(#ffffff a(100%)); background: color(#1689ff a(100%));
         &:active { box-shadow: none; margin-top: 4px; margin-bottom: -4px;}
       }
     }
