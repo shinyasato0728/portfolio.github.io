@@ -124,7 +124,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         &:hover { opacity: 1;}
         @media(--smartphone) { width: auto; padding: 16px;}
       }
-      .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; border-radius: $baseBorderRadius; border: 1px solid $baseBorderColor;
+      .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; z-index: 2000; border-radius: $baseBorderRadius; border: 1px solid $baseBorderColor;
         .languages__box { width: 100%; margin: 0; padding: 16px; border-top: 1px solid $baseBorderColor;
           .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
           svg,span { display: inline-block; vertical-align: middle;}
