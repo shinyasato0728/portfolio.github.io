@@ -28,6 +28,8 @@ canonifyURLs = true
   icon_vuepress = "/images/icon/icon_vuepress.svg"
   icon_wordpress = "/images/icon/icon_wordpress.svg"
   repo_portfolio = "https://github.com/cookboys/portfolio.github.io"
+  placeholder = "/images/placeholder.png"
+  placeholder_photos = "/images/placeholder_photos.png"
 
 [Languages]
 [Languages.ja]

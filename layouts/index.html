@@ -53,7 +53,7 @@
     {{ range first 6 (where .Data.Pages "Section" "landingpage") }}
     <figure ng-cloak>
       <a class="link__top__img" href="{{ .Permalink }}">
-        <img class="ofi lazyload" data-src="{{ .Params.eyecatch }}" alt="" itemprop="image">
+        <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
       <div class="post__title__caption">
         <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
@@ -73,7 +73,7 @@
     {{ range first 12 (where .Data.Pages "Section" "banner") }}
     <figure ng-cloak>
       <a class="link__top__img banner__image" href="{{ .Permalink }}">
-        <img class="ofi lazyload" data-src="{{ .Params.eyecatch }}" alt="" itemprop="image">
+        <img class="lazyload" src="{{ .Site.Params.Placeholder_photos }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
       <div class="post__title__caption">
         <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
@@ -93,7 +93,7 @@
     {{ range (where .Data.Pages "Section" "photos") }}
     <figure ng-cloak>
       <a class="link__top__img" href="{{ .Permalink }}">
-        <img class="ofi lazyload" data-src="{{ .Params.eyecatch }}" alt="" itemprop="image">
+        <img class="lazyload" src="{{ .Site.Params.Placeholder_photos }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
       <div class="post__title__caption">
         <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
@@ -113,7 +113,7 @@
     {{ range (where .Data.Pages "Section" "blog") }}
     <figure ng-cloak>
       <a class="link__top__img" href="{{ .Permalink }}">
-        <img class="ofi lazyload" data-src="{{ .Params.eyecatch }}" alt="" itemprop="image">
+        <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
       <div class="post__title__caption">
         <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
@@ -133,7 +133,7 @@
     {{ range first 12 (where .Data.Pages "Section" "illust") }}
     <figure ng-cloak>
       <a class="link__top__img illust__image" href="{{ .Permalink }}">
-        <img class="ofi lazyload" data-src="{{ .Params.eyecatch }}" alt="" itemprop="image">
+        <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
       <div class="post__title__caption">
         <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
@@ -152,7 +152,7 @@
     {{ range (where .Data.Pages "Section" "mailmagazine") }}
     <figure ng-cloak>
       <a class="link__top__img" href="{{ .Permalink }}">
-        <img class="ofi lazyload" data-src="{{ .Params.eyecatch }}" alt="" itemprop="image">
+        <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
       <div class="post__title__caption">
         <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
