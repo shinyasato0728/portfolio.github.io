@@ -172,7 +172,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     .img__wrapper { display: inline-block; width: 960px;}
     figure { width: 32%; margin-bottom: 48px;
       .link__top__img { display: block; text-align: center; position: relative; overflow: hidden; @mixin cardStyle;
-        img { height: 286px;
+        img { background-position: center; background-size: contain; background-repeat: no-repeat;
           @media(--smartphone) { height: auto;}
         }
       }
@@ -191,11 +191,6 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   }
   .photos__wrapper {
     figure { width: 48%;
-      .link__top__img {
-        img { height: 242px;
-          @media(--iPad) { height: auto;}
-        }
-      }
       @media(--iPad) { width: 100%;}
     }
   }
