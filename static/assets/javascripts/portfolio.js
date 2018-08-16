@@ -1,6 +1,9 @@
 import $ from 'jquery';
 import objectFitImages from 'object-fit-images';
 
+require('./modules/Particles');
+require('./modules/Lazysizes');
+
 $(function () {
   objectFitImages( 'img.ofi' );
 });

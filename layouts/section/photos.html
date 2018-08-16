@@ -6,7 +6,7 @@
     {{ range (.Paginator 12).Pages }}
     <figure ng-cloak>
       <a class="link__top__img" href="{{ .Permalink }}">
-        <img class="ofi" src="{{ .Params.eyecatch }}" alt="{{ .Params.Title }}" itemprop="image">
+        <img class="ofi lazyload" data-src="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
       <div class="post__title__caption">
         <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>

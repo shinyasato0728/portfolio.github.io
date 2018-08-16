@@ -3,8 +3,8 @@
   "version": "1.0,0",
   "private": true,
   "dependencies": {
-    "babel-core": "6.26.0",
     "babel-cli": "^6.26.0",
+    "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "^7.1.4",
@@ -27,7 +27,6 @@
   "devDependencies": {
     "cssnano": "^3.10.0",
     "postcss": "^6.0.19",
-    "postcss-loader": "2.0.8",
     "postcss-animation": "0.0.12",
     "postcss-bem-linter": "^3.1.0",
     "postcss-calc": "^6.0.1",
@@ -38,6 +37,7 @@
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-html": "^0.31.0",
     "postcss-import": "^11.1.0",
+    "postcss-loader": "2.0.8",
     "postcss-markdown": "^0.31.0",
     "postcss-media-minmax": "^3.0.0",
     "postcss-mixins": "^6.2.0",
