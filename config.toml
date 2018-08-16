@@ -9,6 +9,24 @@ relativeURLs = true
 canonifyURLs = true
 
 [params]
+  image_symbol = "/images/symbol.svg"
+  icon_ai = "/images/icon/icon_ai.svg"
+  icon_psd = "/images/icon/icon_psd.svg"
+  icon_xd = "/images/icon/icon_xd.svg"
+  icon_an = "/images/icon/icon_an.svg"
+  icon_vim = "/images/icon/icon_vim.svg"
+  icon_hyper = "/images/icon/icon_hyper.svg"
+  icon_netlify = "/images/icon/icon_netlify.svg"
+  icon_html5 = "/images/icon/icon_html5.svg"
+  icon_css = "/images/icon/icon_css.svg"
+  icon_sass = "/images/icon/icon_sass.svg"
+  icon_postcss = "/images/icon/icon_postcss.svg"
+  icon_rails = "/images/icon/icon_rails.svg"
+  icon_git = "/images/icon/icon_git.svg"
+  icon_jekyll = "/images/icon/icon_jekyll.svg"
+  icon_hugo = "/images/icon/icon_hugo.svg"
+  icon_vuepress = "/images/icon/icon_vuepress.svg"
+  icon_wordpress = "/images/icon/icon_wordpress.svg"
   repo_portfolio = "https://github.com/cookboys/portfolio.github.io"
 
 [Languages]
