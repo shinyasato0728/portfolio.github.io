@@ -294,3 +294,29 @@ h3 { font-size: 1rem; margin-bottom: 1rem;}
 /* build.css */
 .margins { margin-top: 12px; margin-right: 24px; margin-left: 36px;}
 ```
+
+---
+
+# 画像の表示方法について
+
+このサイトは画像を表示させる際、[lazySizes](https://github.com/aFarkas/lazysizes)とHUGOのfrontMatterを組み合わせて使っている。
+srcとして、透明な画像を読み込ませ、background-imageとして表示させる画像を読み込ませている。
+これにより、backgroundとしてcssで画像を制御する事ができ、異なるサイズの画像でも、同じ枠組みの大きさで画像を表示させる事ができる。
+
+```
+/* index */
+<img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
+
+/* post */
+---
+eyecatch: '/images/eyecatch/landingpage/coincheck_exchange.png'
+---
+
+/* css */
+img { background-position: center; background-size: contain; background-repeat: no-repeat;}
+
+/* build */
+<img class=" lazyloaded" src="./images/placeholder.png" data-bg="/images/eyecatch/landingpage/coincheck_exchange.png" alt="" itemprop="image" style="background-image: url(&quot;/images/eyecatch/landingpage/coincheck_exchange.png);">
+```
+
+![画像で見る](https://shinya-sato.com/images/readme_photo.png)
