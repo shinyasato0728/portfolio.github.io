@@ -300,8 +300,12 @@ h3 { font-size: 1rem; margin-bottom: 1rem;}
 # 画像の表示方法について
 
 このサイトは画像を表示させる際、[lazySizes](https://github.com/aFarkas/lazysizes)とHUGOのfrontMatterを組み合わせて使っている。
+
 srcとして、透明な画像を読み込ませ、background-imageとして表示させる画像を読み込ませている。
+
 これにより、backgroundとしてcssで画像を制御する事ができ、異なるサイズの画像でも、同じ枠組みの大きさで画像を表示させる事ができる。
+
+容量の軽い透明な画像を最初に読み込ませるので、表示速度の向上にも役立つ。
 
 ```
 /* index */
