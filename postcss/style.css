@@ -35,6 +35,8 @@ svg { display: inherit;}
 
 img { background-position: center; background-size: contain; background-repeat: no-repeat;}
 
+figcaption { margin-top: 8px; text-align: center;}
+
 main { flex: 1 0 auto;}
 
 footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-align: center; padding: 48px 8px;
