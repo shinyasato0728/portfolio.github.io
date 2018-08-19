@@ -14,7 +14,8 @@
 
 $textColor: color(#212121 a(100%));
 $cardShadow: color(#000000 a(10%));
-$baseBorderColor: color(#eeeeee a(100%));
+$baseBorderColor: color(#cccccc a(100%));
+$subBorderColor: color(#eeeeee a(100%));
 $baseBorderRadius: 4px;
 $baseFontSize: 16px;
 

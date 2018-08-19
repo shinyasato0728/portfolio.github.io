@@ -98,10 +98,10 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         svg,img,span { display: inline-block; vertical-align: middle;}
       }
       .menu__nav__container { width: 220px; position: absolute; z-index: 5000; top: 70px; right: 0; overflow: auto;
-        .menu__nav__box { background: color(#ffffff a(100%)); border-radius: $baseBorderRadius; border: 1px solid $baseBorderColor;
-          .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center; border-top: 1px solid $baseBorderColor;
+        .menu__nav__box { background: color(#ffffff a(100%)); border-radius: $baseBorderRadius; border: 1px solid $subBorderColor;
+          .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center; border-top: 1px solid $subBorderColor;
             .svg__icon { width: 24px; height: 24px; margin-right: 8px;}
-            .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: #cccccc;
+            .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: $baseBorderColor;
               @media(--smartphone) { display: inline-block;}
             }
             svg,span { display: inline-block;}
@@ -128,8 +128,8 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         &:hover { opacity: 1;}
         @media(--smartphone) { width: auto; padding: 16px;}
       }
-      .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; z-index: 2000; border-radius: $baseBorderRadius; border: 1px solid $baseBorderColor;
-        .languages__box { width: 100%; margin: 0; padding: 16px; border-top: 1px solid $baseBorderColor;
+      .languages__nav__content { width: 220px; text-align: left; background: white; position: absolute; bottom: 80px; right: 0; z-index: 2000; border-radius: $baseBorderRadius; border: 1px solid $subBorderColor;
+        .languages__box { width: 100%; margin: 0; padding: 16px; border-top: 1px solid $subBorderColor;
           .lang__icon { width: 24px; height: 24px; margin-right: 4px; vertical-align: middle;}
           svg,span { display: inline-block; vertical-align: middle;}
           &:hover { background: #f4f4f4; opacity: 1;}
@@ -170,7 +170,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   .mailmagazine__wrapper { text-align: center;}
 }
 
-.wrapper { width: 960px; margin: 48px auto; border-bottom: 1px solid #cccccc;
+.wrapper { width: 960px; margin: 48px auto; border-bottom: 1px solid $baseBorderColor;
   .title { margin: 36px auto 48px auto; display: flex; align-items: center;}
   .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-between;
     .img__wrapper { display: inline-block; width: 960px;}
@@ -220,7 +220,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 .form__wrapper { width: 100%; margin-bottom: 32px;
   form { width: 960px; margin: auto;
     p { margin-bottom: 0; text-align: left;}
-    input { width: 100%; display: inline-block; border: 1px solid #cccccc; padding: 16px; border: none; border-radius: 4px;}
+    input { width: 100%; display: inline-block; border: 1px solid $baseBorderColor; padding: 16px; border: none; border-radius: 4px;}
     .form__label__wrapper { width: 100%; position: relative;
       .form__label { display: inline-block; float: left; margin-top: 12px;}
     }
@@ -230,7 +230,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
           &:last-of-type { margin-top: 20px;}
         }
         .field__textarea { width: 100%; text-align: left;
-          textarea { width: 100%; display: inherit; height: 176px; padding: 16px; border: 1px solid #cccccc; border-radius: 4px; resize: none;}
+          textarea { width: 100%; display: inherit; height: 176px; padding: 16px; border: 1px solid $baseBorderColor; border-radius: 4px; resize: none;}
         }
         .span__required { font-size: 12px; padding: 4px 8px; margin-left: 8px; border-radius: 4px; background: #ea352d;}
         @media(--iPad) { width: 100%;
