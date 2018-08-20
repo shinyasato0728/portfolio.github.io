@@ -58,11 +58,11 @@
 - id: photosList
   translation: "Photofabrication List"
 
-- id: blogTitle
-  translation: "Blog"
+- id: serviceTitle
+  translation: "Service"
 
-- id: blogList
-  translation: "Blog list"
+- id: serviceList
+  translation: "Service list"
 
 - id: mailmagazineTitle
   translation: "E-mail magazine"

@@ -58,11 +58,11 @@
 - id: photosList
   translation: "照片处理列表"
 
-- id: blogTitle
-  translation: "博客"
+- id: serviceTitle
+  translation: "服务"
 
-- id: blogList
-  translation: "博客列表"
+- id: serviceList
+  translation: "服务列表"
 
 - id: mailmagazineTitle
   translation: "电子邮件杂志"

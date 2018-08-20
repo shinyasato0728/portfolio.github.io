@@ -2,7 +2,7 @@
 {{ partial "header.html" . }}
 <div class="wrapper categories__wrapper">
   <div class="wrapper__items">
-    <h2 class="title">{{ i18n "mailmagazineTitle" }}</h2>
+    <h2 class="title">{{ partial "svg/menu_mail.html" . }}{{ i18n "mailmagazineTitle" }}</h2>
     {{ range (.Paginator 12).Pages }}
     <figure ng-cloak>
       <a class="link__top__img" href="{{ .Permalink }}">
