@@ -53,7 +53,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 
 .first__wrapper { width: 100%; position: relative; display: flex; padding: 160px 0 60px 0;
-  .first__content { width: 960px; position: relative; z-index: 1000;  margin: auto;
+  .first__content { width: $largeWidth; position: relative; z-index: 1000;  margin: auto;
     .first__box { position: relative; @mixin cardStyle;
       .first__textbox { padding: 32px 48px;
         .symbol__wrapper { width: 60px; @util margin(null auto 12px auto);}
@@ -86,7 +86,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 .single__page { margin-bottom: 80px;}
 
 .menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(98%)); position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cardShadow; z-index: 3000;
-  .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: 960px; margin: auto; position: relative;
+  .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: $largeWidth; margin: auto; position: relative;
     .menu__home { display: inline-block; order: 1;
       .svg__icon { width: 28px; margin-right: 8px;}
       svg,span { display: inline-block; vertical-align: middle;}
@@ -142,7 +142,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 }
 
 .post__page{ width: 100%;
-  .post__page__wrapper { width: 960px; margin: 160px auto 40px;
+  .post__page__wrapper { width: $largeWidth; margin: 160px auto 80px;
     .illust__image { margin-top: 72px; @mixin cardStyle;}
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
@@ -150,7 +150,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     @media(--smartphone) { margin: 120px auto 40px;}
   }
   .post__netlify__admin { margin: 32px auto; box-shadow: 0 0 8px $cardShadow;}
-  .post__banner__wrapper { width: 700px; margin: 160px auto 40px;
+  .post__banner__wrapper { width: 700px; margin: 160px auto 80px;
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
     figure { text-align: center;
@@ -167,13 +167,22 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     @media(--breakBanner) { width: 95%;}
     @media(--smartphone) { margin: 120px auto 40px;}
   }
+  .post__photos__wrapper { width: $largeWidth; margin: 160px auto 80px;
+    h3 { font-size: $baseFontSize; margin-bottom: 8px;}
+    small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
+    figure { text-align: center;
+      img { box-shadow: 0 2px 4px $cardShadow;}
+    }
+    @media(--breakPC) { width: 95%;}
+    @media(--smartphone) { margin: 120px auto 40px;}
+  }
   .mailmagazine__wrapper { text-align: center;}
 }
 
-.wrapper { width: 960px; margin: 48px auto; border-bottom: 1px solid $baseBorderColor;
+.wrapper { width: $largeWidth; margin: 48px auto; border-bottom: 1px solid $baseBorderColor;
   .title { margin: 36px auto 48px auto; display: flex; align-items: center;}
   .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-between;
-    .img__wrapper { display: inline-block; width: 960px;}
+    .img__wrapper { display: inline-block; width: $largeWidth;}
     figure { width: 32%; margin-bottom: 48px;
       .link__top__img { display: block; text-align: center; position: relative; overflow: hidden; @mixin cardStyle;
       }
@@ -218,7 +227,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 /* Form */
 .form__wrapper { width: 100%; margin-bottom: 32px;
-  form { width: 960px; margin: auto;
+  form { width: $largeWidth; margin: auto;
     p { margin-bottom: 0; text-align: left;}
     input { width: 100%; display: inline-block; border: 1px solid $baseBorderColor; padding: 16px; border: none; border-radius: 4px;}
     .form__label__wrapper { width: 100%; position: relative;

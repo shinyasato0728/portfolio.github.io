@@ -19,6 +19,8 @@ $subBorderColor: color(#eeeeee a(100%));
 $baseBorderRadius: 4px;
 $baseFontSize: 16px;
 
+$largeWidth: 960px;
+
 @define-mixin titleBackground $backgroundColor, $property, $params { padding: 8px 16px; background: color($backgroundColor $property($params)); border-radius: $baseBorderRadius; }
 @define-mixin cardStyle { background: color(#ffffff a(50%)); border-radius: $baseBorderRadius; box-shadow: 0 0 8px color(#000000 a(10%)); }
 @define-mixin buttonStyle { display: inline-block; padding: 12px 36px; color: $textColor; text-decoration: none; background: color(#ffffff a(100%)); border: 1px solid $textColor; border-radius: $baseBorderRadius; }
