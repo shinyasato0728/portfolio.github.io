@@ -176,7 +176,9 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 }
 
 .wrapper { width: $largeWidth; margin: 48px auto; border-bottom: 1px solid $baseBorderColor;
-  .title { margin: 36px auto 48px auto; display: flex; align-items: center;}
+  .title { margin: 36px auto 48px auto; display: flex; align-items: center;
+    svg { width: 36px; height: 36px; margin-right: 12px;}
+  }
   .wrapper__items { display: flex; flex-wrap: wrap; justify-content: space-between;
     .img__wrapper { display: inline-block; width: $largeWidth;}
     figure { width: 32%; margin-bottom: 48px;

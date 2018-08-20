@@ -58,11 +58,11 @@
 - id: photosList
   translation: "写真加工一覧"
 
-- id: blogTitle
-  translation: "ブログ"
+- id: serviceTitle
+  translation: "サービス"
 
-- id: blogList
-  translation: "ブログ一覧"
+- id: serviceList
+  translation: "サービス一覧"
 
 - id: mailmagazineTitle
   translation: "メルマガ"
