@@ -1,0 +1,61 @@
+---
+title: "Brighten the picture of the night sky"
+date: 2018-05-15
+categories: ['photos']
+caption: "Photoshop"
+eyecatch: '/images/photos/photo09_firstview.png'
+url: '/en/photos/photo09/'
+draft: false
+---
+
+<article class="post__page">
+  <div class="post__banner__wrapper">
+    <h3>Brighten the picture of the night sky</h3>
+    <small>Photoshop</small>
+    {{< figure src="/images/photos/photo09_firstview.png" alt="">}}
+  </div>
+  <div class="post__text--wrapper">
+    <h2 class="post__photos--title">Prepare the image to be processed</h2>
+    <figure>
+      <img class="lazyload" data-src="/images/photos/photo09_01.png" alt="">
+    </figure>
+    <p>In this time I would like to brighten the photos of the night sky using this image.</p>
+
+    <h2 class="post__photos--title">Apply CameraRaw filter</h2>
+    <figure>
+      <img class="lazyload" data-src="/images/photos/photo09_02.png" alt="">
+    </figure>
+    <p>Before you modify it first, convert the image to "Smart Object". By doing this, it becomes possible to edit without destroying the original image.</p>
+    <p>Select "Filter" → "Camera Raw filter".</p>
+    <p>Set it to "Exposure amount: 1.25". This makes it possible to brighten the whole photo.</p>
+    <p>Open the "Tone curve" panel and adjust the contrast.</p>
+    <p>Return to the "Basic Correction" panel and adjust to "Color temperature: 16" and "Color cast compensation: 10" in "White balance" (values ​​are adjusted appropriately with the photos)</p>
+    <p>Open the "Detail" panel and set "Noise Reduction" to "Brightness: 45", "Luminance Detail: 35", "Brightness Contrast: 25". It can suppress the roughness of the star.</p>
+    <p>Open the "Lens Correction" panel and brighten the image using the "Exposure" slider.</p>
+    <p>When all settings are completed, press the "OK" button.</p>
+
+    <h2 class="post__photos--title">Adjust tone curve</h2>
+    <figure>
+      <img class="lazyload" data-src="/images/photos/photo09_03.png" alt="">
+    </figure>
+    <p>Duplicate layers with command / Ctrl + J on the layer to which the filter is applied.</p>
+    <p>Use "Quick Selection Tool" to create selection ranges of mountain and forest pictures.</p>
+    <p>After creating the selection range, select "Layer" → "Layer mask" → "mask out of selection range".</p>
+    <p>With the original photo selected, use "Layer" → "New Adjustment Layer" → "Tone Curve" to create a new adjustment layer for the tone curve. As a result, it is possible to apply a tone curve only to the starry sky portion.</p>
+    <p>With the mask of the created adjustment layer selected, set the drawing color to black (# 000000) and fill it.</p>
+    <p>Continue to use the "brush tool" and paint the drawing color with white (#ffffff) at the place where you want to increase the sparkle.</p>
+    <p>Since the brush is hard in the painted area, it is blurred with "filter" → "blur" → "blur (Gauss)". Include a blur with "Radius: 250px".</p>
+
+    <h2 class="post__photos--title">Finish in pop</h2>
+    <figure>
+      <img class="lazyload" data-src="/images/photos/photo09_04.png" alt="">
+    </figure>
+    <p>Make it even more pop. Select the original photo layer and duplicate again.</p>
+    <p>Select the duplicated layer, and select "Filter" → "Sharp" → "Unsharp Mask", then set "Amount: 88%" and "Radius: 10 px".</p>
+    <p>Further, "layer" -> "layer mask" -> "hide all areas" is set and a layer mask is set.</p>
+    <p>Select the brush tool, set the drawing color to white (#ffffff), and paint where you want to shine.</p>
+    <p>As before, in order to blur the brush, select "Filter" → "Blur" → "Blur (Gauss)" and set to "Radius: 250px".</p>
+    <p>Finally, adjust the fill or opacity of the layer to "50%".</p>
+    <p>It is complete!!</p>
+  </div>
+</article>
