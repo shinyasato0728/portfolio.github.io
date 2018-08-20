@@ -167,14 +167,10 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     @media(--breakBanner) { width: 95%;}
     @media(--smartphone) { margin: 120px auto 40px;}
   }
-  .post__photos__wrapper { width: $largeWidth; margin: 160px auto 80px;
-    h3 { font-size: $baseFontSize; margin-bottom: 8px;}
-    small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
+  .post__photos__wrapper {
     figure { text-align: center;
       img { box-shadow: 0 2px 4px $cardShadow;}
     }
-    @media(--breakPC) { width: 95%;}
-    @media(--smartphone) { margin: 120px auto 40px;}
   }
   .mailmagazine__wrapper { text-align: center;}
 }
