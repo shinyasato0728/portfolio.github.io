@@ -299,7 +299,7 @@ h3 { font-size: 1rem; margin-bottom: 1rem;}
 
 # 画像の表示方法について
 
-このサイトは画像を表示させる際、[lazySizes](https://github.com/aFarkas/lazysizes)とHUGOのfrontMatterを組み合わせて使っている。
+このサイトは画像を表示させる際、[lazySizes](https://github.com/aFarkas/lazysizes)とHUGOの[frontMatter](https://gohugo.io/content-management/front-matter/)を組み合わせて使っている。
 
 透明な画像を読み込ませ、background-imageとして表示させる画像を読み込ませている。
 
