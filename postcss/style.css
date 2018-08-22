@@ -167,11 +167,6 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     @media(--breakBanner) { width: 95%;}
     @media(--smartphone) { margin: 120px auto 40px;}
   }
-  .post__photos__wrapper {
-    figure { text-align: center;
-      img { box-shadow: 0 2px 4px $cardShadow;}
-    }
-  }
   .mailmagazine__wrapper { text-align: center;}
 }
 
