@@ -53,10 +53,10 @@
   translation: "型插画列表"
 
 - id: photosTitle
-  translation: "照片处理"
+  translation: "图像处理"
 
 - id: photosList
-  translation: "照片处理列表"
+  translation: "图像处理列表"
 
 - id: serviceTitle
   translation: "服务"
