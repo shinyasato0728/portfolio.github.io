@@ -53,10 +53,10 @@
   translation: "Illust list"
 
 - id: photosTitle
-  translation: "Photofabrication"
+  translation: "Photo editing"
 
 - id: photosList
-  translation: "Photofabrication List"
+  translation: "Photo editing List"
 
 - id: serviceTitle
   translation: "Service"

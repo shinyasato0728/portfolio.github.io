@@ -53,10 +53,10 @@
   translation: "イラスト一覧"
 
 - id: photosTitle
-  translation: "写真加工"
+  translation: "画像加工"
 
 - id: photosList
-  translation: "写真加工一覧"
+  translation: "画像加工一覧"
 
 - id: serviceTitle
   translation: "サービス"
