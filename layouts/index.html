@@ -90,7 +90,7 @@
 <article id="photo" class="wrapper">
   <h2 class="title">{{ partial "svg/menu_photo.html" . }}{{ i18n "photosTitle" }}</h2>
   <div class="wrapper__items photos__wrapper">
-    {{ range (where .Data.Pages "Section" "photos") }}
+    {{ range first 12 (where .Data.Pages "Section" "photos") }}
     <figure ng-cloak>
       <a class="link__top__img" href="{{ .Permalink }}">
         <img class="lazyload" src="{{ .Site.Params.Placeholder_photos }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">

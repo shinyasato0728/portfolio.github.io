@@ -20,6 +20,7 @@ module.exports = (ctx) => ({
     require('postcss-utilities'),
     require('postcss-flexbugs-fixes'),
     require('autoprefixer')({ browsers: ['> 1%', 'last 2 versions', 'Opera >=10.1', 'Firefox >= 4', 'iOS >=3.2'] }),
+    require('postcss-instagram'),
     require('cssnano')
   ]
 });

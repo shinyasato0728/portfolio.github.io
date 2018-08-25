@@ -37,6 +37,7 @@
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-html": "^0.31.0",
     "postcss-import": "^11.1.0",
+    "postcss-instagram": "^1.0.0",
     "postcss-loader": "2.0.8",
     "postcss-markdown": "^0.31.0",
     "postcss-media-minmax": "^3.0.0",
