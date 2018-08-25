@@ -1,0 +1,301 @@
+---
+title: "PostCSSでInstagram風の写真を作る"
+date: 2018-06-05
+categories: ['photos']
+caption: "PostCSS"
+eyecatch: '/images/photos/photo13_firstview.png'
+ogp: 'images/photos/photo13_firstview.png'
+url: '/photos/photo13/'
+draft: false
+---
+
+<article class="post__page">
+  <div class="post__page__wrapper post__photos__wrapper">
+    <h3>PostCSSでInstagram風の写真を作る</h3>
+    <small>PostCSS</small>
+    {{< figure src="/images/photos/photo13_firstview.png" alt="">}}
+  </div>
+  <div class="post__text--wrapper">
+    <h2 class="post__photos--title">元画像を用意する</h2>
+    <figure>
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <p>今回はこの画像を使って、PostCSSで画像加工をしていきたいと思います。</p>
+
+    <h2 class="post__photos--title">プラグインをインストールする</h2>
+    <pre class="prettyprint">
+      <code>
+npm install postcss-instagram
+// or
+yarn add postcss-instagram
+
+// postcss.config.js
+module.exports = (ctx) => ({
+    require('postcss-instagram')
+  ]
+});
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">1977</h2>
+    <figure class="postcss__fill__1977">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: 1977;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  filter: sepia(.5) hue-rotate(-35deg) saturate(1.6) contrast(.9);
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 3em #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Amaro</h2>
+    <figure class="postcss__fill__amaro">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: amaro;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  hue-rotate(-10deg) contrast(.9) brightness(1.1) saturate(1.5)
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 3em #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Brannan</h2>
+    <figure class="postcss__fill__brannan">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: brannan;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  sepia(.5) contrast(1.3)
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 3em #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Earlybird</h2>
+    <figure class="postcss__fill__earlybird">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: earlybird;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  sepia(.4) saturate(1.8) contrast(1.1) brightness(.9) hue-rotate(-20deg)
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 3em #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Inkwell</h2>
+    <figure class="postcss__fill__inkwell">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: inkwell;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  grayscale(1) brightness(1.2) contrast(1.05)
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Kalvin</h2>
+    <figure class="postcss__fill__kalvin">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: kalvin;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  sepia(.3) saturate(2.2) brightness(1.3) contrast(1)
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 3em #555;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Lo-Fi</h2>
+    <figure class="postcss__fill__lofi">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: lo-fi;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  contrast(1.5) brightness(.9) sepia(.05)
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 7em #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Nashville</h2>
+    <figure class="postcss__fill__nashville">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: nashville;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  sepia(.4) saturate(1.5) contrast(.9) brightness(1.1) hue-rotate(-15deg)
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 100em #00f;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+
+    <h2 class="post__photos--title">Toaster</h2>
+    <figure class="postcss__fill__toaster">
+      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: toaster;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  sepia(.4) saturate(2.5) hue-rotate(-30deg) contrast(.67)
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 3em #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+      </code>
+    </pre>
+  </div>
+</article>

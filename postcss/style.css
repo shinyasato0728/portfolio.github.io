@@ -15,13 +15,15 @@
 * { box-sizing: border-box;}
 
 html { position: relative; min-height: 100%;}
-body { display: flex; flex-direction: column; height: 100vh; line-height: 1.75; color: $textColor; font-size: $baseFontSize; letter-spacing: 1px; font-feature-settings : "palt"; font-family: Roboto,Arial,Helvetica,sans-serif;}
+body { display: flex; flex-direction: column; height: 100vh; line-height: 1.75; color: $textColor; font-size: $baseFontSize; letter-spacing: 1px; font-feature-settings: "palt"; font-family: Roboto,Arial,Helvetica,sans-serif;}
 img { vertical-align: bottom; max-width: 100%;}
 a { transition: 0.3s;
   &:hover { opacity: 0.6;}
 }
 
 button, input, optgroup, select, textarea { color: initial; font: 400 16px system-ui; outline: none;}
+
+pre { padding: 0 24px; border-radius: $baseBorderRadius; white-space: pre-wrap;}
 
 h1 { width: 100%; font-size: 28px; margin-bottom: 20px;}
 h2 { width: 100%; font-size: 24px; margin-bottom: 16px;}
@@ -271,7 +273,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 /* Post */
 .post__text--wrapper { margin: 48px auto; width: 600px;
-  figure { margin: 32px auto; text-align: center;}
+  figure { display: block; margin: 32px auto; text-align: center;}
   .post__text--title { margin: 24px 0; text-align: center; @mixin titleBackground #f5f5f5,a,70%;}
   .post__photos--title { margin: 48px auto 24px; text-align: left; @mixin titleBackground #f5f5f5,a,70%;
     @media(--smartphone) { font-size: 20px;}
@@ -296,3 +298,14 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 /* Lazyload */
 .lazyloading { opacity: 0;}
 .lazyloaded { opacity: 1; transition: opacity 0.5s;}
+
+/* Instagram風 */
+.postcss__fill__1977 { filter: 1977;}
+.postcss__fill__amaro { filter: amaro;}
+.postcss__fill__brannan { filter: brannan;}
+.postcss__fill__earlybird { filter: earlybird;}
+.postcss__fill__inkwell { filter: inkwell;}
+.postcss__fill__kalvin { filter: kalvin;}
+.postcss__fill__lofi { filter: lo-fi;}
+.postcss__fill__nashville { filter: nashville;}
+.postcss__fill__toaster { filter: toaster;}

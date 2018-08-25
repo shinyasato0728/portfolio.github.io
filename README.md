@@ -295,6 +295,36 @@ h3 { font-size: 1rem; margin-bottom: 1rem;}
 .margins { margin-top: 12px; margin-right: 24px; margin-left: 36px;}
 ```
 
+
+
+- [postcss-instagram](https://www.npmjs.com/package/postcss-instagram)
+
+Instagram風の加工を、PostCSSでできるようになる。
+
+```
+/* postcss.css */
+.postcss__instagram { filter: 1977;}
+
+/* build.css */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  filter: sepia(.5) hue-rotate(-35deg) saturate(1.6) contrast(.9);
+}
+.postcss__instagram:after {
+  box-shadow: inset 0 0 3em #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+```
+
 ---
 
 # 画像の表示方法について
