@@ -183,9 +183,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       }
       .post__title__caption { margin-top: 24px;
         .caption__title { text-decoration: none; color: $textColor; position: relative; display: inline-block; margin-bottom: 8px;
-          &:after { position: absolute; top: 1.5rem; left: 0; content: ""; display: inline-block; width: 0; height: 1px; background: $textColor; transition: .5s;}
-          &:hover { opacity: 1;}
-          &:hover:after { width: 100%;}
+          &:hover { text-decoration: underline; opacity: 1;}
         }
         .caption { font-size: 12px; color: color(#848484 a(100%));}
       }
@@ -264,9 +262,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 /* pagenation */
 .pagination { text-align: center;
   a { text-decoration: none; color: $textColor; position: relative; display: inline-block; margin-bottom: 8px;
-    &:before { position: absolute; top: 1.5rem; left: 0; content: ""; display: inline-block; width: 0; height: 1px; background: $textColor; transition: .5s;}
-    &:hover { opacity: 1;}
-    &:hover:before { width: 100%;}
+    &:hover { text-decoration: underline; opacity: 1;}
   }
   .current__page { display: inline-block; margin: 0 24px;}
 }
