@@ -352,5 +352,3 @@ img { background-position: center; background-size: contain; background-repeat: 
 /* build */
 <img class="lazyloaded" src="./images/placeholder.png" data-bg="/images/eyecatch/landingpage/coincheck_exchange.png" alt="" itemprop="image" style="background-image: url("/images/eyecatch/landingpage/coincheck_exchange.png");">
 ```
-
-![画像で見る](https://shinya-sato.com/images/readme_photo.png)

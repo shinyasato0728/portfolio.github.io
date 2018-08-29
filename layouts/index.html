@@ -46,46 +46,6 @@
   </div>
 </article>
 
-<article id="lp" class="wrapper">
-  <h2 class="title">{{ partial "svg/menu_lp.html" . }}{{ i18n "landingpageTitle" }}</h2>
-  <div class="wrapper__items">
-    {{ range first 6 (where .Data.Pages "Section" "landingpage") }}
-    <figure ng-cloak>
-      <a class="link__top__img" href="{{ .Permalink }}">
-        <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
-        <p class="caption">{{ .Params.caption }}</p>
-      </div>
-    </figure>
-    {{ end }}
-  </div>
-  <nav class="categories">
-    <a href="{{ "/landingpage/" | relLangURL }}">{{ i18n "landingpageList" }}</a>
-  </nav>
-</article>
-
-<article id="banner" class="wrapper">
-  <h2 class="title">{{ partial "svg/menu_banner.html" . }}{{ i18n "bannerTitle" }}</h2>
-  <div class="wrapper__items photos__wrapper">
-    {{ range first 12 (where .Data.Pages "Section" "banner") }}
-    <figure ng-cloak>
-      <a class="link__top__img banner__image" href="{{ .Permalink }}">
-        <img class="lazyload" src="{{ .Site.Params.Placeholder_photos }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
-        <p class="caption">{{ .Params.caption }}</p>
-      </div>
-    </figure>
-    {{ end }}
-  </div>
-  <nav class="categories">
-    <a href="{{ "/banner/" | relLangURL }}">{{ i18n "bannerList" }}</a>
-  </nav>
-</article>
-
 <article id="photo" class="wrapper">
   <h2 class="title">{{ partial "svg/menu_photo.html" . }}{{ i18n "photosTitle" }}</h2>
   <div class="wrapper__items photos__wrapper">
@@ -142,26 +102,6 @@
   </div>
   <nav class="categories">
     <a href="{{ "/illust/" | relLangURL }}">{{ i18n "illustList" }}</a>
-  </nav>
-</article>
-
-<article id="mailmagazine" class="wrapper">
-  <h2 class="title">{{ partial "svg/menu_mail.html" . }}{{ i18n "mailmagazineTitle" }}</h2>
-  <div class="wrapper__items">
-    {{ range (where .Data.Pages "Section" "mailmagazine") }}
-    <figure ng-cloak>
-      <a class="link__top__img" href="{{ .Permalink }}">
-        <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
-      </a>
-      <div class="post__title__caption">
-        <a class="caption__title" href="{{ .Permalink }}">{{ .Params.Title }}</a>
-        <p class="caption">{{ .Params.caption }}</p>
-      </div>
-    </figure>
-    {{ end }}
-  </div>
-  <nav class="categories">
-    <a href="{{ "/mailmagazine/" | relLangURL }}">{{ i18n "mailmagazineList" }}</a>
   </nav>
 </article>
 
