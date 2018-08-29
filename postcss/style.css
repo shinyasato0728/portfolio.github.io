@@ -190,7 +190,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       @media(--iPad) { width: 48%;}
       @media(--smartphone) { width: 100%;}
     }
-    &::after { content: ""; display: block; width: 48%;}
+    &::after { content: ""; display: block; width: 32%;}
   }
   .photos__wrapper {
     figure { width: 48%;
@@ -257,7 +257,9 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 }
 
 /* categories */
-.categories__wrapper { margin-top: 72px; border-bottom: none;}
+.categories__wrapper { margin-top: 120px; border-bottom: none;
+  @media(--smartphone) { margin-top: 80px;}
+}
 
 /* pagenation */
 .pagination { text-align: center;
