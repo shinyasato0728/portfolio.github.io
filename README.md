@@ -343,12 +343,12 @@ Instagram風の加工を、PostCSSでできるようになる。
 
 /* post */
 ---
-eyecatch: '/images/eyecatch/landingpage/coincheck_exchange.png'
+eyecatch: '/images/eyecatch/landingpage/eyecatch.png'
 ---
 
 /* css */
 img { background-position: center; background-size: contain; background-repeat: no-repeat;}
 
 /* build */
-<img class="lazyloaded" src="./images/placeholder.png" data-bg="/images/eyecatch/landingpage/coincheck_exchange.png" alt="" itemprop="image" style="background-image: url("/images/eyecatch/landingpage/coincheck_exchange.png");">
+<img class="lazyloaded" src="./images/placeholder.png" data-bg="/images/eyecatch/landingpage/eyecatch.png" alt="" itemprop="image" style="background-image: url("/images/eyecatch/landingpage/eyecatch.png");">
 ```
