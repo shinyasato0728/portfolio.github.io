@@ -25,9 +25,6 @@
 - id: profileText03
   translation: "Also, since it was an environment where computers were close to me from childhood, I was absorbed in computers at elementary school. I watched the website and tried making the Flash that was popular at that time myself."
 
-- id: profileText04
-  translation: "Since it is fancy to make blogs with static site generator, if you have someone who wants to switch from WordPress to static site generator, please do not hesitate to consult us."
-
 - id: profileTitleTools
   translation: "Frequently used tools"
 
@@ -105,12 +102,6 @@
 
 - id: formTitle
   translation: "Contact Us"
-
-- id: formText01
-  translation: "Please do not hesitate to contact us for production requests or consultation."
-
-- id: formText02
-  translation: "Even if I just said what I was concerned about, about me, if you have comments, I would be happy if you could contact me from the form below."
 
 - id: formMailaddress
   translation: "E-Mail"

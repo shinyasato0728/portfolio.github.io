@@ -25,9 +25,6 @@
 - id: profileText03
   translation: "而且，由於這是一個電腦從小就接近我的環境，我專心於小學電腦。 我觀看了該網站，並嘗試製作當時流行的Flash。"
 
-- id: profileText04
-  translation: "由於使用靜態站點生成器創建博客是很有趣的，所以如果有人想從WordPress切換到靜態站點生成器，請不要猶豫，向我們諮詢。"
-
 - id: profileTitleTools
   translation: "常用的软件"
 
@@ -102,12 +99,6 @@
 
 - id: formTitle
   translation: "在這里聯系我們"
-
-- id: formText01
-  translation: "請不要猶豫，聯繫我們的生產要求或諮詢。"
-
-- id: formText02
-  translation: "即使我剛才說了我關心的事情，關於我，如果您有任何意見，如果您可以通過下面的表格與我聯繫，我會很高興。"
 
 - id: formMailaddress
   translation: "電郵地址"
