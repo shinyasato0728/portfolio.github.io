@@ -25,9 +25,6 @@
 - id: profileText03
   translation: "また、幼少期からコンピューターが身近にある環境だったので、小学生の時にはコンピューターに夢中になっていました。Webサイトを見たり、当時流行っていたFlashを自分で作ってみたりしました。"
 
-- id: profileText04
-  translation: "静的サイトジェネレーターでブログを作るのが好きなので、WordPressから静的サイトジェネレーターに移行したい方がいれば、お気軽にご相談下さい。"
-
 - id: profileTitleTools
   translation: "よく使うツール"
 
@@ -102,12 +99,6 @@
 
 - id: formTitle
   translation: "お問い合わせはこちら"
-
-- id: formText01
-  translation: "制作の依頼、ご相談などお気軽にお問い合わせ下さい。"
-
-- id: formText02
-  translation: "私のことについて、気になったこと、挨拶したいだけでも、コメントがありましたら下記のフォームからご連絡いただけると、嬉しいです。"
 
 - id: formMailaddress
   translation: "メールアドレス"
