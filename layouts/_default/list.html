@@ -1,8 +1,7 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
 <div class="wrapper categories__wrapper">
   <div class="wrapper__items">
-  <h2 class="title">{{ .Title }}</h2>
+    <h2 class="title">{{ .Title }}</h2>
     {{ range (.Paginator 12).Pages }}
     <figure>
       <a class="link__top__img" href="{{ .Permalink }}">
@@ -17,4 +16,4 @@
   </div>
   {{ partial "pagenation.html" . }}
 </div>
-  {{ partial "footer.html" . }}
+{{ partial "footer.html" . }}

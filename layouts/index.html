@@ -1,5 +1,4 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
 <article class="first__wrapper">
   <div class="first__content">
     <div class="first__box">
@@ -35,8 +34,12 @@
           <img src="{{ .Site.Params.Icon_git }}" alt="Git">
           <img src="{{ .Site.Params.Icon_jekyll }}" alt="Jekyll">
           <img src="{{ .Site.Params.Icon_hugo }}" alt="HUGO">
-          <img src="{{ .Site.Params.Icon_vuepress }}" alt="VuePress">
           <img src="{{ .Site.Params.Icon_wordpress }}" alt="WordPress">
+        </div>
+        <div class="first__content__skill">
+          <h3 class="first__skill__title">{{ i18n "profileTitleStudy" }}</h3>
+          <img src="{{ .Site.Params.Icon_vuepress }}" alt="VuePress">
+          <img src="{{ .Site.Params.Icon_firebase }}" alt="Firebase">
         </div>
       </div>
       <figure class="icon__try">
@@ -50,7 +53,7 @@
   <h2 class="title">{{ partial "svg/menu_photo.html" . }}{{ i18n "photosTitle" }}</h2>
   <div class="wrapper__items photos__wrapper">
     {{ range first 12 (where .Data.Pages "Section" "photos") }}
-    <figure ng-cloak>
+    <figure>
       <a class="link__top__img" href="{{ .Permalink }}">
         <img class="lazyload" src="{{ .Site.Params.Placeholder_photos }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
@@ -70,7 +73,7 @@
   <h2 class="title">{{ partial "svg/menu_service.html" . }}{{ i18n "serviceTitle" }}</h2>
   <div class="wrapper__items">
     {{ range (where .Data.Pages "Section" "service") }}
-    <figure ng-cloak>
+    <figure>
       <a class="link__top__img" href="{{ .Permalink }}">
         <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>
@@ -90,7 +93,7 @@
   <h2 class="title">{{ partial "svg/menu_illust.html" . }}{{ i18n "illustTitle" }}</h2>
   <div class="wrapper__items">
     {{ range first 12 (where .Data.Pages "Section" "illust") }}
-    <figure ng-cloak>
+    <figure>
       <a class="link__top__img illust__image" href="{{ .Permalink }}">
         <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>

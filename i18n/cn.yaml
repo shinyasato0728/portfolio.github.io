@@ -7,8 +7,17 @@
 - id: menuHome
   translation: "首页"
 
+- id: sineOut
+  translation: "退出"
+
 - id: languageSelect
   translation: "選擇一種語言"
+
+- id: facebookSignin
+  translation: "Facebook上注册·登录"
+
+- id: singoutViewText01
+  translation: "该投资组合网站采用密码身份验证来限制浏览。"
 
 - id: profileTitleName
   translation: "サトウ シンヤ"
@@ -30,6 +39,9 @@
 
 - id: profileTitleSkill
   translation: "常用技术"
+
+- id: profileTitleStudy
+  translation: "研究技术"
 
 - id: landingpageTitle
   translation: "登陆页面"
@@ -102,6 +114,12 @@
 
 - id: formMailaddress
   translation: "電郵地址"
+
+- id: formPassword
+  translation: "密码"
+
+- id: formSignin
+  translation: "注册"
 
 - id: formName
   translation: "名"

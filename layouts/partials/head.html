@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>{{if .IsHome}}{{ .Site.Params.homeTitle }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Params.SiteName }}</title>
+  <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta name="keywords" content="{{ with .Params.Keyword }}{{ . }}{{ else }}{{ .Site.Params.Keyword }}{{ end }}">
   <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
   {{ partial "ogp.html" . }}
   {{ partial "styles.html" . }}
-  {{ partial "angularjs.html" . }}
+  {{ partial "headjs.html" . }}
   {{ if not (in (.Site.BaseURL | string) "localhost") }}
     {{ template "_internal/google_analytics.html" . }}
   {{ end }}
 </head>
 <body onload="PR.prettyPrint()">
-<main>
+  {{ partial "header.html" . }}
+  <div id="loading">
+    <img src="{{ .Site.BaseURL }}/images/load.gif" alt="">
+  </div>
+  <main id="main">
