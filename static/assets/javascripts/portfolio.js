@@ -25,3 +25,7 @@ document.addEventListener('lazybeforeunveil', function(e){
     e.target.style.backgroundImage = 'url(' + bg + ')';
   }
 });
+
+window.onload = function() {
+  $('#loading').remove();
+}

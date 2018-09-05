@@ -89,12 +89,12 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(98%)); position: fixed; color: color(#ffffff a(100%)); top: 0; box-shadow: 0 2px 4px $cardShadow; z-index: 3000;
   .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: $largeWidth; margin: auto; position: relative;
-    .menu__home { display: inline-block; order: 1;
+    .menu__home { display: inline-block;
       .svg__icon { width: 28px; margin-right: 8px;}
       svg,span { display: inline-block; vertical-align: middle;}
     }
-    .menu__github { position: absolute; width: 32px; height: 32px; left: 0; right: 0; margin: auto;}
-    .menu__nav { color: $textColor; order: 2;
+    .menu__github { position: absolute; left: 0; right: 0; margin: auto; width: 32px; height: 32px;}
+    .menu__nav { color: $textColor;
       .menu__hamburger { font-size: $baseFontSize; border: none; background: none; cursor: pointer; padding: 0;
         img { width: 20px; height: 20px; margin-left: 8px;}
         svg,img,span { display: inline-block; vertical-align: middle;}
@@ -309,3 +309,6 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 .postcss__fill__lofi { filter: lo-fi;}
 .postcss__fill__nashville { filter: nashville;}
 .postcss__fill__toaster { filter: toaster;}
+
+/* Loading */
+#loading { position: fixed; left: 0; right: 0; top: 0; bottom: 0; margin: auto; z-index: 9999; width: 80px; height: 80px; padding: 16px; background: $baseWhite; border-radius: $baseBorderRadius; opacity: 0.5;}

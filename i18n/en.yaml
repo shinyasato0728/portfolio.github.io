@@ -7,8 +7,17 @@
 - id: menuHome
   translation: "Home"
 
+- id: sineOut
+  translation: "Sine out"
+
 - id: languageSelect
   translation: "Language"
+
+- id: facebookSignin
+  translation: "Register Facebook or Log in"
+
+- id: singoutViewText01
+  translation: "This portfolio site adopts password authentication for restricting browsing."
 
 - id: profileTitleName
   translation: "Shinya Sato"
@@ -30,6 +39,9 @@
 
 - id: profileTitleSkill
   translation: "Frequently used skill"
+
+- id: profileTitleStudy
+  translation: "Study under skill"
 
 - id: landingpageTitle
   translation: "Landing Page"
@@ -105,6 +117,12 @@
 
 - id: formMailaddress
   translation: "E-Mail"
+
+- id: formPassword
+  translation: "Password"
+
+- id: formSignin
+  translation: "Sign in"
 
 - id: formName
   translation: "Name"

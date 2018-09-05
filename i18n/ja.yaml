@@ -7,8 +7,17 @@
 - id: menuHome
   translation: "ホーム"
 
+- id: sineOut
+  translation: "サインアウト"
+
 - id: languageSelect
   translation: "言語を選択"
+
+- id: facebookSignin
+  translation: "Facebookで登録・ログイン"
+
+- id: singoutViewText01
+  translation: "このポートフォリオサイトは閲覧制限の為に、パスワード認証を採用しています。"
 
 - id: profileTitleName
   translation: "サトウ シンヤ"
@@ -30,6 +39,9 @@
 
 - id: profileTitleSkill
   translation: "よく使う技術"
+
+- id: profileTitleStudy
+  translation: "学習中の技術"
 
 - id: landingpageTitle
   translation: "ランディングページ"
@@ -102,6 +114,12 @@
 
 - id: formMailaddress
   translation: "メールアドレス"
+
+- id: formPassword
+  translation: "パスワード"
+
+- id: formSignin
+  translation: "サインイン"
 
 - id: formName
   translation: "名前"

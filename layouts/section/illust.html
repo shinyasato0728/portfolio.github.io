@@ -1,10 +1,9 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
 <div class="wrapper categories__wrapper">
   <div class="wrapper__items">
     <h2 class="title">{{ partial "svg/menu_illust.html" . }}{{ i18n "illustTitle" }}</h2>
     {{ range (.Paginator 12).Pages }}
-    <figure ng-cloak>
+    <figure>
       <a class="link__top__img" href="{{ .Permalink }}">
         <img class="lazyload" src="{{ .Site.Params.Placeholder }}" data-bg="{{ .Params.eyecatch }}" alt="" itemprop="image">
       </a>

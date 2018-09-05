@@ -1,11 +1,11 @@
-<div id="container" style="position: fixed; top: 0; left: 0; z-index: -1;"></div>
 </main>
-<footer>
+<footer id="footer">
   {{ partial "form.html" . }}
   <a class="github__icon" href="{{ .Site.Params.Repo_portfolio }}" target="_blank">{{ partial "svg/github.html" . }}</a>
   <small>Building this site with<a href="https://gohugo.io/" target="_blank">Hugo</a><a href="https://postcss.org/" target="_blank">PostCSS</a>and hosting it on<a href="https://www.netlify.com/" target="_blank">Netlify</a></small>
   <small>The Go gopher was designed by Renée French.</small>
 </footer>
+<div id="container" style="position: fixed; top: 0; left: 0; z-index: -1;"></div>
 {{ partial "javascripts.html" . }}
 <audio id="sound" preload="auto">
   <source src="{{ .Site.BaseURL }}assets/sound/click.mp3" type="audio/mp3"></source>
