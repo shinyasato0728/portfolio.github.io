@@ -23,7 +23,7 @@ a { transition: 0.3s;
 
 button, input, optgroup, select, textarea { color: initial; font: 400 16px system-ui; outline: none;}
 
-pre { padding: 0 24px; border-radius: $baseBorderRadius; white-space: pre-wrap;}
+pre { padding: 0 24px; border-radius: $baseBorderRadius; white-space: pre-wrap; background: $textColor !important;}
 
 h1 { width: 100%; font-size: 28px; margin-bottom: 20px;}
 h2 { width: 100%; font-size: 24px; margin-bottom: 16px;}
