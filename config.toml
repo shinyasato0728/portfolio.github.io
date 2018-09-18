@@ -25,6 +25,7 @@ canonifyURLs = true
   icon_git = "/images/icon/icon_git.svg"
   icon_jekyll = "/images/icon/icon_jekyll.svg"
   icon_hugo = "/images/icon/icon_hugo.svg"
+  icon_gatsby = "/images/icon/icon_gatsby.svg"
   icon_vuepress = "/images/icon/icon_vuepress.svg"
   icon_firebase = "/images/icon/icon_firebase.svg"
   icon_wordpress = "/images/icon/icon_wordpress.svg"
