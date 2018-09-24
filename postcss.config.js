@@ -1,11 +1,7 @@
 module.exports = (ctx) => ({
   map: ctx.options.map,
   plugins: [
-    require('postcss-import')({
-      plugins: [
-        require('stylelint')
-      ]
-    }),
+    require('postcss-import'),
     require('postcss-mixins'),
     require('postcss-simple-vars'),
     require('postcss-nested'),

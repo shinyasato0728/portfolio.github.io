@@ -1,0 +1,55 @@
+@import 'mixins.css';
+
+/* Instagram風 */
+.postcss__fill__1977 { filter: 1977;}
+.postcss__fill__amaro { filter: amaro;}
+.postcss__fill__brannan { filter: brannan;}
+.postcss__fill__earlybird { filter: earlybird;}
+.postcss__fill__inkwell { filter: inkwell;}
+.postcss__fill__kalvin { filter: kalvin;}
+.postcss__fill__lofi { filter: lo-fi;}
+.postcss__fill__nashville { filter: nashville;}
+.postcss__fill__toaster { filter: toaster;}
+
+.code__span { display: inline-block; padding: 0 8px; margin: auto 4px; border-radius: $baseBorderRadius; color: color(#ed2f78 a(100%)); background: color(#f5f5f5 a(100%));}
+.filter__property__wrapper { margin: 40px auto 40px 20px;
+  li { list-style-type: disc; margin-bottom: 10px;
+    &:last-of-type { margin-bottom: 0;}
+  }
+}
+.color__wheel { width: 60%; margin: auto; background: color($baseWhite a(100%));
+  img { border: 1px solid $baseBorderColor; border-radius: $baseBorderRadius;}
+  @media(--smartphone) { width: 70%;}
+}
+
+.filters__wrapper { display: block; position: relative;}
+
+.filters__wrapper .blur__param--5 { filter: blur(5px);}
+.filters__wrapper .blur__param--10 { filter: blur(10px);}
+.filters__wrapper .grayscale__param--100 { filter: grayscale(100%);}
+.filters__wrapper .grayscale__param--50 { filter: grayscale(50%);}
+.filters__wrapper .contrast__param--150 { filter: contrast(150%);}
+.filters__wrapper .contrast__param--300 { filter: contrast(300%);}
+.filters__wrapper .contrast__param--50 { filter: contrast(50%);}
+.filters__wrapper .hue__param--90d { filter: hue-rotate(90deg);}
+.filters__wrapper .hue__param--180d { filter: hue-rotate(180deg);}
+.filters__wrapper .hue__param--270d { filter: hue-rotate(270deg);}
+.filters__wrapper .saturate__param--150 { filter: saturate(150%);}
+.filters__wrapper .saturate__param--300 { filter: saturate(300%);}
+.filters__wrapper .saturate__param--50 { filter: saturate(50%);}
+.filters__wrapper .brightness__param--150 { filter: brightness(150%);}
+.filters__wrapper .brightness__param--300 { filter: brightness(300%);}
+.filters__wrapper .brightness__param--50 { filter: brightness(50%);}
+.filters__wrapper .invert__param--60 { filter: invert(60%);}
+.filters__wrapper .invert__param--100 { filter: invert(100%);}
+.filters__wrapper .sepia__param--50 { filter: sepia(50%);}
+.filters__wrapper .sepia__param--100 { filter: sepia(100%);}
+.filters__wrapper .dropshadow__param--darker { filter: drop-shadow(4px 4px 8px #212121);}
+.filters__wrapper .opacity__param--60 { filter: opacity(60%);}
+.filters__wrapper .opacity__param--20 { filter: opacity(20%);}
+
+.blurimage__wrapper,.blurimage__contents::before { background: url(/images/photos/photo17_01.png) no-repeat center; background-size: cover; box-sizing: border-box;}
+.blurimage__wrapper { position: relative; padding: 10%; margin: 32px auto;}
+.blurimage__contents::before { content: ""; position: absolute; box-sizing: border-box; background-clip: content-box; width: 100%; height: 100%; padding: 10%; top: 0; left: 0; filter: blur(5px);}
+.blurimage__main { padding: 10%; position: relative; text-align: center; background: rgba(255,255,255,0.4); border-radius: $baseBorderRadius; box-shadow: 0 0 8px $cardShadow;}
+.blurimage__main img { width: 30%;}

@@ -1,4 +1,5 @@
 @import 'mixins.css';
+@import 'filters.css';
 
 ::selection { background: $textColor; color: $baseWhite;}
 
@@ -25,7 +26,9 @@ a { transition: 0.3s;
 
 button, input, optgroup, select, textarea { color: initial; font: 400 16px system-ui; outline: none;}
 
-pre { padding: 0 24px; border-radius: $baseBorderRadius; white-space: pre-wrap; background: $textColor !important;}
+pre { padding: 0 24px; border-radius: $baseBorderRadius; white-space: pre-wrap; background: $textColor !important;
+  code { display: block; margin: -30px 0 -60px 0;}
+}
 
 h1 { width: 100%; font-size: 28px; margin-bottom: 20px;}
 h2 { width: 100%; font-size: 24px; margin-bottom: 16px;}
@@ -272,7 +275,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 }
 
 /* Post */
-.post__text--wrapper { margin: 48px auto; width: 600px;
+.post__text--wrapper { margin: 100px auto; width: 600px;
   figure { display: block; margin: 32px auto; text-align: center;
     &:after { bottom: 0;}
   }
@@ -280,7 +283,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
   .main__font { border-bottom: 2px solid #ed2f78;}
   .sub__font { border-bottom: 2px solid #84c1ff;}
   .post__text--title { margin: 24px 0; text-align: center; @mixin titleBackground #f5f5f5,a,70%;}
-  .post__photos--title { margin: 48px auto 24px; text-align: left; @mixin titleBackground #f5f5f5,a,70%;
+  .post__photos--title { margin: 100px auto 24px; text-align: left; @mixin titleBackground #f5f5f5,a,70%;
     @media(--smartphone) { font-size: 20px;}
   }
   .post__photo--small { width: 50%;
@@ -303,17 +306,6 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 /* Lazyload */
 .lazyloading { opacity: 0;}
 .lazyloaded { opacity: 1; transition: opacity 0.5s;}
-
-/* Instagram風 */
-.postcss__fill__1977 { filter: 1977;}
-.postcss__fill__amaro { filter: amaro;}
-.postcss__fill__brannan { filter: brannan;}
-.postcss__fill__earlybird { filter: earlybird;}
-.postcss__fill__inkwell { filter: inkwell;}
-.postcss__fill__kalvin { filter: kalvin;}
-.postcss__fill__lofi { filter: lo-fi;}
-.postcss__fill__nashville { filter: nashville;}
-.postcss__fill__toaster { filter: toaster;}
 
 /* Loading */
 #loading { position: fixed; left: 0; right: 0; top: 0; bottom: 0; margin: auto; z-index: 9999; width: 80px; height: 80px; padding: 16px; background: $baseWhite; border-radius: $baseBorderRadius; opacity: 0.5;}

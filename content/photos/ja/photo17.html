@@ -1,0 +1,276 @@
+---
+title: "CSS3でどこまで画像加工ができるか試してみた"
+date: 2018-06-25
+categories: ['photos']
+caption: "CSS3"
+eyecatch: '/images/photos/photo17_firstview.png'
+ogp: 'images/photos/photo17_firstview.png'
+url: '/photos/photo17/'
+draft: false
+---
+
+<article class="post__page">
+  <div class="post__page__wrapper post__photos__wrapper">
+    <h3>CSS3でどこまで画像加工ができるか試してみた</h3>
+    <small>CSS3</small>
+    {{< figure src="/images/photos/photo17_firstview.png" alt="">}}
+  </div>
+
+  <div class="post__text--wrapper">
+    <h2 class="post__photos--title">CSS3で編集する画像を用意する</h2>
+    <figure>
+      <img class="lazyload" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <p>CSS3で画像編集する為に、元画像を探して用意します。</p>
+    <p>普段はPhotoshopを使って画像を編集することに慣れているのか、CSS3でどれぐらい画像編集ができるか把握しきれていないので、どこまで加工できるか試してみました。</p>
+    <p>折角なので、<a href="http://sass-lang.com/" target="_blank">Sass</a>も<a href="http://stylus-lang.com/" target="_blank">Stylus</a>も<a href="https://postcss.org/" target="_blank">PostCSS</a>も使わずに、生のCSS3で画像編集することにしました。</p>
+    <p>加工した際の変化がわかりやすいように、なるべく色鮮やかで、配色のバランスに偏りがない画像を選択しました。</p>
+
+    <h2 class="post__photos--title">filter属性を整理する</h2>
+    <p>CSS3を使った画像加工に使われる要素は、主に<span class="code__span">filter</span>属性です。</p>
+    <p>filterはプロパティを使用して画像を編集します。プロパティをまずは整理します。</p>
+    <ul class="filter__property__wrapper">
+      <li><span class="code__span">blur</span>要素をぼかす</li>
+      <li><span class="code__span">grayscale</span>要素をグレースケールにできる</li>
+      <li><span class="code__span">contrast</span>コントラストを調節できる</li>
+      <li><span class="code__span">hue-rotate</span>色相を回転させることができる</li>
+      <li><span class="code__span">saturate</span>彩度を調節できる</li>
+      <li><span class="code__span">brightness</span>明度を調節できる</li>
+      <li><span class="code__span">invert</span>階調反転させる事ができる</li>
+      <li><span class="code__span">sepia</span>要素をセピア調にできる</li>
+      <li><span class="code__span">drop-shadow</span>要素に影を追加できる</li>
+      <li><span class="code__span">opacity</span>透過率を調節できる</li>
+    </ul>
+    <p>また、親要素には<span class="code__span">display: block; position: relative;</span>を指定しておきます。</p>
+    <p>こうする事により、擬似クラスの1つである<span class="code__span">::after</span>属性を利用して、要素にさらに効果を追加する事ができます（内側に影を入れたり、色調を重ねがけする事も可能）。</p>
+
+    <h2 class="post__photos--title">ぼかし（blur）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload blur__param--5" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload blur__param--10" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .blur__param--5 { filter: blur(5px);}
+.filters__wrapper .blur__param--10 { filter: blur(10px);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「フィルター」→「ぼかし」→「ぼかし（ガウス）」に相当するものですね。</p>
+
+    <h2 class="post__photos--title">グレースケール（grayscale）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload grayscale__param--50" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload grayscale__param--100" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .grayscale__param--50 { filter: grayscale(50%);}
+.filters__wrapper .grayscale__param--100 { filter: grayscale(100%);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「イメージ」→「色調補正」→「彩度を下げる」ですかね。</p>
+    <p>「イメージ」→「モード」→「グレースケール」とも同じですね。</p>
+    <p>パーセンテージを調節できる点は異なりますが。</p>
+
+    <h2 class="post__photos--title">コントラスト（contrast）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload contrast__param--150" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload contrast__param--300" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload contrast__param--50" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .contrast__param--150 { filter: contrast(150%);}
+.filters__wrapper .contrast__param--300 { filter: contrast(300%);}
+.filters__wrapper .contrast__param--50 { filter: contrast(50%);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「イメージ」→「色調補正」→「明るさ・コントラスト」のコントラストに相当するものですね。</p>
+
+    <h2 class="post__photos--title">色調の回転（hue-rotate）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload hue__param--90d" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload hue__param--180d" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload hue__param--270d" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .hue__param--90d { filter: hue-rotate(90deg);}
+.filters__wrapper .hue__param--180d { filter: hue-rotate(180deg);}
+.filters__wrapper .hue__param--270d { filter: hue-rotate(270deg);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「イメージ」→「色調補正」→「色相・彩度」の色相に相当するものですね。</p>
+    <p>「色相・彩度」と違うのは、色相環の回転率から色相を変更する点。</p>
+    <p>色相環とは、マンセルが提唱した色の3属性「色相（Hue）・彩度（Chroma）・明度（Value）」の色相を、視覚的に表した丸型の図形。</p>
+    <p>隣合う色は、同系統の「類似色」。反対の色は、相反する色の「補色」を表しています。</p>
+    <figure class="color__wheel">
+      <img class="lazyload" data-src="/images/photos/colorWheel.png" alt="">
+      <figcaption>マンセル・カラー・システムによる色相環</figcaption>
+    </figure>
+
+    <h2 class="post__photos--title">彩度（saturate）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload saturate__param--150" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload saturate__param--300" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload saturate__param--50" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .brightness__param--150 { filter: brightness(150%);}
+.filters__wrapper .brightness__param--300 { filter: brightness(300%);}
+.filters__wrapper .brightness__param--50 { filter: brightness(50%);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「イメージ」→「色調補正」→「色相・彩度」の彩度に相当するものですね。</p>
+
+    <h2 class="post__photos--title">明度（brightness）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload brightness__param--150" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload brightness__param--300" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload brightness__param--50" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .brightness__param--150 { filter: brightness(150%);}
+.filters__wrapper .brightness__param--300 { filter: brightness(300%);}
+.filters__wrapper .brightness__param--50 { filter: brightness(50%);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「イメージ」→「色調補正」→「色相・彩度」の明度に相当するものですね。</p>
+
+    <h2 class="post__photos--title">階調反転（invert）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload invert__param--60" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload invert__param--100" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .invert__param--60 { filter: invert(60%);}
+.filters__wrapper .invert__param--100 { filter: invert(100%);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「イメージ」→「色調補正」→「階調の反転」に相当するものですね。</p>
+    <p>パーセンテージを指定できる点は異なりますね。</p>
+
+    <h2 class="post__photos--title">セピア（sepia）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload sepia__param--50" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload sepia__param--100" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .sepia__param--50 { filter: sepia(50%);}
+.filters__wrapper .sepia__param--100 { filter: sepia(100%);}
+      </code>
+    </pre>
+    <p>Photoshopで実現するには、「色相・彩度」からセピア調にする必要があります。</p>
+
+    <h2 class="post__photos--title">影（drop-shadow）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload dropshadow__param--darker" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .dropshadow__param--darker { filter: drop-shadow(4px 4px 8px #212121);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、「レイヤー」→「レイヤースタイル」→「ドロップシャドウ」に相当するものですね。</p>
+    <p>1つ目には、水平方向（x軸）の影の位置。</p>
+    <p>2つ目には、垂直方向（y軸）の影の位置。</p>
+    <p>3つ目には、影の広がり（ぼかし）の大きさ。</p>
+    <p>4つ目には、影の色を入力します。何も入力しない場合は、<span style="display: inline-block; border-radius: 4px; color: #ffffff; background: #000000; padding: 0 8px; margin: auto 4px;">黒（#000000）</span>が適用されます。</p>
+
+    <h2 class="post__photos--title">透過率（opacity）</h2>
+    <figure class="filters__wrapper">
+      <img class="lazyload opacity__param--60" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <figure class="filters__wrapper">
+      <img class="lazyload opacity__param--20" data-src="/images/photos/photo17_01.png" alt="">
+    </figure>
+    <pre class="prettyprint">
+      <code>
+.filters__wrapper .opacity__param--60 { filter: opacity(60%);}
+.filters__wrapper .opacity__param--20 { filter: opacity(20%);}
+      </code>
+    </pre>
+    <p>Photoshopでいうと、レイヤーメニューの「不透明度」に相当するものですね。</p>
+    <p><span class="code__span">opacity</span>属性と同じ効果ですね。</p>
+
+    <h2 class="post__photos--title">すりガラスを作る（応用技）</h2>
+    <div class="blurimage__wrapper">
+      <div class="blurimage__contents">
+        <div class="blurimage__main">
+          <img class="lazyload" data-src="/images/icon/icon_css.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <pre class="prettyprint">
+      <code>
+.blurimage__wrapper,.blurimage__contents::before {
+  background: url(/images/photos/photo17_01.png) no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.blurimage__wrapper {
+  position: relative;
+  padding: 10%;
+  margin: 32px auto;
+}
+.blurimage__contents::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  background-clip: content-box;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  top: 0;
+  left: 0;
+  filter: blur(5px);
+}
+.blurimage__main {
+  padding: 10%;
+  position: relative;
+  text-align: center;
+  background: rgba(255,255,255,0.4);
+  border-radius:
+  $baseBorderRadius;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.blurimage__main img {
+  width: 30%;
+}
+      </code>
+    </pre>
+    <p>親要素と、子要素の<span class="code__span">::before</span>属性に、同じ背景画像を読み込ませます。</p>
+    <p>子要素の<span class="code__span">::before</span>に<span class="code__span">filter: blur(5px);</span>を適用し、子要素の背景画像のみぼかしを加えます。</p>
+    <p><span class="code__span" style="margin-left: 0;">box-sizing: border-box;</span>属性を加えて、paddingも箱の大きさに含めさせます。</p>
+    <p>孫要素に、<span class="code__span">background: rgba(255,255,255,0.4);</span>を加えて、白い曇りガラスっぽくさせます。</p>
+    <p><span class="code__span" style="margin-left: 0;">position: relative;</span>も加えて、相対位置の親要素に指定します。</p>
+  </div>
+</article>
