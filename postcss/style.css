@@ -27,7 +27,7 @@ a { transition: 0.3s;
 button, input, optgroup, select, textarea { color: initial; font: 400 16px system-ui; outline: none;}
 
 pre { padding: 0 24px; border-radius: $baseBorderRadius; white-space: pre-wrap; background: $textColor !important;
-  code { display: block; margin: -30px 0 -60px 0;}
+  code { display: block; margin: -30px 0 -60px 0; word-break: break-all;}
 }
 
 h1 { width: 100%; font-size: 28px; margin-bottom: 20px;}
