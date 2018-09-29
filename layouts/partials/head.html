@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>{{if .IsHome}}{{ .Site.Params.homeTitle }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Params.SiteName }}</title>
-  <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta name="keywords" content="{{ with .Params.Keyword }}{{ . }}{{ else }}{{ .Site.Params.Keyword }}{{ end }}">
   <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
