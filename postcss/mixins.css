@@ -16,14 +16,16 @@ $textColor: color(#212121 a(100%));
 $cardShadow: color(#000000 a(10%));
 $baseWhite: color(#ffffff a(100%));
 $baseBorderColor: color(#cccccc a(100%));
-$subBorderColor: color(#eeeeee a(100%));
+$subBorderColor: color(#e7e8ea a(100%));
 $baseBorderRadius: 4px;
 $baseFontSize: 16px;
 
 $largeWidth: 960px;
 
 @define-mixin titleBackground $backgroundColor, $property, $params { padding: 8px 16px; background: color($backgroundColor $property($params)); border-radius: $baseBorderRadius; }
-@define-mixin cardStyle { background: color(#ffffff a(50%)); border-radius: $baseBorderRadius; box-shadow: 0 0 8px color(#000000 a(10%)); }
+@define-mixin cardStyle { background: color(#ffffff a(60%)); border-radius: $baseBorderRadius; box-shadow: 0 0 8px color(#000000 a(10%));
+  @media(--breakPC) { border-radius: 0;}
+}
 @define-mixin buttonStyle { display: inline-block; padding: 12px 36px; color: $textColor; text-decoration: none; background: color(#ffffff a(100%)); border: 1px solid $textColor; border-radius: $baseBorderRadius; }
 @define-mixin buttonStyleHover { color: color(#ffffff a(100%)); background: $textColor; border: 1px solid #ffffff; opacity: 1; }
 @define-mixin animated $animationTime { animation-fillmode: both; animation-duration: $animationTime; }
