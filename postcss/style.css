@@ -92,7 +92,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .single__page { margin-bottom: 80px;}
 
-.menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(98%)); position: fixed; color: color(#ffffff a(100%)); top: 0; border: 1px solid $subBorderColor; z-index: 3000;
+.menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(98%)); position: fixed; color: color(#ffffff a(100%)); top: 0; z-index: 9999; box-shadow: 0 2px 4px $cardShadow;
   .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: $largeWidth; margin: auto; position: relative;
     .menu__home { display: inline-block;
       .svg__icon { width: 28px; margin-right: 8px;}
