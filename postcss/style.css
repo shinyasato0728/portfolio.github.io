@@ -46,12 +46,12 @@ figcaption { margin-top: 8px; text-align: center;}
 
 main { flex: 1 0 auto;}
 
-footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-align: center; padding: 48px 8px;
+footer { width: 100%; background: #212121; color: $baseWhite; text-align: center; padding: 48px 8px;
   .github__icon { display: block; width: 32px; margin: 0 auto 8px auto;
-    .svg__icon { fill: #ffffff;}
+    .svg__icon { fill: $baseWhite;}
   }
   small { font-size: 12px; display: block; margin: auto;
-    a { color: color(#ffffff a(100%)); text-decoration: underline; padding: 0 8px;}
+    a { color: $baseWhite; text-decoration: underline; padding: 0 8px;}
     @media(--breakPC) { width: 95%;}
   }
   @media(--breakPC) { padding: 48px 0 120px;}
@@ -62,7 +62,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 .first__wrapper { width: 100%; position: relative; display: flex; padding: 160px 0 60px 0;
   .first__content { width: $largeWidth; position: relative; z-index: 1000;  margin: auto;
     .first__box { position: relative; @mixin cardStyle;
-      .first__textbox { padding: 32px 48px;
+      .first__textbox { padding: 32px;
         .symbol__wrapper { width: 60px; @util margin(null auto 12px auto);}
         .first__text__title { text-align: center;}
         .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
@@ -74,7 +74,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
             &:hover { @mixin buttonStyleHover;}
           }
         }
-        @media(--smartphone) { padding: 32px 24px;}
+        @media(--iPad) { padding: 48px 24px;}
       }
       .icon__circle { width: 44px; position: absolute; top: 16px; left: 16px;}
       .icon__try { width: 44px; position: absolute; bottom: 16px; right: 16px;}
@@ -92,7 +92,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
 
 .single__page { margin-bottom: 80px;}
 
-.menu__wrapper { width: 100%; font-size: $baseFontSize; background: color(#ffffff a(98%)); position: fixed; color: color(#ffffff a(100%)); top: 0; z-index: 9999; box-shadow: 0 2px 4px $cardShadow;
+.menu__wrapper { width: 100%; font-size: $baseFontSize; background: color($baseWhite a(98%)); position: fixed; color: $baseWhite; top: 0; z-index: 9999; box-shadow: 0 2px 4px $cardShadow;
   .menu__container { display: flex; justify-content: space-between; align-items: center; height: 56px; width: $largeWidth; margin: auto; position: relative;
     .menu__home { display: inline-block;
       .svg__icon { width: 28px; margin-right: 8px;}
@@ -105,7 +105,7 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
         svg,img,span { display: inline-block; vertical-align: middle;}
       }
       .menu__nav__container { width: 220px; position: absolute; z-index: 5000; top: 70px; right: 0; overflow: auto;
-        .menu__nav__box { background: color(#ffffff a(100%)); border-radius: $baseBorderRadius; border: 1px solid $subBorderColor;
+        .menu__nav__box { background: $baseWhite; border-radius: $baseBorderRadius; border: 1px solid $subBorderColor;
           .menu__nav__inline { width: 100%; margin: 0; padding: 12px; position: relative; display: flex; flex-wrap: wrap; align-items: center; border-top: 1px solid $subBorderColor;
             .svg__icon { width: 24px; height: 24px; margin-right: 8px;}
             .menu__svg__icon { display: none; width: 22px; height: 22px; margin: auto; position: absolute; right: 12px; top: 0; bottom: 0; fill: $baseBorderColor;
@@ -124,13 +124,13 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
     @media(--breakPC) { width: 95%;}
   }
   a { color: $textColor; text-decoration: none; display: inline-block; vertical-align: middle;}
-  .languages__wrapper { position: fixed; z-index: 2000; margin: auto; bottom: 32px; right: 32px; background: #ffffff; border-radius: 100px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  .languages__wrapper { position: fixed; z-index: 2000; margin: auto; bottom: 32px; right: 32px; background: $baseWhite; border-radius: 100px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     .languages__nav { text-align: center;
-      .languages__nav__button { font-size: $baseFontSize; width: 220px; color: color(#ffffff a(100%)); background: linear-gradient(45deg, #ed2f78 0%,#ea352d 100%);  cursor: pointer; border-radius: 100px; border: none; padding: 16px 32px;
+      .languages__nav__button { font-size: $baseFontSize; width: 220px; color: $baseWhite; background: linear-gradient(45deg, #ed2f78 0%,#ea352d 100%);  cursor: pointer; border-radius: 100px; border: none; padding: 16px 32px;
         .svg__icon { width: 20px; height: 20px;
           @media(--smartphone) { width: 28px; height: 28px;}
         }
-        svg,span { fill: color(#ffffff a(100%)); vertical-align: middle;}
+        svg,span { fill: $baseWhite; vertical-align: middle;}
         span { @mixin displayPcOnly;}
         &:hover { opacity: 1;}
         @media(--smartphone) { width: auto; padding: 16px;}
@@ -244,13 +244,13 @@ footer { width: 100%; background: #212121; color: color(#ffffff a(100%)); text-a
       }
     }
     .form__button__wrapper { width: 100%; text-align: center; margin-top: 32px;
-      .submit__button { width: auto; padding: 16px 60px; font-size: $baseFontSize; cursor: pointer; border-radius: 100px; border: none; color: color(#ffffff a(100%)); background: color(#1689ff a(100%));
+      .submit__button { width: auto; padding: 16px 60px; font-size: $baseFontSize; cursor: pointer; border-radius: 100px; border: none; color: $baseWhite; background: color(#1689ff a(100%));
         &:active { box-shadow: none; margin-top: 4px; margin-bottom: -4px;}
       }
     }
     @media(--breakPC) { width: 95%;}
   }
-  a { color: color(#ffffff a(100%));}
+  a { color: $baseWhite;}
 }
 
 /* gopher */
