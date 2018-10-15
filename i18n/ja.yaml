@@ -34,6 +34,15 @@
 - id: profileText03
   translation: "また、幼少期からコンピューターが身近にある環境だったので、小学生の時にはコンピューターに夢中になっていました。Webサイトを見たり、当時流行っていたFlashを自分で作ってみたりしました。"
 
+- id: profileText04
+  translation: "このポートフォリオサイトは、静的サイトジェネレーターの一つである「HUGO」で作りました。"
+
+- id: profileText05
+  translation: "CSSは「PostCSS」を使用して、ホスティングサービスとデプロイは「Netlify」を使っています。"
+
+- id: profileText06
+  translation: "「静的サイトジェネレーターでサイトを作りたい」というご要望があれば、一番下のフォームからご相談下さい。"
+
 - id: profileTitleTools
   translation: "よく使うツール"
 

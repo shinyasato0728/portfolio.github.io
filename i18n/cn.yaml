@@ -34,6 +34,15 @@
 - id: profileText03
   translation: "而且，由於這是一個電腦從小就接近我的環境，我專心於小學電腦。 我觀看了該網站，並嘗試製作當時流行的Flash。"
 
+- id: profileText04
+  translation: "这个投资组合网站是用“HUGO”制作的，它是静态站点生成器之一。"
+
+- id: profileText05
+  translation: "CSS使用“PostCSS”，托管服务和部署使用“Netlify”。"
+
+- id: profileText06
+  translation: "如果您有“使用静态站点生成器创建站点”的请求，请参阅底部表单。"
+
 - id: profileTitleTools
   translation: "常用的软件"
 
