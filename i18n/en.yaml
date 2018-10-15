@@ -34,6 +34,15 @@
 - id: profileText03
   translation: "Also, since it was an environment where computers were close to me from childhood, I was absorbed in computers at elementary school. I watched the website and tried making the Flash that was popular at that time myself."
 
+- id: profileText04
+  translation: "This portfolio site was made with \"HUGO\" which is one of the static site generators."
+
+- id: profileText05
+  translation: "CSS uses \"PostCSS\", hosting service and deployment uses \"Netlify\"."
+
+- id: profileText06
+  translation: "If you have a request to \"create a site with static site generator\" please consult from the bottom form."
+
 - id: profileTitleTools
   translation: "Frequently used tools"
 
