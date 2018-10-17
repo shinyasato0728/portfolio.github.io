@@ -66,7 +66,7 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
         .symbol__wrapper { width: 60px; @util margin(null auto 12px auto);}
         .first__text__title { text-align: center;}
         .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
-        .notfound__image__wrapper { width: 500px; @util margin(null auto 36px auto);
+        .notfound__image__wrapper { width: 400px; @util margin(null auto 36px auto);
           @media(--smartphone) { width: 70%;}
         }
         .notfound__button__wrapper { width: 100%; text-align: center; @util margin(32px null null null);
