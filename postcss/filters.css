@@ -12,6 +12,7 @@
 .postcss__fill__toaster { filter: toaster;}
 
 .code__span { display: inline-block; padding: 0 8px; margin: auto 4px; border-radius: $baseBorderRadius; color: color(#ed2f78 a(100%)); background: color(#f5f5f5 a(100%));}
+.color__span { display: inline-block; border-radius: $baseBorderRadius; padding: 0 8px; margin: auto 4px;}
 .filter__property__wrapper { margin: 40px auto 40px 20px;
   li { list-style-type: disc; margin-bottom: 10px;
     &:last-of-type { margin-bottom: 0;}

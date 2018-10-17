@@ -277,6 +277,9 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
   figure { display: block; margin: 32px auto; text-align: center;
     &:after { bottom: 0;}
   }
+  .fill__figure {
+    figcaption { margin-top: 8px; text-align: left;}
+  }
   .main__font,.sub__font { padding: 2px 0; margin: 0 4px;}
   .main__font { border-bottom: 2px solid #ed2f78;}
   .sub__font { border-bottom: 2px solid #84c1ff;}
