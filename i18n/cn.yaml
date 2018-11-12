@@ -26,21 +26,15 @@
   translation: "※按钮，当您单击菜单时，声音变为。 第一次点击时，请注意周围环境。"
 
 - id: profileText01
-  translation: "很高兴认识你，我是1987年出生的设计师，热爱材料设计。"
+  translation: "很高兴认识你，我是1987年出生的设计师，热爱材料设计。我長大了，看著我的祖父在童年時期經營一家客棧，所以我總是善於烹飪，有時間我有時間。"
 
 - id: profileText02
-  translation: "我長大了，看著我的祖父在童年時期經營一家客棧，所以我總是善於烹飪，有時間我有時間。"
+  translation: "目前，我们主要进行品牌指南创建，UI / UX改进（纸质原型设计），基于Google Analytics数据的网站改进，Web应用程序实施等。"
 
 - id: profileText03
-  translation: "而且，由於這是一個電腦從小就接近我的環境，我專心於小學電腦。 我觀看了該網站，並嘗試製作當時流行的Flash。"
+  translation: "这个投资组合网站是用“HUGO”制作的，它是静态站点生成器之一。CSS使用“PostCSS”，托管服务和部署使用“Netlify”。"
 
 - id: profileText04
-  translation: "这个投资组合网站是用“HUGO”制作的，它是静态站点生成器之一。"
-
-- id: profileText05
-  translation: "CSS使用“PostCSS”，托管服务和部署使用“Netlify”。"
-
-- id: profileText06
   translation: "如果您有“使用静态站点生成器创建站点”的请求，请参阅底部表单。"
 
 - id: profileTitleTools
@@ -159,3 +153,9 @@
 
 - id: ieChromeLink
   translation: "Google Chrome下载"
+
+- id: aboutMe
+  translation: "关于我的详细介绍在这里"
+
+- id: aboutMeMenu
+  translation: "关于我"

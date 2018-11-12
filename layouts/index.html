@@ -14,8 +14,6 @@
         <p>{{ i18n "profileText02" }}</p>
         <p>{{ i18n "profileText03" }}</p>
         <p>{{ i18n "profileText04" }}</p>
-        <p>{{ i18n "profileText05" }}</p>
-        <p>{{ i18n "profileText06" }}</p>
         <div class="first__content__skill">
           <h3 class="first__skill__title">{{ i18n "profileTitleTools" }}</h3>
           <img src="{{ .Site.Params.Icon_ai }}" alt="Illustrator">
@@ -23,27 +21,24 @@
           <img src="{{ .Site.Params.Icon_xd }}" alt="XD">
           <img src="{{ .Site.Params.Icon_an }}" alt="Animate">
           <img src="{{ .Site.Params.Icon_vim }}" alt="VIM">
-          <img src="{{ .Site.Params.Icon_hyper }}" alt="Hyper">
-          <img src="{{ .Site.Params.Icon_netlify }}" alt="Netlify">
+          <img class="skyll__image__large" src="{{ .Site.Params.Icon_hyper }}" alt="Hyper">
+          <img class="skyll__image__normal" src="{{ .Site.Params.Icon_netlify }}" alt="Netlify">
         </div>
         <div class="first__content__skill">
           <h3 class="first__skill__title">{{ i18n "profileTitleSkill" }}</h3>
           <img src="{{ .Site.Params.Icon_html5 }}" alt="HTMl5">
           <img src="{{ .Site.Params.Icon_css }}" alt="CSS">
-          <img src="{{ .Site.Params.Icon_sass }}" alt="SASS">
-          <img src="{{ .Site.Params.Icon_postcss }}" alt="PostCSS">
+          <img class="skyll__image__large" src="{{ .Site.Params.Icon_sass }}" alt="SASS">
+          <img class="skyll__image__normal" src="{{ .Site.Params.Icon_postcss }}" alt="PostCSS">
           <img src="{{ .Site.Params.Icon_rails }}" alt="Rails">
-          <img src="{{ .Site.Params.Icon_git }}" alt="Git">
-          <img src="{{ .Site.Params.Icon_jekyll }}" alt="Jekyll">
-          <img src="{{ .Site.Params.Icon_hugo }}" alt="HUGO">
-        </div>
-        <div class="first__content__skill">
-          <h3 class="first__skill__title">{{ i18n "profileTitleStudy" }}</h3>
-          <img src="{{ .Site.Params.Icon_gatsby }}" alt="Gatsby">
-          <img src="{{ .Site.Params.Icon_vuepress }}" alt="VuePress">
-          <img src="{{ .Site.Params.Icon_firebase }}" alt="Firebase">
+          <img class="skyll__image__normal" src="{{ .Site.Params.Icon_git }}" alt="Git">
+          <img class="skyll__image__normal" src="{{ .Site.Params.Icon_jekyll }}" alt="Jekyll">
+          <img class="skyll__image__small" src="{{ .Site.Params.Icon_hugo }}" alt="HUGO">
         </div>
       </div>
+      <nav class="nav__more">
+        <a href="{{ "/about/" | relLangURL }}">{{ i18n "aboutMe" }}</a>
+      </nav>
       <figure class="icon__try">
         <img src="/images/back/icon_back_try.svg" alt="">
       </figure>
