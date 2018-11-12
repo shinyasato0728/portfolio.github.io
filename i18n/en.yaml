@@ -26,21 +26,15 @@
   translation: "* Button, when you click the menu, the sound becomes. When clicking for the first time, please pay attention to surrounding environment."
 
 - id: profileText01
-  translation: "Nice to meet you, I am a designer born in 1987 who loves material design."
+  translation: "Nice to meet you, I am a designer born in 1987 who loves material design. I grew up watching my grandfather who was running a inn in the early childhood, so I am always good at cooking and having time when I have time."
 
 - id: profileText02
-  translation: "I grew up watching my grandfather who was running a inn in the early childhood, so I am always good at cooking and having time when I have time."
+  translation: "Currently, we mainly do brand guideline creation, UI / UX improvement (paper prototype to design), site improvement based on Google Analytics figures, Web application implementation, etc."
 
 - id: profileText03
-  translation: "Also, since it was an environment where computers were close to me from childhood, I was absorbed in computers at elementary school. I watched the website and tried making the Flash that was popular at that time myself."
+  translation: "This portfolio site was made with \"HUGO\" which is one of the static site generators. CSS uses \"PostCSS\", hosting service and deployment uses \"Netlify\"."
 
 - id: profileText04
-  translation: "This portfolio site was made with \"HUGO\" which is one of the static site generators."
-
-- id: profileText05
-  translation: "CSS uses \"PostCSS\", hosting service and deployment uses \"Netlify\"."
-
-- id: profileText06
   translation: "If you have a request to \"create a site with static site generator\" please consult from the bottom form."
 
 - id: profileTitleTools
@@ -162,3 +156,9 @@
 
 - id: ieChromeLink
   translation: "Download Google Chrome"
+
+- id: aboutMe
+  translation: "About me"
+
+- id: aboutMeMenu
+  translation: "About me"

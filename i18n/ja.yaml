@@ -26,21 +26,15 @@
   translation: "※ボタン、メニューをクリックすると音がなります。初めてクリックするときは、周りの環境に注意して下さい。"
 
 - id: profileText01
-  translation: "初めまして、マテリアルデザインをこよなく愛する、1987年生まれのデザイナーです。"
+  translation: "初めまして、マテリアルデザインをこよなく愛する、1987年生まれのデザイナーです。幼少期から民宿を経営していた祖父を見て育ったので、料理が得意で時間があったらいつも作っています。"
 
 - id: profileText02
-  translation: "幼少期から民宿を経営していた祖父を見て育ったので、料理が得意で時間があったらいつも作っています。"
+  translation: "現在は主に、ブランドガイドライン作成、UI/UX改善（ペーパープロトタイプからデザイン作成）、Google Analyticsの数値を元したサイト改善、Webアプリの実装等を行っております。"
 
 - id: profileText03
-  translation: "また、幼少期からコンピューターが身近にある環境だったので、小学生の時にはコンピューターに夢中になっていました。Webサイトを見たり、当時流行っていたFlashを自分で作ってみたりしました。"
+  translation: "このポートフォリオサイトは、静的サイトジェネレーターの一つである「HUGO」で作りました。CSSは「PostCSS」を使用して、ホスティングサービスとデプロイは「Netlify」を使っています。"
 
 - id: profileText04
-  translation: "このポートフォリオサイトは、静的サイトジェネレーターの一つである「HUGO」で作りました。"
-
-- id: profileText05
-  translation: "CSSは「PostCSS」を使用して、ホスティングサービスとデプロイは「Netlify」を使っています。"
-
-- id: profileText06
   translation: "「静的サイトジェネレーターでサイトを作りたい」というご要望があれば、一番下のフォームからご相談下さい。"
 
 - id: profileTitleTools
@@ -159,3 +153,9 @@
 
 - id: ieChromeLink
   translation: "Google Chromeをダウンロード"
+
+- id: aboutMe
+  translation: "私についての詳しい紹介はこちら"
+
+- id: aboutMeMenu
+  translation: "私について"
