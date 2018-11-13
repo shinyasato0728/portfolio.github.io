@@ -93,7 +93,7 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
     }
     @media(--breakPC) { width: 100%;}
   }
-  .nav__more { width: 100%; display: flex; justify-content: center; align-items: center; height: 100%; max-height: 46%; position: absolute; bottom: 0; background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 30%,rgba(255,255,255,1) 100%);
+  .nav__more { width: 100%; display: flex; justify-content: center; padding-bottom: 40px;
     a { @mixin buttonStyle;
       &:hover { @mixin buttonStyleHover;}
     }
