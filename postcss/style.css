@@ -94,10 +94,10 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
     @media(--breakPC) { width: 100%;}
   }
   .nav__more { width: 100%; display: flex; justify-content: center; padding-bottom: 40px;
-    a { @mixin buttonStyle;
+    a { @mixin buttonStyle; text-align: center;
       &:hover { @mixin buttonStyleHover;}
     }
-    @media(--breakPC) { max-height: 50%;}
+    @media(--iPad) { padding: 0 24px 80px 24px;}
   }
   @media(--smartphone) { padding: 120px 0 0 0;}
 }
