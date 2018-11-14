@@ -37,6 +37,9 @@
 - id: profileText04
   translation: "If you have a request to \"create a site with static site generator\" please consult from the bottom form."
 
+- id: profileSkillset
+  translation: "Skill set"
+
 - id: profileTitleTools
   translation: "Frequently used tools"
 

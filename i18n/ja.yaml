@@ -37,6 +37,9 @@
 - id: profileText04
   translation: "「静的サイトジェネレーターでサイトを作りたい」というご要望があれば、一番下のフォームからご相談下さい。"
 
+- id: profileSkillset
+  translation: "主なスキルセット"
+
 - id: profileTitleTools
   translation: "よく使うツール"
 

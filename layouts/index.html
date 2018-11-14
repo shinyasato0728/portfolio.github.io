@@ -14,6 +14,24 @@
         <p>{{ i18n "profileText02" }}</p>
         <p>{{ i18n "profileText03" }}</p>
         <p>{{ i18n "profileText04" }}</p>
+        <div class="first__content__skill">
+          <h3 class="first__skill__title">{{ i18n "profileSkillset" }}</h3>
+          <img src="{{ .Site.Params.Icon_ai }}" alt="Illustrator">
+          <img src="{{ .Site.Params.Icon_psd }}" alt="Photoshop">
+          <img src="{{ .Site.Params.Icon_xd }}" alt="XD">
+          <img src="{{ .Site.Params.Icon_an }}" alt="Animate">
+          <img src="{{ .Site.Params.Icon_vim }}" alt="VIM">
+          <img class="skill__image__large" src="{{ .Site.Params.Icon_hyper }}" alt="Hyper">
+          <img class="skill__image__large" src="{{ .Site.Params.Icon_netlify }}" alt="Netlify">
+          <img src="{{ .Site.Params.Icon_html5 }}" alt="HTMl5">
+          <img src="{{ .Site.Params.Icon_css }}" alt="CSS">
+          <img class="skill__image__large" src="{{ .Site.Params.Icon_sass }}" alt="SASS">
+          <img class="skill__image__large" src="{{ .Site.Params.Icon_postcss }}" alt="PostCSS">
+          <img src="{{ .Site.Params.Icon_rails }}" alt="Rails">
+          <img class="skill__image__normal" src="{{ .Site.Params.Icon_git }}" alt="Git">
+          <img class="skill__image__normal" src="{{ .Site.Params.Icon_jekyll }}" alt="Jekyll">
+          <img class="skill__image__small" src="{{ .Site.Params.Icon_hugo }}" alt="HUGO">
+        </div>
       </div>
       <nav class="nav__more">
         <a href="{{ "/about/" | relLangURL }}">{{ i18n "aboutMe" }}</a>
