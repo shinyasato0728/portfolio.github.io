@@ -67,7 +67,7 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
         .symbol__wrapper { width: 60px; @util margin(null auto 12px auto);}
         .face__wrapper { @util margin(null auto 24px auto); text-align: center;}
         .first__text__title { text-align: center;}
-        .first__skill__title { text-align: center; margin-bottom: 16px; @mixin titleBackground #f9f9f9,a,100%;}
+        .first__skill__title { text-align: center;}
         .notfound__image__wrapper { width: 400px; @util margin(null auto 36px auto);
           @media(--smartphone) { width: 70%;}
         }
@@ -81,13 +81,13 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
       }
       .icon__circle { width: 44px; position: absolute; top: 16px; left: 16px;}
       .icon__try { width: 44px; position: absolute; bottom: 16px; right: 16px;}
-      .first__content__skill { margin-top: 48px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
-        img { display: inline-block; height: 60px; margin-top: 16px; margin-right: 32px;
+      .first__content__skill { margin-top: 60px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+        img { display: inline-block; height: 60px; margin-top: 24px; margin-right: 32px;
           &:last-of-type { margin-right: 0;}
         }
-        .skyll__image__large { height: 50px;}
-        .skyll__image__normal { height: 40px;}
-        .skyll__image__small { height: 30px;}
+        .skill__image__large { height: 50px;}
+        .skill__image__normal { height: 40px;}
+        .skill__image__small { height: 30px;}
         @media(--smartphone) { justify-content: flex-start;}
       }
     }
