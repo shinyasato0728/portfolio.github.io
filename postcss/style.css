@@ -66,8 +66,8 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
         ul { margin: 12px auto 12px 32px; list-style-type: disc;}
         .symbol__wrapper { width: 60px; @util margin(null auto 12px auto);}
         .face__wrapper { @util margin(null auto 24px auto); text-align: center;}
-        .first__text__title { text-align: center;}
-        .first__skill__title { text-align: center;}
+        .first__text__title { font-weight: bold; text-align: center;}
+        .first__skill__title { text-align: center; @mixin titleBackground #f9f9f9,a,100%;}
         .notfound__image__wrapper { width: 400px; @util margin(null auto 36px auto);
           @media(--smartphone) { width: 70%;}
         }
