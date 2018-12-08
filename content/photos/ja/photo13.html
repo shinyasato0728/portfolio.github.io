@@ -16,14 +16,17 @@ draft: false
     {{< figure src="/images/photos/photo13_firstview.png" alt="">}}
   </div>
   <div class="post__text--wrapper">
-    <h2 class="post__photos--title">元画像を用意する</h2>
-    <figure>
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <p>今回はこの画像を使って、PostCSSで画像加工をしていきたいと思います。</p>
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">元画像を用意する</h2>
+      <figure>
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <p>今回はこの画像を使って、PostCSSで画像加工をしていきたいと思います。</p>
+    </div>
 
-    <h2 class="post__photos--title">プラグインをインストールする</h2>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">プラグインをインストールする</h2>
+      <pre class="prettyprint">
       <code>
 npm install postcss-instagram
 // or
@@ -36,13 +39,15 @@ module.exports = (ctx) => ({
   ]
 });
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">1977</h2>
-    <figure class="postcss__fill__1977">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">1977</h2>
+      <figure class="postcss__fill__1977">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: 1977;}
@@ -66,13 +71,15 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">Amaro</h2>
-    <figure class="postcss__fill__amaro">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">Amaro</h2>
+      <figure class="postcss__fill__amaro">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: amaro;}
@@ -96,13 +103,15 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">Brannan</h2>
-    <figure class="postcss__fill__brannan">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">Brannan</h2>
+      <figure class="postcss__fill__brannan">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: brannan;}
@@ -126,13 +135,15 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">Earlybird</h2>
-    <figure class="postcss__fill__earlybird">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">Earlybird</h2>
+      <figure class="postcss__fill__earlybird">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: earlybird;}
@@ -156,33 +167,15 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">Inkwell</h2>
-    <figure class="postcss__fill__inkwell">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
-      <code>
-/* PostCSS */
-.postcss__instagram { filter: inkwell;}
-
-/* build */
-.postcss__instagram {
-  position: relative;
-  display: inline-block;
-}
-.postcss__instagram img {
-  grayscale(1) brightness(1.2) contrast(1.05)
-}
-      </code>
-    </pre>
-
-    <h2 class="post__photos--title">Kalvin</h2>
-    <figure class="postcss__fill__kalvin">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">Kalvin</h2>
+      <figure class="postcss__fill__kalvin">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: kalvin;}
@@ -206,13 +199,15 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">Lo-Fi</h2>
-    <figure class="postcss__fill__lofi">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">Lo-Fi</h2>
+      <figure class="postcss__fill__lofi">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: lo-fi;}
@@ -236,13 +231,37 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">Nashville</h2>
-    <figure class="postcss__fill__nashville">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">Inkwell</h2>
+      <figure class="postcss__fill__inkwell">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
+      <code>
+/* PostCSS */
+.postcss__instagram { filter: inkwell;}
+
+/* build */
+.postcss__instagram {
+  position: relative;
+  display: inline-block;
+}
+.postcss__instagram img {
+  grayscale(1) brightness(1.2) contrast(1.05)
+}
+      </code>
+      </pre>
+
+
+
+      <h2 class="post__photos--title">Nashville</h2>
+      <figure class="postcss__fill__nashville">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: nashville;}
@@ -267,13 +286,15 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
 
-    <h2 class="post__photos--title">Toaster</h2>
-    <figure class="postcss__fill__toaster">
-      <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
-    </figure>
-    <pre class="prettyprint">
+    <div class="post__text--contents">
+      <h2 class="post__photos--title">Toaster</h2>
+      <figure class="postcss__fill__toaster">
+        <img class="lazyload" data-src="/images/photos/photo13_01.png" alt="">
+      </figure>
+      <pre class="prettyprint">
       <code>
 /* PostCSS */
 .postcss__instagram { filter: toaster;}
@@ -297,6 +318,7 @@ module.exports = (ctx) => ({
   content: "";
 }
       </code>
-    </pre>
+      </pre>
+    </div>
   </div>
 </article>

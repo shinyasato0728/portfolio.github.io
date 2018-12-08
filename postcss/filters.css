@@ -19,7 +19,6 @@
   }
 }
 .color__wheel { width: 60%; margin: auto; background: color($baseWhite a(100%));
-  img { border: 1px solid $baseBorderColor; border-radius: $baseBorderRadius;}
   @media(--smartphone) { width: 70%;}
 }
 

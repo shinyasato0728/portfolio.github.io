@@ -44,7 +44,7 @@ img { background-position: center; background-size: contain; background-repeat: 
 
 figcaption { margin-top: 8px; text-align: center;}
 
-main { flex: 1 0 auto;}
+main { flex: 1 0 auto; padding-top: 56px;}
 
 footer { width: 100%; background: #212121; color: $baseWhite; text-align: center; padding: 48px 8px;
   .github__icon { display: block; width: 32px; margin: 0 auto 8px auto;
@@ -59,7 +59,7 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
 }
 
 
-.first__wrapper { width: 100%; position: relative; display: flex; padding: 160px 0 0 0;
+.first__wrapper { width: 100%; position: relative; display: flex; padding: 100px 0 0 0;
   .first__content { width: $largeWidth; position: relative; z-index: 1000;  margin: auto;
     .first__box { position: relative; @mixin cardStyle;
       .first__textbox { padding: 40px;
@@ -132,7 +132,7 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
       .svg__icon { width: 28px; margin-right: 8px;}
       svg,span { display: inline-block; vertical-align: middle;}
     }
-    .menu__github { position: absolute; left: 0; right: 0; margin: auto; width: 32px; height: 32px;}
+    .menu__symbol { position: absolute; left: 0; right: 0; margin: auto; width: 32px; height: 32px;}
     .menu__nav { color: $textColor;
       .menu__hamburger { font-size: $baseFontSize; border: none; background: none; cursor: pointer; padding: 0;
         img { width: 20px; height: 20px; margin-left: 8px;}
@@ -183,7 +183,7 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
 }
 
 .post__page{ width: 100%;
-  .post__page__wrapper { width: $largeWidth; margin: 160px auto 80px;
+  .post__page__wrapper { width: $largeWidth; margin: 100px auto 80px;
     .illust__image { margin-top: 72px;}
     h3 { font-size: $baseFontSize; margin-bottom: 8px;}
     small { font-size: 12px; color: color(#848484 a(100%)); margin-bottom: 16px; display: inline-block;}
@@ -308,30 +308,47 @@ footer { width: 100%; background: #212121; color: $baseWhite; text-align: center
 }
 
 /* Post */
-.post__text--wrapper { margin: 100px auto; width: 600px;
-  figure { display: block; margin: 32px auto; text-align: center;
-    &:after { bottom: 0;}
+.post__text--wrapper { margin: 120px auto; width: $largeWidth;
+  .post__text--contents { margin: 80px auto; width: 700px; background: color(#ffffff a(70%)); padding: 40px; border: 1px solid $subBorderColor; border-radius: $baseBorderRadius;
+    figure { display: block; margin: 32px auto; text-align: center;
+      &:after { bottom: 0;}
+    }
+    h2 { text-align: center;}
+    .fill__figure {
+      figcaption { margin-top: 8px; text-align: left;}
+    }
+    ul { margin: 16px auto 16px 40px; list-style-type: disc;
+      li { margin-bottom: 16px;
+        &:last-of-type { margin-bottom: 0;}
+      }
+    }
+    @media(--iPad) { width: 100%; border-radius: unset; border: unset; border-top: 1px solid $subBorderColor; border-bottom: 1px solid $subBorderColor;}
+    @media(--smartphone) { padding: 24px;}
   }
-  .fill__figure {
-    figcaption { margin-top: 8px; text-align: left;}
+  .post__page--figure { width: $largeWidth; margin: 100px auto; box-shadow: 0 4px 30px color(#000000 a(20%));
+    @media(--breakPC) { width: 95%;}
+  }
+  .post__page--captionfigure { width: $largeWidth; margin: 40px auto;
+    img { display: inline-block; width: 100%; border: 1px solid $subBorderColor;}
+    @media(--breakPC) { width: 95%;}
   }
   .main__font,.sub__font { padding: 2px 0; margin: 0 4px;}
   .main__font { border-bottom: 2px solid #ed2f78;}
   .sub__font { border-bottom: 2px solid #84c1ff;}
-  .post__text--title { margin: 24px 0; text-align: center; @mixin titleBackground #f5f5f5,a,70%;}
-  .post__photos--title { margin: 100px auto 24px; text-align: left; @mixin titleBackground #f5f5f5,a,70%;
+  .post__text--title { margin-bottom: 24px; text-align: center; @mixin titleBackground #f5f5f5,a,70%;}
+  .post__photos--title { margin-bottom: 24px; text-align: left; @mixin titleBackground #f5f5f5,a,70%;
     @media(--smartphone) { font-size: 20px;}
   }
   .post__photo--small { width: 50%;
     @media(--smartphone) { width: 100%;}
   }
   .button__wrapper { width: 100%; text-align: center;
-    .click__button { @mixin buttonStyle; margin-top: 32px;
+    .click__button { @mixin buttonStyle;
       &:hover { @mixin buttonStyleHover;}
     }
   }
   a { color: $textColor;}
-  @media(--smartphone) { width: 95%;}
+  @media(--breakPC) { width: 100%;}
 }
 
 /* IE Alert */
