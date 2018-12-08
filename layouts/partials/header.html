@@ -6,7 +6,7 @@
     <a class="menu__home" href="{{ "/" | relLangURL }}">
       {{ partial "svg/menu_home.html" . }}<span>{{ i18n "menuHome" }}</span>
     </a>
-    <a class="menu__github" href="{{ .Site.Params.Repo_portfolio }}" target="_blank">{{ partial "svg/github.html" . }}</a>
+    <span class="menu__symbol"><img src="{{ .Site.Params.Image_symbol }}" alt=""></span>
     <nav class="menu__nav">
       <button class="menu__hamburger click__sound" ng-click="mCtrl.openMenu()" ng-show="showMenu != true">
         <span>{{ i18n "menuTitle" }}</span><img src="{{ .Site.BaseURL }}images/icon/menu_icon_open_reserve.svg" alt="Open">
